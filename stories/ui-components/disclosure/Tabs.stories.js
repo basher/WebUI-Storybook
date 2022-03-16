@@ -17,23 +17,23 @@ export default {
 
 export const Tabs = (args) => `
 <div
-    class="kb-tabs"
+    class="ui-tabs"
     ${args.tabsNoAccordion === true ? 'data-tabs-no-accordion="true"' : ''}
 >
-    <h2 class="kb-tabs__title">Tabs title 1</h2>
-    <div class="kb-tabs__content">
+    <h2 class="ui-tabs__title">Tabs title 1</h2>
+    <div class="ui-tabs__content">
         <p>Tabs content 1.</p>
         ${htmlFragmentContent}
     </div>
 
-    <h2 class="kb-tabs__title">Tabs title 2</h2>
-    <div class="kb-tabs__content">
+    <h2 class="ui-tabs__title">Tabs title 2</h2>
+    <div class="ui-tabs__content">
         <p>Tabs content 2.</p>
         ${htmlFragmentContent}
     </div>
 
-    <h2 class="kb-tabs__title">Tabs title 3</h2>
-    <div class="kb-tabs__content">
+    <h2 class="ui-tabs__title">Tabs title 3</h2>
+    <div class="ui-tabs__content">
         <p>Tabs content 3.</p>
         ${htmlFragmentContent}
     </div>
@@ -42,23 +42,23 @@ export const Tabs = (args) => `
 
 export const TabsNotOpen = (args) => `
 <div
-    class="kb-tabs"
+    class="ui-tabs"
     data-open="false"
 >
-    <h2 class="kb-tabs__title">Tabs title 1</h2>
-    <div class="kb-tabs__content">
+    <h2 class="ui-tabs__title">Tabs title 1</h2>
+    <div class="ui-tabs__content">
         <p>Tabs content 1.</p>
         ${htmlFragmentContent}
     </div>
 
-    <h2 class="kb-tabs__title">Tabs title 2</h2>
-    <div class="kb-tabs__content">
+    <h2 class="ui-tabs__title">Tabs title 2</h2>
+    <div class="ui-tabs__content">
         <p>Tabs content 2.</p>
         ${htmlFragmentContent}
     </div>
 
-    <h2 class="kb-tabs__title">Tabs title 3</h2>
-    <div class="kb-tabs__content">
+    <h2 class="ui-tabs__title">Tabs title 3</h2>
+    <div class="ui-tabs__content">
         <p>Tabs content 3.</p>
         ${htmlFragmentContent}
     </div>
@@ -67,21 +67,21 @@ export const TabsNotOpen = (args) => `
 TabsNotOpen.storyName = 'Tabs (1st one closed)';
 
 export const TabsVertical = () => `
-<div class="kb-tabs kb-tabs--vertical">
-    <h2 class="kb-tabs__title">Tabs title 1</h2>
-    <div class="kb-tabs__content">
+<div class="ui-tabs ui-tabs--vertical">
+    <h2 class="ui-tabs__title">Tabs title 1</h2>
+    <div class="ui-tabs__content">
         <p>Tabs content 1.</p>
         ${htmlFragmentContent}
     </div>
 
-    <h2 class="kb-tabs__title">Tabs title 2</h2>
-    <div class="kb-tabs__content">
+    <h2 class="ui-tabs__title">Tabs title 2</h2>
+    <div class="ui-tabs__content">
         <p>Tabs content 2.</p>
         ${htmlFragmentContent}
     </div>
 
-    <h2 class="kb-tabs__title">Tabs title 3</h2>
-    <div class="kb-tabs__content">
+    <h2 class="ui-tabs__title">Tabs title 3</h2>
+    <div class="ui-tabs__content">
         <p>Tabs content 3.</p>
         ${htmlFragmentContent}
     </div>

@@ -21,7 +21,7 @@ export default {
 export const TextButton = (args) => `
 <button
     type="button"
-    class="kb-button kb-button--text kb-button--${args.buttonType} kb-button--${
+    class="ui-button ui-button--text ui-button--${args.buttonType} ui-button--${
     args.buttonSize
 }"
     ${args.disabled === true ? 'disabled' : ''}

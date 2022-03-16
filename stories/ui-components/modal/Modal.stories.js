@@ -10,11 +10,11 @@ export default {
 };
 
 export const Modal = () => `
-<div class="kb-layout">
+<div class="ui-layout">
     <p>
         <button
             type="button"
-            class="kb-button kb-button--text"
+            class="ui-button ui-button--text"
             data-modal-open="modal"
             data-modal-title=""
         >
@@ -23,10 +23,10 @@ export const Modal = () => `
     </p>
 </div>
 
-<div class="kb-modal__overlay is-hidden" id="modal">
-    <div class="kb-modal">
+<div class="ui-modal__overlay is-hidden" id="modal">
+    <div class="ui-modal">
         <div
-            class="kb-modal__inner"
+            class="ui-modal__inner"
             role="dialog"
             aria-modal="true"
             aria-labelledby="modal-title"
@@ -34,16 +34,16 @@ export const Modal = () => `
 
             <button
                 type="button"
-                class="kb-button kb-button--icon"
+                class="ui-button ui-button--icon"
                 data-modal-close
             >
                 <svg
                     aria-hidden="true"
                     focusable="false"
-                    class="kb-icon kb-icon--medium"
+                    class="ui-icon ui-icon--medium"
                 >
                     <title>Close</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG016" />
+                    <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                 </svg>
                 <span class="sr-only">Close</span>
             </button>
@@ -61,17 +61,17 @@ export const Modal = () => `
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam molestiae. Soluta voluptatem deleniti excepturi laudantium. Officia at repudiandae quo nulla reiciendis optio modi nemo.</p>
                 <p>And here are more buttons (e.g. for submitting/cancelling a form) that close the modal too:</p>
 
-                <div class="kb-button-group">
+                <div class="ui-button-group">
                     <button
                         type="button"
-                        class="kb-button kb-button--text kb-button--positive"
+                        class="ui-button ui-button--text ui-button--positive"
                         data-modal-close
                     >
                         OK
                     </button>
                     <button
                         type="button"
-                        class="kb-button kb-button--text kb-button--negative"
+                        class="ui-button ui-button--text ui-button--negative"
                         data-modal-close
                     >
                         Cancel
@@ -86,11 +86,11 @@ export const Modal = () => `
 Modal.storyName = 'Modal HTML content rendered by server';
 
 export const ModalAjax = () => `
-<div class="kb-layout">
+<div class="ui-layout">
     <p>
         <button
             type="button"
-            class="kb-button kb-button--text"
+            class="ui-button ui-button--text"
             data-modal-open="modal"
             data-modal-title="Meaningful modal title"
             data-modal-fetch-content="true"
@@ -111,31 +111,31 @@ export const ModalAjax = () => `
     </article>
 </div>
 
-<div class="kb-modal__overlay is-hidden" id="modal">
-    <div class="kb-modal">
+<div class="ui-modal__overlay is-hidden" id="modal">
+    <div class="ui-modal">
         <div
-            class="kb-modal__inner"
+            class="ui-modal__inner"
             role="dialog"
             aria-modal="true"
         >
 
             <button
                 type="button"
-                class="kb-button kb-button--icon"
+                class="ui-button ui-button--icon"
                 data-modal-close
             >
                 <svg
                     aria-hidden="true"
                     focusable="false"
-                    class="kb-icon kb-icon--medium"
+                    class="ui-icon ui-icon--medium"
                 >
                     <title>Close</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG016" />
+                    <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                 </svg>
                 <span class="sr-only">Close</span>
             </button>
 
-            <div class="kb-modal__ajax"></div>
+            <div class="ui-modal__ajax"></div>
 
         </div>
     </div>
@@ -144,13 +144,13 @@ export const ModalAjax = () => `
 ModalAjax.storyName = 'Modal HTML content is Ajax-fetched';
 
 export const ModalPageload = () => `
-<div class="kb-layout">
+<div class="ui-layout">
     <p>Some dummy page content...</p>
 </div>
-<div class="kb-modal__overlay is-hidden" id="modal" data-auto-open-modal>
-    <div class="kb-modal">
+<div class="ui-modal__overlay is-hidden" id="modal" data-auto-open-modal>
+    <div class="ui-modal">
         <div
-            class="kb-modal__inner"
+            class="ui-modal__inner"
             role="dialog"
             aria-modal="true"
             aria-labelledby="modal-title"
@@ -158,16 +158,16 @@ export const ModalPageload = () => `
 
             <button
                 type="button"
-                class="kb-button kb-button--icon"
+                class="ui-button ui-button--icon"
                 data-modal-close
             >
                 <svg
                     aria-hidden="true"
                     focusable="false"
-                    class="kb-icon kb-icon--medium"
+                    class="ui-icon ui-icon--medium"
                 >
                     <title>Close</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG016" />
+                    <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                 </svg>
                 <span class="sr-only">Close</span>
             </button>
@@ -185,17 +185,17 @@ export const ModalPageload = () => `
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam molestiae. Soluta voluptatem deleniti excepturi laudantium. Officia at repudiandae quo nulla reiciendis optio modi nemo.</p>
                 <p>And here are more buttons (e.g. for submitting/cancelling a form) that close the modal too:</p>
 
-                <div class="kb-button-group">
+                <div class="ui-button-group">
                     <button
                         type="button"
-                        class="kb-button kb-button--text kb-button--positive"
+                        class="ui-button ui-button--text ui-button--positive"
                         data-modal-close
                     >
                         OK
                     </button>
                     <button
                         type="button"
-                        class="kb-button kb-button--text kb-button--negative"
+                        class="ui-button ui-button--text ui-button--negative"
                         data-modal-close
                     >
                         Cancel

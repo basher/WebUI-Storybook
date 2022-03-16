@@ -10,10 +10,10 @@ export default {
 };
 
 export const Pagination = () => `
-<div class="kb-pagination kb-button-group">
+<div class="ui-pagination ui-button-group">
     <a
         href="#"
-        class="kb-button kb-button--text kb-button--positive"
+        class="ui-button ui-button--text ui-button--positive"
     >
         Next page
     </a>

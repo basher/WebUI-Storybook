@@ -15,12 +15,12 @@ export default {
 
 export const ResponsiveTable = () => `
 <div
-    class="kb-table-responsive-wrap"
+    class="ui-table-responsive-wrap"
     role="region"
     aria-labelledby="unique-caption1"
     tabindex="0"
 >
-    <table class="kb-table">
+    <table class="ui-table">
         <caption id="unique-caption1">Meaningful <code>&lt;caption&gt;</code> with unique <code>ID</code></caption>
 
         <thead>
@@ -53,12 +53,12 @@ ResponsiveTable.storyName = 'Responsive table';
 
 export const ResponsiveTableRowHeaders = () => `
 <div
-    class="kb-table-responsive-wrap"
+    class="ui-table-responsive-wrap"
     role="region"
     aria-labelledby="unique-caption2"
     tabindex="0"
 >
-    <table class="kb-table">
+    <table class="ui-table">
         <caption id="unique-caption2">Meaningful <code>&lt;caption&gt;</code> with unique <code>ID</code></caption>
 
         <thead>
@@ -91,12 +91,12 @@ ResponsiveTableRowHeaders.storyName = 'Responsive table with row headers';
 
 export const ResponsiveStripedTable = () => `
 <div
-    class="kb-table-responsive-wrap"
+    class="ui-table-responsive-wrap"
     role="region"
     aria-labelledby="unique-caption3"
     tabindex="0"
 >
-    <table class="kb-table kb-table--striped">
+    <table class="ui-table ui-table--striped">
         <caption id="unique-caption3">Meaningful <code>&lt;caption&gt;</code> with unique <code>ID</code></caption>
         <tbody>
             <tr>

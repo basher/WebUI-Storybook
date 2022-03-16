@@ -19,35 +19,35 @@ export default {
 
 export const BasicFormStructure = () => `
 <form
-    class="kb-form"
+    class="ui-form"
     action="#"
 >
-    <h2 class="kb-form__title">Optional form title</h2>
-    <p class="kb-form__description">Optional form description</p>
+    <h2 class="ui-form__title">Optional form title</h2>
+    <p class="ui-form__description">Optional form description</p>
 
-    <fieldset class="kb-form__fieldset">
-        <legend class="kb-form__legend">
+    <fieldset class="ui-form__fieldset">
+        <legend class="ui-form__legend">
             This is a <code>&lt;legend&gt;</code>, describing the purpose of related form elements grouped inside an optional <code>&lt;fieldset&gt;</code>.
             <br/>
             It could contain information such as <b>"all fields are required"</b>.
         </legend>
 
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Text input (optional)</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="text"
                     placeholder="placeholder..."
                 />
             </label>
         </div>
 
-        <div class="kb-form__field kb-form__field--small">
-            <label class="kb-form__label">
+        <div class="ui-form__field ui-form__field--small">
+            <label class="ui-form__label">
                 <span>Text input small (optional)</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="text"
                     placeholder="placeholder..."
                 />
@@ -55,16 +55,16 @@ export const BasicFormStructure = () => `
         </div>
     </fieldset>
 
-    <div class="kb-form__buttons kb-button-group">
+    <div class="ui-form__buttons ui-button-group">
         <button
             type="submit"
-            class="kb-button kb-button--text kb-button--positive"
+            class="ui-button ui-button--text ui-button--positive"
         >
             Submit
         </button>
         <button
             type="reset"
-            class="kb-button kb-button--text"
+            class="ui-button ui-button--text"
         >
             Reset
         </button>
@@ -75,38 +75,38 @@ BasicFormStructure.storyName = 'Basic form structure';
 
 export const CheckboxRadio = () => `
 <form
-    class="kb-form"
+    class="ui-form"
     action="#"
 >
-    <div class="kb-form__field kb-form__field--checkbox">
-        <label class="kb-form__label">
+    <div class="ui-form__field ui-form__field--checkbox">
+        <label class="ui-form__label">
             <span>Single checkbox</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="checkbox"
             />
         </label>
     </div>
 
-    <fieldset class="kb-form__fieldset kb-form__fieldset--checkbox">
-        <legend class="kb-form__legend">
+    <fieldset class="ui-form__fieldset ui-form__fieldset--checkbox">
+        <legend class="ui-form__legend">
             This is a <code>&lt;legend&gt;</code> for checkbox group.
         </legend>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Checkbox 1</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="checkbox"
                     name="checkbox-group1"
                 />
             </label>
         </div>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Checkbox 2</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="checkbox"
                     name="checkbox-group1"
                 />
@@ -114,26 +114,26 @@ export const CheckboxRadio = () => `
         </div>
     </fieldset>
 
-    <fieldset class="kb-form__fieldset kb-form__fieldset--radio">
-        <legend class="kb-form__legend">
+    <fieldset class="ui-form__fieldset ui-form__fieldset--radio">
+        <legend class="ui-form__legend">
             This is a <code>&lt;legend&gt;</code> for radio group.
         </legend>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Radio 1</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="radio"
                     name="radio-group1"
                     checked
                 />
             </label>
         </div>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Radio 2</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="radio"
                     name="radio-group1"
                 />
@@ -148,38 +148,38 @@ CheckboxRadio.storyName = 'Checkboxes & radio inputs';
 
 export const CustomCheckbox = () => `
 <form
-    class="kb-form"
+    class="ui-form"
     action="#"
 >
-    <div class="kb-form__field kb-form__field--checkbox kb-form__field--checkbox-custom">
-        <label class="kb-form__label">
+    <div class="ui-form__field ui-form__field--checkbox ui-form__field--checkbox-custom">
+        <label class="ui-form__label">
             <span>Single custom checkbox</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="checkbox"
             />
         </label>
     </div>
 
-    <fieldset class="kb-form__fieldset kb-form__fieldset--checkbox kb-form__fieldset--checkbox-custom">
-        <legend class="kb-form__legend">
+    <fieldset class="ui-form__fieldset ui-form__fieldset--checkbox ui-form__fieldset--checkbox-custom">
+        <legend class="ui-form__legend">
             This is a <code>&lt;legend&gt;</code> for custom checkbox group.
         </legend>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Custom checkbox 1</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="checkbox"
                     name="checkbox-group1"
                 />
             </label>
         </div>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Custom checkbox 2</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="checkbox"
                     name="checkbox-group1"
                 />
@@ -192,14 +192,14 @@ CustomCheckbox.storyName = 'Custom checkboxes';
 
 export const SpecialInputs = () => `
 <form
-    class="kb-form"
+    class="ui-form"
     action="#"
 >
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>Email input</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="email"
                 autocomplete="email"
                 placeholder="email@domain.com"
@@ -207,25 +207,25 @@ export const SpecialInputs = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
         </label>
     </div>
 
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>Tel input</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="tel"
                 autocomplete="tel"
                 pattern="^[0-9-+\s()]*$"
@@ -234,16 +234,16 @@ export const SpecialInputs = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
         </label>
     </div>
@@ -255,14 +255,14 @@ SpecialInputs.storyName = 'Special text input types';
 
 export const RequiredFields = () => `
 <form
-    class="kb-form"
+    class="ui-form"
     action="#"
 >
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>Text input</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 placeholder="placeholder..."
                 required
@@ -270,19 +270,19 @@ export const RequiredFields = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
             <span
-                class="kb-form__error"
+                class="ui-form__error"
                 id="error1-text"
             >
                 Error 1 text
@@ -290,11 +290,11 @@ export const RequiredFields = () => `
         </label>
     </div>
 
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>Select</span>
             <select
-                class="kb-form__select"
+                class="ui-form__select"
                 required
             >
                 <option></option>
@@ -305,19 +305,19 @@ export const RequiredFields = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
             <span
-                class="kb-form__error"
+                class="ui-form__error"
                 id="error2-text"
             >
                 Error 2 text
@@ -325,11 +325,11 @@ export const RequiredFields = () => `
         </label>
     </div>
 
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>Textarea</span>
             <textarea
-                class="kb-form__textarea"
+                class="ui-form__textarea"
                 cols="30"
                 rows="6"
                 required
@@ -337,19 +337,19 @@ export const RequiredFields = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
             <span
-                class="kb-form__error"
+                class="ui-form__error"
                 id="error3-text"
             >
                 Error 3 text
@@ -357,30 +357,30 @@ export const RequiredFields = () => `
         </label>
     </div>
 
-    <div class="kb-form__field kb-form__field--checkbox">
-        <label class="kb-form__label">
+    <div class="ui-form__field ui-form__field--checkbox">
+        <label class="ui-form__label">
             <span>Single required checkbox</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="checkbox"
                 required
             />
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
             <span
-                class="kb-form__error"
+                class="ui-form__error"
                 id="error4-text"
             >
                 Error 4 text
@@ -395,14 +395,14 @@ RequiredFields.storyName = 'Required fields';
 
 export const GroupedRequiredFields = () => `
 <form
-    class="kb-form"
+    class="ui-form"
     action="#"
 >
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>Group1 required field 1</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 placeholder="placeholder..."
                 required
@@ -411,25 +411,25 @@ export const GroupedRequiredFields = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
         </label>
     </div>
 
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>Group1 required field 2</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 placeholder="placeholder..."
                 required
@@ -438,25 +438,25 @@ export const GroupedRequiredFields = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
         </label>
     </div>
 
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>Group2 required field 1</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 placeholder="placeholder..."
                 required
@@ -465,25 +465,25 @@ export const GroupedRequiredFields = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
         </label>
     </div>
 
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>Group2 required field 2</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 placeholder="placeholder..."
                 required
@@ -492,16 +492,16 @@ export const GroupedRequiredFields = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
         </label>
     </div>
@@ -512,8 +512,8 @@ export const GroupedRequiredFields = () => `
 GroupedRequiredFields.storyName = '"Grouped" required fields';
 
 export const FormErrors = () => `
-<div class="kb-form__errors" role="alert">
-    <h2 class="kb-form__errors__title">Form errors</h2>
+<div class="ui-form__errors" role="alert">
+    <h2 class="ui-form__errors__title">Form errors</h2>
     <ul>
         <li>
             <a href="#input-error2">Error 2...</a>
@@ -525,16 +525,16 @@ export const FormErrors = () => `
 </div>
 
 <form
-    class="kb-form"
+    class="ui-form"
     action="#"
 >
-    <div class="kb-form__field">
-        <label class="kb-form__label">
+    <div class="ui-form__field">
+        <label class="ui-form__label">
             <span>
                 Text input 1
             </span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 placeholder="placeholder..."
                 required
@@ -544,27 +544,27 @@ export const FormErrors = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
         </label>
     </div>
 
-    <div class="kb-form__field kb-form__field--has-error">
-        <label class="kb-form__label">
+    <div class="ui-form__field ui-form__field--has-error">
+        <label class="ui-form__label">
             <span>
                 Text input 2
             </span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 placeholder="placeholder..."
                 required
@@ -575,19 +575,19 @@ export const FormErrors = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
             <span
-                class="kb-form__error"
+                class="ui-form__error"
                 id="error2-text"
             >
                 Error 2 text
@@ -595,13 +595,13 @@ export const FormErrors = () => `
         </label>
     </div>
 
-    <div class="kb-form__field kb-form__field--has-error">
-        <label class="kb-form__label">
+    <div class="ui-form__field ui-form__field--has-error">
+        <label class="ui-form__label">
             <span>
                 Text input 3
             </span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 placeholder="placeholder..."
                 required
@@ -612,19 +612,19 @@ export const FormErrors = () => `
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon kb-form__icon--error"
+                class="ui-icon ui-form__icon ui-form__icon--error"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG074" />
             </svg>
             <svg
                 aria-hidden="true"
                 focusable="false"
-                class="kb-icon kb-form__icon"
+                class="ui-icon ui-form__icon"
             >
-                <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+                <use href="${UIconfig.theme}.sprite.svg#SVG075" />
             </svg>
             <span
-                class="kb-form__error"
+                class="ui-form__error"
                 id="error3-text"
             >
                 Error 3 text
@@ -639,14 +639,14 @@ FormErrors.storyName = 'Form errors';
 
 export const DisabledFields = () => `
 <form
-    class="kb-form"
+    class="ui-form"
     action="#"
 >
-    <div class="kb-form__field is-disabled">
-        <label class="kb-form__label">
+    <div class="ui-form__field is-disabled">
+        <label class="ui-form__label">
             <span>Text input</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 placeholder="placeholder..."
                 disabled
@@ -654,11 +654,11 @@ export const DisabledFields = () => `
         </label>
     </div>
 
-    <div class="kb-form__field is-disabled">
-        <label class="kb-form__label">
+    <div class="ui-form__field is-disabled">
+        <label class="ui-form__label">
             <span>Select</span>
             <select
-                class="kb-form__select"
+                class="ui-form__select"
                 disabled
             >
                 <option value="option1">Option 1</option>
@@ -668,11 +668,11 @@ export const DisabledFields = () => `
         </label>
     </div>
 
-    <div class="kb-form__field is-disabled">
-        <label class="kb-form__label">
+    <div class="ui-form__field is-disabled">
+        <label class="ui-form__label">
             <span>Textarea</span>
             <textarea
-                class="kb-form__textarea"
+                class="ui-form__textarea"
                 cols="30"
                 rows="6"
                 disabled
@@ -680,26 +680,26 @@ export const DisabledFields = () => `
         </label>
     </div>
 
-    <fieldset class="kb-form__fieldset kb-form__fieldset--checkbox is-disabled">
-        <legend class="kb-form__legend">
+    <fieldset class="ui-form__fieldset ui-form__fieldset--checkbox is-disabled">
+        <legend class="ui-form__legend">
             This is a <code>&lt;legend&gt;</code> for checkbox group.
         </legend>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Checkbox 1</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="checkbox"
                     name="checkbox-group1"
                     disabled
                 />
             </label>
         </div>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Checkbox 2</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="checkbox"
                     name="checkbox-group1"
                     disabled
@@ -708,15 +708,15 @@ export const DisabledFields = () => `
         </div>
     </fieldset>
 
-    <fieldset class="kb-form__fieldset kb-form__fieldset--radio is-disabled">
-        <legend class="kb-form__legend">
+    <fieldset class="ui-form__fieldset ui-form__fieldset--radio is-disabled">
+        <legend class="ui-form__legend">
             This is a <code>&lt;legend&gt;</code> for radio group.
         </legend>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Radio 1</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="radio"
                     name="radio-group1"
                     checked
@@ -724,11 +724,11 @@ export const DisabledFields = () => `
                 />
             </label>
         </div>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Radio 2</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="radio"
                     name="radio-group1"
                     disabled
@@ -741,13 +741,13 @@ export const DisabledFields = () => `
 DisabledFields.storyName = 'Disabled fields';
 
 export const RangeInput = () => `
-<div class="kb-form__field kb-form__range">
-    <label class="kb-form__label">
-        <span class="kb-form__range__label">
+<div class="ui-form__field ui-form__range">
+    <label class="ui-form__label">
+        <span class="ui-form__range__label">
             Range slider
         </span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="range"
             value="1"
             min="1"
@@ -756,23 +756,23 @@ export const RangeInput = () => `
             aria-valuemin="1"
             aria-valuemax="20"
         />
-        <output class="kb-form__range__bubble"></output>
+        <output class="ui-form__range__bubble"></output>
     </label>
 </div>
 `;
 RangeInput.storyName = 'Range input slider';
 
 export const RangeInputMultiple = () => `
-<div class="kb-form__field kb-form__range kb-form__range--multiple">
-    <label class="kb-form__label">
-        <span class="kb-form__range__label">
-            <span class="kb-form__range__minmax">
+<div class="ui-form__field ui-form__range ui-form__range--multiple">
+    <label class="ui-form__label">
+        <span class="ui-form__range__label">
+            <span class="ui-form__range__minmax">
                 Min
             </span>
             Range slider
         </span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="range"
             data-range="min"
             step="1"
@@ -783,17 +783,17 @@ export const RangeInputMultiple = () => `
             aria-valuemin="1"
             aria-valuemax="19"
         />
-        <output class="kb-form__range__bubble"></output>
+        <output class="ui-form__range__bubble"></output>
     </label>
-    <label class="kb-form__label">
-        <span class="kb-form__range__label">
-            <span class="kb-form__range__minmax">
+    <label class="ui-form__label">
+        <span class="ui-form__range__label">
+            <span class="ui-form__range__minmax">
                 Max
             </span>
             Range slider
         </span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="range"
             data-range="max"
             step="1"
@@ -804,23 +804,23 @@ export const RangeInputMultiple = () => `
             aria-valuemin="2"
             aria-valuemax="20"
         />
-        <output class="kb-form__range__bubble"></output>
+        <output class="ui-form__range__bubble"></output>
     </label>
 </div>
 `;
 RangeInputMultiple.storyName = 'Multiple range input sliders';
 
 export const RangeInputMultipleConversions = () => `
-<div class="kb-form__field kb-form__range kb-form__range--multiple kb-form__range--unit-conversions">
-    <fieldset class="kb-form__fieldset kb-form__fieldset--radio">
-        <legend class="kb-form__legend">
+<div class="ui-form__field ui-form__range ui-form__range--multiple ui-form__range--unit-conversions">
+    <fieldset class="ui-form__fieldset ui-form__fieldset--radio">
+        <legend class="ui-form__legend">
             Range slider.
         </legend>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>CC</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="radio"
                     name="engine-size"
                     checked
@@ -844,11 +844,11 @@ export const RangeInputMultipleConversions = () => `
             />
         </div>
 
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Ltr</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="radio"
                     name="engine-size"
                 />
@@ -872,15 +872,15 @@ export const RangeInputMultipleConversions = () => `
         </div>
     </fieldset>
 
-    <label class="kb-form__label">
-        <span class="kb-form__range__label">
-            <span class="kb-form__range__minmax">
+    <label class="ui-form__label">
+        <span class="ui-form__range__label">
+            <span class="ui-form__range__minmax">
                 Min
             </span>
             Range slider
         </span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="range"
             data-range="min"
             step="10"
@@ -891,18 +891,18 @@ export const RangeInputMultipleConversions = () => `
             aria-valuemin="0"
             aria-valuemax="1990"
         />
-        <output class="kb-form__range__bubble"></output>
+        <output class="ui-form__range__bubble"></output>
     </label>
 
-    <label class="kb-form__label">
-        <span class="kb-form__range__label">
-            <span class="kb-form__range__minmax">
+    <label class="ui-form__label">
+        <span class="ui-form__range__label">
+            <span class="ui-form__range__minmax">
                 Max
             </span>
             Range slider
         </span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="range"
             data-range="max"
             step="10"
@@ -913,7 +913,7 @@ export const RangeInputMultipleConversions = () => `
             aria-valuemin="10"
             aria-valuemax="2000"
         />
-        <output class="kb-form__range__bubble"></output>
+        <output class="ui-form__range__bubble"></output>
     </label>
 </div>
 `;
@@ -923,16 +923,16 @@ RangeInputMultipleConversions.storyName =
 export const AjaxFormSubmission = () => `
 <div role="region" aria-label="[meaningful label]">
     <form
-        class="kb-form"
+        class="ui-form"
         action="#"
         data-action="/ajax/fragment-form.html"
         method="post"
     >
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>"onChange" event submits form</span>
                 <select
-                    class="kb-form__select"
+                    class="ui-form__select"
                     data-ajax-submit
                 >
                     <option value="option1">Select 1 option 1</option>
@@ -943,17 +943,17 @@ export const AjaxFormSubmission = () => `
 
             <button
                 type="submit"
-                class="kb-button kb-button--text kb-button--secondary"
+                class="ui-button ui-button--text ui-button--secondary"
             >
                 Go
             </button>
         </div>
 
-        <div class="kb-form__field is-disabled">
-            <label class="kb-form__label">
+        <div class="ui-form__field is-disabled">
+            <label class="ui-form__label">
                 <span>Disabled field until Ajax completes</span>
                 <select
-                    class="kb-form__select"
+                    class="ui-form__select"
                     disabled
                 >
                     <option value="option1">Select 2 option 1</option>
@@ -963,10 +963,10 @@ export const AjaxFormSubmission = () => `
             </label>
         </div>
 
-        <div class="kb-form__buttons kb-button-group">
+        <div class="ui-form__buttons ui-button-group">
             <button
                 type="submit"
-                class="kb-button kb-button--text kb-button--positive"
+                class="ui-button ui-button--text ui-button--positive"
             >
                 Submit
             </button>
@@ -978,10 +978,10 @@ AjaxFormSubmission.storyName = 'Ajax form submission';
 
 export const FormFieldsInGrid = () => `
 <form
-    class="kb-form"
+    class="ui-form"
     action="#"
 >
-    <div class="kb-grid">
+    <div class="ui-grid">
         ${htmlFragmentTextInputRequired}
         ${htmlFragmentSelectRequired}
         ${htmlFragmentEmailInputRequired}

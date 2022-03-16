@@ -13,9 +13,9 @@ export default {
 };
 
 export const Float = (args) => `
-<div class="kb-float ${args.reverse === true ? 'kb-float--reverse' : ''}">
+<div class="ui-float ${args.reverse === true ? 'ui-float--reverse' : ''}">
     <img
-        class="kb-image kb-float__content"
+        class="ui-image ui-float__content"
         src="https://via.placeholder.com/1024x655.png"
         alt=""
         loading="lazy"

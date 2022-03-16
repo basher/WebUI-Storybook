@@ -11,36 +11,36 @@ export default {
 };
 
 export const ToolbarStock = () => `
-<div class="kb-toolbar kb-toolbar--stock">
-    <div class="kb-button-group">
+<div class="ui-toolbar ui-toolbar--stock">
+    <div class="ui-button-group">
         <a
             href="https://www.google.com"
-            class="kb-button kb-button--text-icon"
+            class="ui-button ui-button--text-icon"
         >
-            <span class="kb-button__inner ">
-                <svg aria-hidden="true" focusable="false" class="kb-icon">
-                    <use href="${KBconfig.theme}.sprite.svg#SVG007"></use>
+            <span class="ui-button__inner ">
+                <svg aria-hidden="true" focusable="false" class="ui-icon">
+                    <use href="${UIconfig.theme}.sprite.svg#SVG007"></use>
                 </svg>
                 <span>Location</span>
             </span>
         </a>
         <a
             href="https://www.google.com"
-            class="kb-button kb-button--icon"
+            class="ui-button ui-button--icon"
         >
-                <svg aria-hidden="true" focusable="false" class="kb-icon">
+                <svg aria-hidden="true" focusable="false" class="ui-icon">
                     <title>Print</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG036"></use>
+                    <use href="${UIconfig.theme}.sprite.svg#SVG036"></use>
                 </svg>
                 <span class="sr-only">Print</span>
         </a>
         <a
             href="https://www.google.com"
-            class="kb-button kb-button--icon kb-toolbar--stock__compare"
+            class="ui-button ui-button--icon ui-toolbar--stock__compare"
         >
-                <svg aria-hidden="true" focusable="false" class="kb-icon">
+                <svg aria-hidden="true" focusable="false" class="ui-icon">
                     <title>Compare</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG056"></use>
+                    <use href="${UIconfig.theme}.sprite.svg#SVG056"></use>
                 </svg>
                 <span class="sr-only">Compare</span>
         </a>
@@ -51,31 +51,31 @@ export const ToolbarStock = () => `
 ToolbarStock.storyName = 'Stock toolbar';
 
 export const ToolbarStockNoLink = () => `
-<div class="kb-toolbar kb-toolbar--stock">
-    <div class="kb-button-group">
-        <span class="kb-toolbar--stock__location">
-            <svg aria-hidden="true" focusable="false" class="kb-icon">
-                <use href="${KBconfig.theme}.sprite.svg#SVG007"></use>
+<div class="ui-toolbar ui-toolbar--stock">
+    <div class="ui-button-group">
+        <span class="ui-toolbar--stock__location">
+            <svg aria-hidden="true" focusable="false" class="ui-icon">
+                <use href="${UIconfig.theme}.sprite.svg#SVG007"></use>
             </svg>
             <span>Location</span>
         </span>
         <a
             href="https://www.google.com"
-            class="kb-button kb-button--icon"
+            class="ui-button ui-button--icon"
         >
-                <svg aria-hidden="true" focusable="false" class="kb-icon">
+                <svg aria-hidden="true" focusable="false" class="ui-icon">
                     <title>Print</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG036"></use>
+                    <use href="${UIconfig.theme}.sprite.svg#SVG036"></use>
                 </svg>
                 <span class="sr-only">Print</span>
         </a>
         <a
             href="https://www.google.com"
-            class="kb-button kb-button--icon kb-toolbar--stock__compare"
+            class="ui-button ui-button--icon ui-toolbar--stock__compare"
         >
-                <svg aria-hidden="true" focusable="false" class="kb-icon">
+                <svg aria-hidden="true" focusable="false" class="ui-icon">
                     <title>Compare</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG056"></use>
+                    <use href="${UIconfig.theme}.sprite.svg#SVG056"></use>
                 </svg>
                 <span class="sr-only">Compare</span>
         </a>

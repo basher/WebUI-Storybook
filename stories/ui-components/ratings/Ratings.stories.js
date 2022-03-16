@@ -10,9 +10,9 @@ export default {
 };
 
 export const Ratings = () => `
-<div class="kb-ratings">
-    <div class="kb-ratings__stars" style="--rating: 68%;"></div>
-    <p class="kb-ratings__text">
+<div class="ui-ratings">
+    <div class="ui-ratings__stars" style="--rating: 68%;"></div>
+    <p class="ui-ratings__text">
         <a href="#">
             <span>Rating</span>
             3.4 (based on 195 reviews)
@@ -22,29 +22,29 @@ export const Ratings = () => `
 `;
 
 export const RatingsBanner = () => `
-<div class="kb-ratings-banner">
-    <p class="kb-ratings-banner__branch">
+<div class="ui-ratings-banner">
+    <p class="ui-ratings-banner__branch">
         Branch name
     </p>
 
-    <div class="kb-ratings">
-        <div class="kb-ratings__stars" style="--rating: 68%;"></div>
-        <p class="kb-ratings__text">
+    <div class="ui-ratings">
+        <div class="ui-ratings__stars" style="--rating: 68%;"></div>
+        <p class="ui-ratings__text">
             <span>Rating</span>
             3.4 (based on 195 reviews)
         </p>
     </div>
 
-    <div class="kb-ratings-banner__inner">
+    <div class="ui-ratings-banner__inner">
         <img
-            class="kb-image"
+            class="ui-image"
             src="https://via.placeholder.com/200x25.png"
             alt="ratings provider"
         />
 
         <a
             href="#"
-            class="kb-button kb-button--text kb-button--secondary kb-button--small"
+            class="ui-button ui-button--text ui-button--secondary ui-button--small"
         >
             View responses
         </a>
@@ -54,8 +54,8 @@ export const RatingsBanner = () => `
 RatingsBanner.storyName = 'Ratings banner';
 
 export const RatingsSignpost = () => `
-<div class="kb-ratings-signpost__wrap">
-    <a class="kb-ratings-signpost" href="#">
+<div class="ui-ratings-signpost__wrap">
+    <a class="ui-ratings-signpost" href="#">
         <span>
             Reviews
         </span>
@@ -63,9 +63,9 @@ export const RatingsSignpost = () => `
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon"
+            class="ui-icon"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG072" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG072" />
         </svg>
     </a>
 </div>

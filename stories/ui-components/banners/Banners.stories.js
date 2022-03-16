@@ -34,21 +34,21 @@ export default {
 };
 
 export const HeroBanner = (args) => `
-<div class="kb-banner kb-banner--hero">
+<div class="ui-banner ui-banner--hero">
     <div
-        class="kb-banner__inner kb-responsive-media"
+        class="ui-banner__inner ui-responsive-media"
         style="--themeMediaAspectRatio: 21/9; padding-top: 42.857%;"
     >
         ${htmlFragmentImage}
 
-        <div class="kb-banner__overlay kb-banner__overlay--${args.overlayPosition} is-hidden-on-small">
-            <div class="kb-banner__text kb-banner__text--large">
+        <div class="ui-banner__overlay ui-banner__overlay--${args.overlayPosition} is-hidden-on-small">
+            <div class="ui-banner__text ui-banner__text--large">
                 Banner text large
             </div>
-            <div class="kb-banner__text">
+            <div class="ui-banner__text">
                 Banner text small
             </div>
-            <a href="/" class="kb-button kb-button--text kb-button--primary">
+            <a href="/" class="ui-button ui-button--text ui-button--primary">
                 Primary CTA
             </a>
             <small>
@@ -57,14 +57,14 @@ export const HeroBanner = (args) => `
         </div>
     </div>
 
-    <div class="kb-banner__overlay is-hidden-on-medium">
-            <div class="kb-banner__text kb-banner__text--large">
+    <div class="ui-banner__overlay is-hidden-on-medium">
+            <div class="ui-banner__text ui-banner__text--large">
                 Banner text large
             </div>
-            <div class="kb-banner__text">
+            <div class="ui-banner__text">
                 Banner text small - lorem ipsum dolor sit amet consectetur adipisicing elit
             </div>
-            <a href="/" class="kb-button kb-button--text kb-button--primary">
+            <a href="/" class="ui-button ui-button--text ui-button--primary">
                 Primary CTA
             </a>
             <small>
@@ -77,19 +77,19 @@ HeroBanner.storyName = 'Hero (or billboard) banner';
 
 export const BannerSlider = () => `
 <section
-    class="kb-slider kb-slider--banner"
+    class="ui-slider ui-slider--banner"
     aria-label="[meaningful label for slider 1]"
     data-slide-tabbed="true"
     data-slide-variable-height="true"
 >
-    <ul class="kb-slider__slides">
-        <li class="kb-slider__slide">
+    <ul class="ui-slider__slides">
+        <li class="ui-slider__slide">
             ${htmlFragmentSlideBanner1}
         </li>
-        <li class="kb-slider__slide">
+        <li class="ui-slider__slide">
             ${htmlFragmentSlideBanner2}
         </li>
-        <li class="kb-slider__slide">
+        <li class="ui-slider__slide">
             ${htmlFragmentSlideBanner3}
         </li>
     </ul>
@@ -99,18 +99,18 @@ export const BannerSlider = () => `
 BannerSlider.storyName = 'Hero (or billboard) banners in slider';
 
 export const BannerOverlayClickable = () => `
-<div class="kb-banner">
+<div class="ui-banner">
     <div
-        class="kb-banner__inner kb-responsive-media"
+        class="ui-banner__inner ui-responsive-media"
         style="--themeMediaAspectRatio: 21/9; padding-top: 42.857%;"
     >
         ${htmlFragmentImage}
 
-        <a href="/" class="kb-banner__overlay kb-banner__overlay--block-link">
-            <div class="kb-banner__text kb-banner__text--large">
+        <a href="/" class="ui-banner__overlay ui-banner__overlay--block-link">
+            <div class="ui-banner__text ui-banner__text--large">
                 Banner text large - this WHOLE overlay is CLICKABLE
             </div>
-            <div class="kb-banner__text">
+            <div class="ui-banner__text">
                 Banner text small - lorem ipsum dolor sit amet consectetur adipisicing elit
             </div>
         </a>
@@ -120,9 +120,9 @@ export const BannerOverlayClickable = () => `
 BannerOverlayClickable.storyName = 'Banner with clickable overlay';
 
 export const BannerVideo = (args) => `
-<div class="kb-banner kb-banner--video">
+<div class="ui-banner ui-banner--video">
     <div
-        class="kb-banner__inner kb-responsive-media"
+        class="ui-banner__inner ui-responsive-media"
         style="--themeMediaAspectRatio: 21/9; padding-top: 42.857%;"
     >
         <div>
@@ -134,14 +134,14 @@ export const BannerVideo = (args) => `
                 Sorry, your browser doesn't support embedded videos.
             </video>
         </div>
-        <div class="kb-banner__overlay kb-banner__overlay--${args.overlayPosition}">
-            <div class="kb-banner__text kb-banner__text--large">
+        <div class="ui-banner__overlay ui-banner__overlay--${args.overlayPosition}">
+            <div class="ui-banner__text ui-banner__text--large">
                 Banner text large
             </div>
-            <div class="kb-banner__text">
+            <div class="ui-banner__text">
                 Banner text small
             </div>
-            <a href="/" class="kb-button kb-button--text kb-button--primary">
+            <a href="/" class="ui-button ui-button--text ui-button--primary">
                 Primary CTA
             </a>
         </div>
@@ -151,14 +151,14 @@ export const BannerVideo = (args) => `
 BannerVideo.storyName = 'Banner with video';
 
 export const BannerPageTitle = (args) => `
-<div class="kb-banner kb-banner--page-title">
-    <div class="kb-banner__title">
-        <h1 class="kb-banner__text kb-banner__text--large">
+<div class="ui-banner ui-banner--page-title">
+    <div class="ui-banner__title">
+        <h1 class="ui-banner__text ui-banner__text--large">
             Page title
         </h1>
     </div>
     <div
-        class="kb-banner__inner kb-responsive-media"
+        class="ui-banner__inner ui-responsive-media"
         style="--themeMediaAspectRatio: 21/9; padding-top: 42.857%;"
     >
         ${htmlFragmentImage}

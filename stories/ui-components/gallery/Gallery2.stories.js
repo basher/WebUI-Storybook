@@ -18,30 +18,30 @@ export default {
 };
 
 export const Gallery2 = () => `
-<div class="kb-layout">
-    <div class="kb-gallery__wrap">
+<div class="ui-layout">
+    <div class="ui-gallery__wrap">
         <!-- Large image gallery slider -->
         <section
-            class="kb-gallery kb-gallery--gallery2 kb-slider"
+            class="ui-gallery ui-gallery--gallery2 ui-slider"
             aria-label="Gallery slider"
             data-slide-autoplay="false"
             data-slide-no-animations="true"
         >
-            <ul class="kb-slider__slides">
-                <li class="kb-slider__slide">
+            <ul class="ui-slider__slides">
+                <li class="ui-slider__slide">
                     <a
-                        class="kb-gallery__link"
+                        class="ui-gallery__link"
                         href="https://via.placeholder.com/1024x768.png"
                         target="_blank"
                         data-modal-open="modal"
                         data-modal-title="Gallery"
                         data-modal-fetch-content="true"
-                        data-modal-css-class="kb-gallery__modal"
+                        data-modal-css-class="ui-gallery__modal"
                         data-slider="modal-slider1"
                         data-slide-to-show="1"
                     >
                         <img
-                            class="kb-image"
+                            class="ui-image"
                             src="https://via.placeholder.com/1024x768.png"
                             srcset="https://via.placeholder.com/400x300.png 400w,
                                     https://via.placeholder.com/768x576.png 768w,
@@ -56,28 +56,28 @@ export const Gallery2 = () => `
                         />
                     </a>
                 </li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalEven}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalOdd}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalEven}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalOdd}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalEven}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalOdd}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalEven}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalOdd}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalEven}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalOdd}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalEven}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalOdd}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalEven}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalOdd}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalEven}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalOdd}</li>
             </ul>
         </section>
 
         <!-- Thumbnail gallery slider -->
         <section
-            class="kb-gallery kb-gallery--gallery2-thumbs kb-slider"
+            class="ui-gallery ui-gallery--gallery2-thumbs ui-slider"
             aria-label="Gallery thumbnail slider"
             data-slide-autoplay="false"
             data-slide-no-animations="true"
         >
-            <ul class="kb-slider__slides">
-                <li class="kb-slider__slide">
+            <ul class="ui-slider__slides">
+                <li class="ui-slider__slide">
                     <a
-                        class="kb-gallery__link"
+                        class="ui-gallery__link"
                         href="https://via.placeholder.com/1024x768.png"
                         target="_blank"
                         data-modal-open="modal"
@@ -87,7 +87,7 @@ export const Gallery2 = () => `
                         data-slide-to-show="1"
                     >
                         <img
-                            class="kb-image"
+                            class="ui-image"
                             src="https://via.placeholder.com/400x300.png"
                             alt="gallery image 1"
                             loading="lazy"
@@ -96,20 +96,20 @@ export const Gallery2 = () => `
                         />
                     </a>
                 </li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalEvenThumb}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalOddThumb}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalEvenThumb}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalOddThumb}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalEvenThumb}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalOddThumb}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalEvenThumb}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2OpenModalOddThumb}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalEvenThumb}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalOddThumb}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalEvenThumb}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalOddThumb}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalEvenThumb}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalOddThumb}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalEvenThumb}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2OpenModalOddThumb}</li>
             </ul>
         </section>
 
         <!-- Modal gallery slider -->
         <section
-            class="kb-gallery kb-slider"
+            class="ui-gallery ui-slider"
             data-id="modal-slider1"
             data-slide-autoplay="false"
             data-slide-no-animations="true"
@@ -124,46 +124,46 @@ export const Gallery2 = () => `
                 Gallery slider
             </h2>
 
-            <ul class="kb-slider__slides">
-                <li class="kb-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2SliderSlideEven}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2SliderSlideEven}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2SliderSlideEven}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2SliderSlideEven}</li>
-                <li class="kb-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
+            <ul class="ui-slider__slides">
+                <li class="ui-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2SliderSlideEven}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2SliderSlideEven}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2SliderSlideEven}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2SliderSlideEven}</li>
+                <li class="ui-slider__slide">${htmlFragmentGallery2SliderSlideOdd}</li>
             </ul>
         </section>
     </div>
 </div>
 
-<div class="kb-modal__overlay is-hidden" id="modal">
-    <div class="kb-modal">
+<div class="ui-modal__overlay is-hidden" id="modal">
+    <div class="ui-modal">
         <div
-            class="kb-modal__inner"
+            class="ui-modal__inner"
             role="dialog"
             aria-modal="true"
         >
 
             <button
                 type="button"
-                class="kb-button kb-button--icon"
+                class="ui-button ui-button--icon"
                 data-modal-close
             >
                 <svg
                     aria-hidden="true"
                     focusable="false"
-                    class="kb-icon kb-icon--medium"
+                    class="ui-icon ui-icon--medium"
                 >
                     <title>Close</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG016" />
+                    <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                 </svg>
                 <span class="sr-only">Close</span>
             </button>
 
-            <div class="kb-modal__ajax"></div>
+            <div class="ui-modal__ajax"></div>
 
         </div>
     </div>

@@ -11,11 +11,11 @@ export default {
 };
 
 export const ToolbarNews = () => `
-<div class="kb-toolbar kb-toolbar--news">
-    <div class="kb-button-group">
+<div class="ui-toolbar ui-toolbar--news">
+    <div class="ui-button-group">
         ${htmlFragmentShare}
     </div>
-    <div class="kb-toolbar__item">
+    <div class="ui-toolbar__item">
         <span>Posted:</span>
         <span>28/02/2030</span>
     </div>
@@ -24,11 +24,11 @@ export const ToolbarNews = () => `
 ToolbarNews.storyName = 'News toolbar';
 
 export const ToolbarPromotions = () => `
-<div class="kb-toolbar kb-toolbar--promotions">
-    <div class="kb-button-group">
+<div class="ui-toolbar ui-toolbar--promotions">
+    <div class="ui-button-group">
         ${htmlFragmentShare}
     </div>
-    <div class="kb-toolbar__item">
+    <div class="ui-toolbar__item">
         <span>Offer ends:</span>
         <span>28/02/2030</span>
     </div>

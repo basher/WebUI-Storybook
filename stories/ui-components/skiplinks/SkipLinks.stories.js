@@ -10,10 +10,10 @@ export default {
 };
 
 export const Skiplinks = () => `
-<nav class="kb-skiplinks">
-    <a class="kb-skiplinks__link" href="#navigation">Skip to navigation</a>
-    <a class="kb-skiplinks__link" href="#site-search">Skip to search</a>
-    <a class="kb-skiplinks__link" href="#main">Skip to main content</a>
-    <a class="kb-skiplinks__link" href="#footer">Skip to footer</a>
+<nav class="ui-skiplinks">
+    <a class="ui-skiplinks__link" href="#navigation">Skip to navigation</a>
+    <a class="ui-skiplinks__link" href="#site-search">Skip to search</a>
+    <a class="ui-skiplinks__link" href="#main">Skip to main content</a>
+    <a class="ui-skiplinks__link" href="#footer">Skip to footer</a>
 </nav>
 `;

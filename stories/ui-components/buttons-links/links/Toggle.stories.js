@@ -10,16 +10,16 @@ export default {
 };
 
 export const Toggle = () => `
-<div class="kb-button-group">
+<div class="ui-button-group">
     <a
         href="#"
-        class="kb-button kb-button--text kb-button--toggle is-selected"
+        class="ui-button ui-button--text ui-button--toggle is-selected"
     >
         Selected
     </a>
     <a
         href="#"
-        class="kb-button kb-button--text kb-button--toggle"
+        class="ui-button ui-button--text ui-button--toggle"
     >
         Default
     </a>

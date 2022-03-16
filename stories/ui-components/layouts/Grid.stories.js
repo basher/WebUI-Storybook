@@ -19,10 +19,10 @@ export default {
 
 const style = `
 <style>
-    [class*="kb-grid"] > * {
+    [class*="ui-grid"] > * {
         background: rgba(235, 201, 90, 0.2);
     }
-    [class*="kb-grid--asymmetric"] > * {
+    [class*="ui-grid--asymmetric"] > * {
         min-height: 5rem;
     }
 </style>
@@ -30,7 +30,7 @@ const style = `
 
 export const Grid = (args) => `
 ${style}
-<div class="kb-grid kb-grid--${args.gridModifier}">
+<div class="ui-grid ui-grid--${args.gridModifier}">
     <div>Grid item 1 - lots more content to demonstrate equal height columns</div>
     <div>Grid item 2</div>
     <div>Grid item 3</div>
@@ -41,7 +41,7 @@ ${style}
 
 export const GridList = (args) => `
 ${style}
-<ul class="kb-grid kb-grid--${args.gridModifier}">
+<ul class="ui-grid ui-grid--${args.gridModifier}">
     <li>Grid item 1 - lots more content to demonstrate equal height columns</li>
     <li>Grid item 2</li>
     <li>Grid item 3</li>
@@ -53,7 +53,7 @@ GridList.storyName = 'Grid as a list';
 
 export const GridAsymmetric = () => `
 ${style}
-<div class="kb-grid--asymmetric">
+<div class="ui-grid--asymmetric">
     <div>Asymmetric col 1</div>
     <div>Col 2</div>
 </div>
@@ -62,7 +62,7 @@ GridAsymmetric.storyName = 'Asymmetric 2-column grid';
 
 export const GridAsymmetricAlt = () => `
 ${style}
-<div class="kb-grid--asymmetric-alt">
+<div class="ui-grid--asymmetric-alt">
     <div>Asymmetric col 1</div>
     <div>Col 2</div>
 </div>

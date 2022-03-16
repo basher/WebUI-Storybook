@@ -1,12 +1,12 @@
 export const htmlFragmentProductFilterCard = `
 <a
-    class="kb-card kb-product-card kb-product-card--filter"
+    class="ui-card ui-product-card ui-product-card--filter"
     href="/"
     data-overlay="/ajax/fragment-nav-product-variants.html"
 >
-    <figure class="kb-card__media">
+    <figure class="ui-card__media">
         <img
-            class="kb-image"
+            class="ui-image"
             src="https://via.placeholder.com/200x113.png"
             alt=""
             loading="lazy"
@@ -14,18 +14,18 @@ export const htmlFragmentProductFilterCard = `
             width="200"
         />
     </figure>
-    <div class="kb-card__content">
-        <p class="kb-card__title">Product name</p>
-        <p class="kb-product-card__price">From &pound;19.999</p>
+    <div class="ui-card__content">
+        <p class="ui-card__title">Product name</p>
+        <p class="ui-product-card__price">From &pound;19.999</p>
     </div>
 </a>
 `;
 
 export const htmlFragmentFilteredSubMenu = `
-<div class="kb-product-filter kb-tabs">
-    <span class="kb-tabs__title">Filter 1</span>
-    <div class="kb-tabs__content">
-        <ul class="kb-grid">
+<div class="ui-product-filter ui-tabs">
+    <span class="ui-tabs__title">Filter 1</span>
+    <div class="ui-tabs__content">
+        <ul class="ui-grid">
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
@@ -37,17 +37,17 @@ export const htmlFragmentFilteredSubMenu = `
         </ul>
         <small>Smallprint goes here...</small>
     </div>
-    <span class="kb-tabs__title">Filter 2</span>
-    <div class="kb-tabs__content">
-        <ul class="kb-grid">
+    <span class="ui-tabs__title">Filter 2</span>
+    <div class="ui-tabs__content">
+        <ul class="ui-grid">
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
         </ul>
         <small>Smallprint goes here...</small>
     </div>
-    <span class="kb-tabs__title">Filter 3</span>
-    <div class="kb-tabs__content">
-        <ul class="kb-grid">
+    <span class="ui-tabs__title">Filter 3</span>
+    <div class="ui-tabs__content">
+        <ul class="ui-grid">
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
@@ -59,11 +59,11 @@ export const htmlFragmentFilteredSubMenu = `
 `;
 
 export const htmlFragmentFilterCheckbox = `
-<div class="kb-form__field kb-form__field--checkbox">
-    <label class="kb-form__label">
+<div class="ui-form__field ui-form__field--checkbox">
+    <label class="ui-form__label">
         <span>Filter item</span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="checkbox"
         />
     </label>
@@ -71,16 +71,16 @@ export const htmlFragmentFilterCheckbox = `
 `;
 
 export const htmlFragmentRangeInputMultiple = `
-<div class="kb-form__field kb-form__range kb-form__range--multiple">
-    <label class="kb-form__label">
-        <span class="kb-form__range__label">
-            <span class="kb-form__range__minmax">
+<div class="ui-form__field ui-form__range ui-form__range--multiple">
+    <label class="ui-form__label">
+        <span class="ui-form__range__label">
+            <span class="ui-form__range__minmax">
                 Min
             </span>
             Range slider
         </span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="range"
             data-range="min"
             step="1"
@@ -91,17 +91,17 @@ export const htmlFragmentRangeInputMultiple = `
             aria-valuemin="1"
             aria-valuemax="19"
         />
-        <output class="kb-form__range__bubble"></output>
+        <output class="ui-form__range__bubble"></output>
     </label>
-    <label class="kb-form__label">
-        <span class="kb-form__range__label">
-            <span class="kb-form__range__minmax">
+    <label class="ui-form__label">
+        <span class="ui-form__range__label">
+            <span class="ui-form__range__minmax">
                 Max
             </span>
             Range slider
         </span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="range"
             data-range="max"
             step="1"
@@ -112,22 +112,22 @@ export const htmlFragmentRangeInputMultiple = `
             aria-valuemin="2"
             aria-valuemax="20"
         />
-        <output class="kb-form__range__bubble"></output>
+        <output class="ui-form__range__bubble"></output>
     </label>
 </div>
 `;
 
 export const htmlFragmentRangeInputMultipleConversions = `
-<div class="kb-form__field kb-form__range kb-form__range--multiple kb-form__range--unit-conversions">
-    <fieldset class="kb-form__fieldset kb-form__fieldset--radio">
-        <legend class="kb-form__legend">
+<div class="ui-form__field ui-form__range ui-form__range--multiple ui-form__range--unit-conversions">
+    <fieldset class="ui-form__fieldset ui-form__fieldset--radio">
+        <legend class="ui-form__legend">
             Range slider.
         </legend>
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>CC</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="radio"
                     name="engine-size"
                     checked
@@ -151,11 +151,11 @@ export const htmlFragmentRangeInputMultipleConversions = `
             />
         </div>
 
-        <div class="kb-form__field">
-            <label class="kb-form__label">
+        <div class="ui-form__field">
+            <label class="ui-form__label">
                 <span>Ltr</span>
                 <input
-                    class="kb-form__input"
+                    class="ui-form__input"
                     type="radio"
                     name="engine-size"
                 />
@@ -179,15 +179,15 @@ export const htmlFragmentRangeInputMultipleConversions = `
         </div>
     </fieldset>
 
-    <label class="kb-form__label">
-        <span class="kb-form__range__label">
-            <span class="kb-form__range__minmax">
+    <label class="ui-form__label">
+        <span class="ui-form__range__label">
+            <span class="ui-form__range__minmax">
                 Min
             </span>
             Range slider
         </span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="range"
             data-range="min"
             step="10"
@@ -198,18 +198,18 @@ export const htmlFragmentRangeInputMultipleConversions = `
             aria-valuemin="0"
             aria-valuemax="1990"
         />
-        <output class="kb-form__range__bubble"></output>
+        <output class="ui-form__range__bubble"></output>
     </label>
 
-    <label class="kb-form__label">
-        <span class="kb-form__range__label">
-            <span class="kb-form__range__minmax">
+    <label class="ui-form__label">
+        <span class="ui-form__range__label">
+            <span class="ui-form__range__minmax">
                 Max
             </span>
             Range slider
         </span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="range"
             data-range="max"
             step="10"
@@ -220,7 +220,7 @@ export const htmlFragmentRangeInputMultipleConversions = `
             aria-valuemin="10"
             aria-valuemax="2000"
         />
-        <output class="kb-form__range__bubble"></output>
+        <output class="ui-form__range__bubble"></output>
     </label>
 </div>
 `;

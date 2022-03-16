@@ -31,10 +31,10 @@ import { Preview, Story } from '@storybook/addon-docs/blocks';
 
 ## Default cards in a grid - responsive behaviour
 - It's probably best to only use **vertical** cards inside a grid, as there's no way of determining how much horizonatal space is available in each card without using JavaScript.
-- The grid container has an extra `kb-card-grid` class to override the default CSS Grid behaviour of `kb-grid`. See [Grid layout story](/story/ui-components-layouts-grid--grid).
-- For example, the `kb-card-grid` column min-widths are overridden by:
+- The grid container has an extra `ui-card-grid` class to override the default CSS Grid behaviour of `ui-grid`. See [Grid layout story](/story/ui-components-layouts-grid--grid).
+- For example, the `ui-card-grid` column min-widths are overridden by:
 ```
-.kb-card-grid.kb-grid { @include responsive-grid-columns($min-width: 17.5rem) }
+.ui-card-grid.ui-grid { @include responsive-grid-columns($min-width: 17.5rem) }
 ```
 
 <Preview>

@@ -26,7 +26,7 @@ export default {
 /* Inline <style> blocks to allow components to be rendered in Storybook preview pane correctly. */
 const style1 = `
 <style>
-    .sb-show-main .kb-layout {
+    .sb-show-main .ui-layout {
         min-height: 0;
     }
 </style>
@@ -35,43 +35,43 @@ const style1 = `
 /* Full navigation, but importing fragment template literals to make HTML easier to read. */
 export const Navigation = () => `
 ${style1}
-<div class="kb-layout">
+<div class="ui-layout">
     <header
-    class="kb-layout__header kb-layout__sticky kb-layout__sticky--header" id="header"
+    class="ui-layout__header ui-layout__sticky ui-layout__sticky--header" id="header"
     >
-        <div class="kb-layout__header__overlay"></div>
+        <div class="ui-layout__header__overlay"></div>
 
-        <div class="kb-layout__inner">
-            <div class="kb-header">
+        <div class="ui-layout__inner">
+            <div class="ui-header">
 
                 <nav
                     id="navigation"
-                    class="kb-navigation kb-header__nav"
+                    class="ui-navigation ui-header__nav"
                     aria-label="site header navigation"
                 >
                     ${htmlFragmentMobileMenuButton}
 
                     <div id="navigation-wrap">
-                        <ul class="kb-navigation__list">
-                            <li class="kb-navigation__item" data-dropdown-open="false">
+                        <ul class="ui-navigation__list">
+                            <li class="ui-navigation__item" data-dropdown-open="false">
                                 <a
                                     href="/"
-                                    class="kb-button kb-button--text-icon kb-navigation__link kb-navigation__link--has-submenu"
+                                    class="ui-button ui-button--text-icon ui-navigation__link ui-navigation__link--has-submenu"
                                 >
-                                    <span class="kb-button__inner">
+                                    <span class="ui-button__inner">
                                         <svg
                                             aria-hidden="true"
                                             focusable="false"
-                                            class="kb-icon"
+                                            class="ui-icon"
                                         >
-                                            <use href="${KBconfig.theme}.sprite.svg#SVG012" />
+                                            <use href="${UIconfig.theme}.sprite.svg#SVG012" />
                                         </svg>
                                         <span>Filtered sub-menu</span>
                                     </span>
                                 </a>
                                 ${htmlFragmentTouchOpenSubMenuButton}
 
-                                <div class="kb-navigation__dropdown">
+                                <div class="ui-navigation__dropdown">
                                     ${htmlFragmentMobileBackButton}
                                     ${htmlFragmentMobileSubmenuTitle}
                                     ${htmlFragmentFilteredSubMenu}
@@ -82,25 +82,25 @@ ${style1}
                                 ${htmlFragmentDropdownOverlay}
                             </li>
 
-                            <li class="kb-navigation__item" data-dropdown-open="false">
+                            <li class="ui-navigation__item" data-dropdown-open="false">
                                 <a
                                     href="/"
-                                    class="kb-button kb-button--text-icon kb-navigation__link kb-navigation__link--has-submenu"
+                                    class="ui-button ui-button--text-icon ui-navigation__link ui-navigation__link--has-submenu"
                                 >
-                                    <span class="kb-button__inner">
+                                    <span class="ui-button__inner">
                                         <svg
                                             aria-hidden="true"
                                             focusable="false"
-                                            class="kb-icon"
+                                            class="ui-icon"
                                         >
-                                            <use href="${KBconfig.theme}.sprite.svg#SVG012" />
+                                            <use href="${UIconfig.theme}.sprite.svg#SVG012" />
                                         </svg>
                                         <span>Static sub-menu</span>
                                     </span>
                                 </a>
                                 ${htmlFragmentTouchOpenSubMenuButton}
 
-                                <div class="kb-navigation__dropdown">
+                                <div class="ui-navigation__dropdown">
                                     ${htmlFragmentMobileBackButton}
                                     ${htmlFragmentMobileSubmenuTitle}
                                     ${htmlFragmentDropdownMenu}
@@ -108,8 +108,8 @@ ${style1}
                                 </div>
                             </li>
 
-                            <li class="kb-navigation__item">
-                                <a class="kb-navigation__link" href="/">Simple link 1</a>
+                            <li class="ui-navigation__item">
+                                <a class="ui-navigation__link" href="/">Simple link 1</a>
                             </li>
                             ${htmlFragmentTopLevelLink}
                             ${htmlFragmentTopLevelLink}
@@ -117,7 +117,7 @@ ${style1}
                             ${htmlFragmentTopLevelLink}
                             ${htmlFragmentTopLevelLink}
 
-                            <li class="kb-navigation__item--buttons is-hidden-on-medium">
+                            <li class="ui-navigation__item--buttons is-hidden-on-medium">
                                 ${htmlFragmentButtonGroup}
                             </li>
                         </ul>
@@ -135,42 +135,42 @@ Navigation.storyName = 'Site navigation';
 /* Full navigation, but importing fragment template literals to make HTML easier to read. */
 export const VerticalNavigation = () => `
 ${style1}
-<div class="kb-layout kb-layout--has-vertical-header">
+<div class="ui-layout ui-layout--has-vertical-header">
     <header
-    class="kb-layout__header" id="header"
+    class="ui-layout__header" id="header"
     >
-        <div class="kb-layout__header__overlay"></div>
+        <div class="ui-layout__header__overlay"></div>
 
-        <div class="kb-layout__inner">
-            <div class="kb-header kb-header--vertical">
+        <div class="ui-layout__inner">
+            <div class="ui-header ui-header--vertical">
 
                 <nav
                     id="navigation"
-                    class="kb-navigation kb-navigation--vertical kb-header__nav"
+                    class="ui-navigation ui-navigation--vertical ui-header__nav"
                     aria-label="site header navigation"
                 >
                     ${htmlFragmentMobileMenuButton}
                     <div id="navigation-wrap">
-                        <ul class="kb-navigation__list">
-                            <li class="kb-navigation__item" data-dropdown-open="false">
+                        <ul class="ui-navigation__list">
+                            <li class="ui-navigation__item" data-dropdown-open="false">
                                 <a
                                     href="/"
-                                    class="kb-button kb-button--text-icon kb-navigation__link kb-navigation__link--has-submenu"
+                                    class="ui-button ui-button--text-icon ui-navigation__link ui-navigation__link--has-submenu"
                                 >
-                                    <span class="kb-button__inner">
+                                    <span class="ui-button__inner">
                                         <svg
                                             aria-hidden="true"
                                             focusable="false"
-                                            class="kb-icon"
+                                            class="ui-icon"
                                         >
-                                            <use href="${KBconfig.theme}.sprite.svg#SVG012" />
+                                            <use href="${UIconfig.theme}.sprite.svg#SVG012" />
                                         </svg>
                                         <span>Filtered sub-menu</span>
                                     </span>
                                 </a>
                                 ${htmlFragmentTouchOpenSubMenuButton}
 
-                                <div class="kb-navigation__dropdown">
+                                <div class="ui-navigation__dropdown">
                                     ${htmlFragmentMobileBackButton}
                                     ${htmlFragmentMobileSubmenuTitle}
                                     ${htmlFragmentFilteredSubMenu}
@@ -181,25 +181,25 @@ ${style1}
                                 ${htmlFragmentDropdownOverlay}
                             </li>
 
-                            <li class="kb-navigation__item" data-dropdown-open="false">
+                            <li class="ui-navigation__item" data-dropdown-open="false">
                                 <a
                                     href="/"
-                                    class="kb-button kb-button--text-icon kb-navigation__link kb-navigation__link--has-submenu"
+                                    class="ui-button ui-button--text-icon ui-navigation__link ui-navigation__link--has-submenu"
                                 >
-                                    <span class="kb-button__inner">
+                                    <span class="ui-button__inner">
                                         <svg
                                             aria-hidden="true"
                                             focusable="false"
-                                            class="kb-icon"
+                                            class="ui-icon"
                                         >
-                                            <use href="${KBconfig.theme}.sprite.svg#SVG012" />
+                                            <use href="${UIconfig.theme}.sprite.svg#SVG012" />
                                         </svg>
                                         <span>Static sub-menu</span>
                                     </span>
                                 </a>
                                 ${htmlFragmentTouchOpenSubMenuButton}
 
-                                <div class="kb-navigation__dropdown">
+                                <div class="ui-navigation__dropdown">
                                     ${htmlFragmentMobileBackButton}
                                     ${htmlFragmentMobileSubmenuTitle}
                                     ${htmlFragmentDropdownMenu}
@@ -207,8 +207,8 @@ ${style1}
                                 </div>
                             </li>
 
-                            <li class="kb-navigation__item">
-                                <a class="kb-navigation__link" href="/">Simple link 1</a>
+                            <li class="ui-navigation__item">
+                                <a class="ui-navigation__link" href="/">Simple link 1</a>
                             </li>
                             ${htmlFragmentTopLevelLink}
                             ${htmlFragmentTopLevelLink}
@@ -216,7 +216,7 @@ ${style1}
                             ${htmlFragmentTopLevelLink}
                             ${htmlFragmentTopLevelLink}
 
-                            <li class="kb-navigation__item--buttons is-hidden-on-medium">
+                            <li class="ui-navigation__item--buttons is-hidden-on-medium">
                                 ${htmlFragmentButtonGroup}
                             </li>
                         </ul>
@@ -233,48 +233,48 @@ VerticalNavigation.storyName = 'Vertical site navigation';
 /* Full navigation, but without product filter tabs. */
 export const NavigationWithoutFilterTabs = () => `
 ${style1}
-<div class="kb-layout">
+<div class="ui-layout">
     <header
-    class="kb-layout__header kb-layout__sticky kb-layout__sticky--header" id="header"
+    class="ui-layout__header ui-layout__sticky ui-layout__sticky--header" id="header"
     >
-        <div class="kb-layout__header__overlay"></div>
+        <div class="ui-layout__header__overlay"></div>
 
-        <div class="kb-layout__inner">
-            <div class="kb-header">
+        <div class="ui-layout__inner">
+            <div class="ui-header">
 
                 <nav
                     id="navigation"
-                    class="kb-navigation kb-header__nav"
+                    class="ui-navigation ui-header__nav"
                     aria-label="site header navigation"
                 >
                     ${htmlFragmentMobileMenuButton}
 
                     <div id="navigation-wrap">
-                        <ul class="kb-navigation__list">
-                            <li class="kb-navigation__item" data-dropdown-open="false">
+                        <ul class="ui-navigation__list">
+                            <li class="ui-navigation__item" data-dropdown-open="false">
                                 <a
                                     href="/"
-                                    class="kb-button kb-button--text-icon kb-navigation__link kb-navigation__link--has-submenu"
+                                    class="ui-button ui-button--text-icon ui-navigation__link ui-navigation__link--has-submenu"
                                 >
-                                    <span class="kb-button__inner">
+                                    <span class="ui-button__inner">
                                         <svg
                                             aria-hidden="true"
                                             focusable="false"
-                                            class="kb-icon"
+                                            class="ui-icon"
                                         >
-                                            <use href="${KBconfig.theme}.sprite.svg#SVG012" />
+                                            <use href="${UIconfig.theme}.sprite.svg#SVG012" />
                                         </svg>
                                         <span>Filtered sub-menu</span>
                                     </span>
                                 </a>
                                 ${htmlFragmentTouchOpenSubMenuButton}
 
-                                <div class="kb-navigation__dropdown">
+                                <div class="ui-navigation__dropdown">
                                     ${htmlFragmentMobileBackButton}
                                     ${htmlFragmentMobileSubmenuTitle}
 
-                                    <div class="kb-product-filter kb-product-filter--no-tabs">
-                                        <ul class="kb-grid">
+                                    <div class="ui-product-filter ui-product-filter--no-tabs">
+                                        <ul class="ui-grid">
                                             <li>${htmlFragmentProductFilterCard}</li>
                                             <li>${htmlFragmentProductFilterCard}</li>
                                             <li>${htmlFragmentProductFilterCard}</li>
@@ -291,25 +291,25 @@ ${style1}
                                 ${htmlFragmentDropdownOverlay}
                             </li>
 
-                            <li class="kb-navigation__item" data-dropdown-open="false">
+                            <li class="ui-navigation__item" data-dropdown-open="false">
                                 <a
                                     href="/"
-                                    class="kb-button kb-button--text-icon kb-navigation__link kb-navigation__link--has-submenu"
+                                    class="ui-button ui-button--text-icon ui-navigation__link ui-navigation__link--has-submenu"
                                 >
-                                    <span class="kb-button__inner">
+                                    <span class="ui-button__inner">
                                         <svg
                                             aria-hidden="true"
                                             focusable="false"
-                                            class="kb-icon"
+                                            class="ui-icon"
                                         >
-                                            <use href="${KBconfig.theme}.sprite.svg#SVG012" />
+                                            <use href="${UIconfig.theme}.sprite.svg#SVG012" />
                                         </svg>
                                         <span>Static sub-menu</span>
                                     </span>
                                 </a>
                                 ${htmlFragmentTouchOpenSubMenuButton}
 
-                                <div class="kb-navigation__dropdown">
+                                <div class="ui-navigation__dropdown">
                                     ${htmlFragmentMobileBackButton}
                                     ${htmlFragmentMobileSubmenuTitle}
                                     ${htmlFragmentDropdownMenu}
@@ -317,8 +317,8 @@ ${style1}
                                 </div>
                             </li>
 
-                            <li class="kb-navigation__item">
-                                <a class="kb-navigation__link" href="/">Simple link 1</a>
+                            <li class="ui-navigation__item">
+                                <a class="ui-navigation__link" href="/">Simple link 1</a>
                             </li>
                             ${htmlFragmentTopLevelLink}
                             ${htmlFragmentTopLevelLink}
@@ -326,7 +326,7 @@ ${style1}
                             ${htmlFragmentTopLevelLink}
                             ${htmlFragmentTopLevelLink}
 
-                            <li class="kb-navigation__item--buttons is-hidden-on-medium">
+                            <li class="ui-navigation__item--buttons is-hidden-on-medium">
                                 ${htmlFragmentButtonGroup}
                             </li>
                         </ul>

@@ -19,13 +19,13 @@ export default {
 const style = `
 <style>
     style + h2,
-    .kb-grid:first-of-type {
+    .ui-grid:first-of-type {
         display: none;
     }
-    .kb-grid {
+    .ui-grid {
         grid-template-columns: repeat(auto-fit, 12.5rem);
     }
-    .kb-grid li {
+    .ui-grid li {
         border: 1px solid;
         border-radius: 0.125rem;
         display: flex;
@@ -33,7 +33,7 @@ const style = `
         font-size: 0.875rem;
         padding: 0.25rem;
     }
-    .kb-grid span {
+    .ui-grid span {
         word-break: break-all;
     }
     .styled {
@@ -56,7 +56,7 @@ export const Colours = (args, { loaded }) => `
                     section.slice(1).replace(/-/g, ' ')
                 }
             </h2>
-            <ul class="kb-grid">
+            <ul class="ui-grid">
                 ${loaded[section]
                     .map(
                         (color) =>
@@ -85,9 +85,8 @@ export const Colours = (args, { loaded }) => `
             let styledSpan = document.querySelectorAll('.styled');
             styledSpan.forEach((span) => {
                 let computedSpan = span.nextElementSibling.nextElementSibling;
-                computedSpan.innerHTML = getComputedStyle(
-                    span
-                ).getPropertyValue('background-color');
+                computedSpan.innerHTML =
+                    getComputedStyle(span).getPropertyValue('background-color');
             });
         })
     }

@@ -1,34 +1,34 @@
 export const htmlFragmentShare = `
-<div class="kb-share">
+<div class="ui-share">
     <button
         type="button"
-        class="kb-button kb-button--icon kb-share__button"
+        class="ui-button ui-button--icon ui-share__button"
         data-share-url="https://www.google.com"
         data-share-title="google"
     >
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon"
+            class="ui-icon"
         >
             <title>Share</title>
-            <use href="${KBconfig.theme}.sprite.svg#SVG035" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG035" />
         </svg>
         <span class="sr-only">Share</span>
     </button>
 
-    <div class="kb-share__fallback">
-        <label class="kb-form__label">
+    <div class="ui-share__fallback">
+        <label class="ui-form__label">
             <span>Share [page title]</span>
             <input
-                class="kb-form__input"
+                class="ui-form__input"
                 type="text"
                 value=""
             />
         </label>
         <button
             type="button"
-            class="kb-button kb-button--text kb-button--secondary"
+            class="ui-button ui-button--text ui-button--secondary"
         >
             Copy
         </button>

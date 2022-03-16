@@ -8,24 +8,24 @@ export default {
 };
 
 export const Links = (args) => `
-<div class="kb-button-group ${
-    args.centeredButtons === true ? 'kb-button-group--centered' : ''
+<div class="ui-button-group ${
+    args.centeredButtons === true ? 'ui-button-group--centered' : ''
 }">
     <a
         href="#"
-        class="kb-button kb-button--text kb-button--primary"
+        class="ui-button ui-button--text ui-button--primary"
     >
         Primary
     </a>
     <a
         href="#"
-        class="kb-button kb-button--text kb-button--secondary"
+        class="ui-button ui-button--text ui-button--secondary"
     >
         Secondary
     </a>
     <a
         href="#"
-        class="kb-button kb-button--text"
+        class="ui-button ui-button--text"
     >
         Default
     </a>

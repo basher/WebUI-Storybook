@@ -10,14 +10,14 @@ import { Preview, Story } from '@storybook/addon-docs/blocks';
 ## Gallery 1 (default thumbnail grid layout)
 - This is a **thumbnail** gallery, where clicking on an image will load the **full-size** image in a new browser tab.
 - Image `<figcaption>` is revealed on `:hover` or `:focus`.
-- The `kb-gallery` class is added to the parent `kb-grid` to enable overriding of default grid behaviour. For example, setting the grid columns to `auto-fill` so that they don't expand beyond the maximum size of the images.
+- The `ui-gallery` class is added to the parent `ui-grid` to enable overriding of default grid behaviour. For example, setting the grid columns to `auto-fill` so that they don't expand beyond the maximum size of the images.
 
 <Preview>
     <Story id="ui-components-gallery-gallery1--gallery-1" />
 </Preview>
 
 ## Gallery 1 (alternate thumbnail grid layouts)
-- The `kb-gallery--layout-thumbs-` modifier classes allow alternate layouts comprising **2 or 3 thumbnails per row** which, when combined together, produce a masonry-type layout.
+- The `ui-gallery--layout-thumbs-` modifier classes allow alternate layouts comprising **2 or 3 thumbnails per row** which, when combined together, produce a masonry-type layout.
 - We are no longer using semantic `<ul><li>` constructs for these alternate gallery layouts, as each row of the gallery is actually a separate grid container, so it makes no sense to announce these as separate lists.
 
 ### TODO: Re-organise gallery stories?
@@ -29,9 +29,9 @@ import { Preview, Story } from '@storybook/addon-docs/blocks';
 </Preview>
 
 ## Gallery 1 (thumbnails in tabs)
-- The `kb-gallery__tabs` class is added to the parent `kb-tabs` to enable overriding of default tabs behaviour.
+- The `ui-gallery__tabs` class is added to the parent `ui-tabs` to enable overriding of default tabs behaviour.
 - `data-tabs-no-accordion="true"` ensures that the gallery tabs are not converted to an accordion on smaller screens.
-- Ensure an appropriate heading level is used for the `kb-tabs__title` headings.
+- Ensure an appropriate heading level is used for the `ui-tabs__title` headings.
 
 <Preview>
     <Story id="ui-components-gallery-gallery1--gallery-1-tabs" />
@@ -41,7 +41,7 @@ import { Preview, Story } from '@storybook/addon-docs/blocks';
 - Please refer to the [Sliders story](/story/ui-components-slider-or-carousel--slider) for slider considerations.
 - The slider contains **full-size** images, not thumbnails.
 - The number of slides, or their widths, can be modified using the `data-slide-count` and `data-slide-width` attributes.
-- The `kb-gallery` class is added to the parent `kb-slider` to enable overriding of default slider behaviour.
+- The `ui-gallery` class is added to the parent `ui-slider` to enable overriding of default slider behaviour.
 
 <Preview>
     <Story id="ui-components-gallery-gallery1--gallery-1-slider" />
@@ -54,7 +54,7 @@ import { Preview, Story } from '@storybook/addon-docs/blocks';
 - The slider has additional `data-` attributes to identify it as the target slider, and to hide it until the modal is opened.
 - The slider has an `<h2>`, rather than the default slider `aria-label`, which is referenced by the modal `aria-labelledby`.
 - The slide widths should all be 100% in the modal.
-- The `kb-gallery__modal` class is added to the parent `kb-modal__overlay` to enable overriding of default modal behaviour.
+- The `ui-gallery__modal` class is added to the parent `ui-modal__overlay` to enable overriding of default modal behaviour.
 
 <Preview>
     <Story id="ui-components-gallery-gallery1--gallery-1-modal" />

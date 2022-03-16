@@ -24,13 +24,7 @@ export default {
         iconRef: {
             control: {
                 type: 'select',
-                options: [
-                    'SVG001',
-                    'SVG011',
-                    'SVG012',
-                    'SVG016',
-                    'SVG018',
-                ],
+                options: ['SVG001', 'SVG011', 'SVG012', 'SVG016', 'SVG018'],
             },
         },
         swapIconPosition: { control: 'boolean' },
@@ -42,22 +36,22 @@ export default {
 export const TextAndIconButton = (args) => `
 <button
     type="button"
-    class="kb-button kb-button--text-icon kb-button--${
+    class="ui-button ui-button--text-icon ui-button--${
         args.buttonType
-    } kb-button--${args.buttonSize} ${
-    args.verticalLayout === true ? 'kb-button--vertical' : ''
+    } ui-button--${args.buttonSize} ${
+    args.verticalLayout === true ? 'ui-button--vertical' : ''
 }"
     ${args.disabled === true ? 'disabled' : ''}
 >
-    <span class="kb-button__inner ${
-        args.swapIconPosition === true ? 'kb-button__inner--reverse' : ''
+    <span class="ui-button__inner ${
+        args.swapIconPosition === true ? 'ui-button__inner--reverse' : ''
     }">
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon"
+            class="ui-icon"
         >
-            <use href="${KBconfig.theme}.sprite.svg#${args.iconRef}" />
+            <use href="${UIconfig.theme}.sprite.svg#${args.iconRef}" />
         </svg>
         <span>${args.label}</span>
     </span>

@@ -1,12 +1,12 @@
 export const htmlFragmentSwatch2 = `
-<article class="kb-card kb-card--fullwidth kb-card--media-inline">
-    <div class="kb-card__content">
-        <h3 class="kb-card__title">Exterior paint</h3>
+<article class="ui-card ui-card--fullwidth ui-card--media-inline">
+    <div class="ui-card__content">
+        <h3 class="ui-card__title">Exterior paint</h3>
         <p>Blue</p>
     </div>
-    <figure class="kb-card__media">
+    <figure class="ui-card__media">
         <img
-            class="kb-image"
+            class="ui-image"
             src="/swatch/blue.png"
             alt="blue"
             loading="lazy"
@@ -18,14 +18,14 @@ export const htmlFragmentSwatch2 = `
 `;
 
 export const htmlFragmentSwatch3 = `
-<article class="kb-card kb-card--fullwidth kb-card--media-inline">
-    <div class="kb-card__content">
-        <h3 class="kb-card__title">Exterior paint</h3>
+<article class="ui-card ui-card--fullwidth ui-card--media-inline">
+    <div class="ui-card__content">
+        <h3 class="ui-card__title">Exterior paint</h3>
         <p>Magnetic</p>
     </div>
-    <figure class="kb-card__media">
+    <figure class="ui-card__media">
         <img
-            class="kb-image"
+            class="ui-image"
             src="/swatch/magnetic.png"
             alt="magnetic"
             loading="lazy"
@@ -37,14 +37,14 @@ export const htmlFragmentSwatch3 = `
 `;
 
 export const htmlFragmentSwatch4 = `
-<article class="kb-card kb-card--fullwidth kb-card--media-inline">
-    <div class="kb-card__content">
-        <h3 class="kb-card__title">Exterior paint</h3>
+<article class="ui-card ui-card--fullwidth ui-card--media-inline">
+    <div class="ui-card__content">
+        <h3 class="ui-card__title">Exterior paint</h3>
         <p>Yellow</p>
     </div>
-    <figure class="kb-card__media">
+    <figure class="ui-card__media">
         <img
-            class="kb-image"
+            class="ui-image"
             src="/swatch/yellow.png"
             alt="yellow"
             loading="lazy"
@@ -58,7 +58,7 @@ export const htmlFragmentSwatch4 = `
 export const htmlFragmentThumb2 = `
 <span data-slide-tab="true">
     <img
-        class="kb-image"
+        class="ui-image"
         src="/swatch/tn-blue.jpg"
         alt=""
         loading="lazy"
@@ -71,7 +71,7 @@ export const htmlFragmentThumb2 = `
 export const htmlFragmentThumb3 = `
 <span data-slide-tab="true">
     <img
-        class="kb-image"
+        class="ui-image"
         src="/swatch/tn-magnetic.jpg"
         alt=""
         loading="lazy"
@@ -84,7 +84,7 @@ export const htmlFragmentThumb3 = `
 export const htmlFragmentThumb4 = `
 <span data-slide-tab="true">
     <img
-        class="kb-image"
+        class="ui-image"
         src="/swatch/tn-yellow.jpg"
         alt=""
         loading="lazy"

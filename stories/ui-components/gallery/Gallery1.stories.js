@@ -22,23 +22,23 @@ export default {
 };
 
 export const Gallery1 = () => `
-<ul class="kb-gallery kb-grid">
+<ul class="ui-gallery ui-grid">
     <li>
         <a
-            class="kb-gallery__link"
+            class="ui-gallery__link"
             href="https://via.placeholder.com/1024x655.png"
             target="_blank"
         >
-            <figure class="kb-gallery__figure">
+            <figure class="ui-gallery__figure">
                 <img
-                    class="kb-image"
+                    class="ui-image"
                     src="https://via.placeholder.com/400x300.png"
                     alt=""
                     loading="lazy"
                     height="300"
                     width="400"
                 />
-                <figcaption class="kb-gallery__caption">
+                <figcaption class="ui-gallery__caption">
                     [image caption]
                 </figcaption>
             </figure>
@@ -53,16 +53,16 @@ export const Gallery1 = () => `
 Gallery1.storyName = 'Gallery 1 (default thumbnail grid layout)';
 
 export const Gallery1Alternate = () => `
-<div class="kb-gallery kb-gallery--layout-thumbs-2 kb-grid">
+<div class="ui-gallery ui-gallery--layout-thumbs-2 ui-grid">
     ${htmlFragmentFigureGalleryAlt}
     ${htmlFragmentFigureGalleryAlt}
 </div>
-<div class="kb-gallery kb-gallery--layout-thumbs-3 kb-grid">
+<div class="ui-gallery ui-gallery--layout-thumbs-3 ui-grid">
     ${htmlFragmentFigureGalleryAlt}
     ${htmlFragmentFigureGalleryAlt}
     ${htmlFragmentFigureGalleryAlt}
 </div>
-<div class="kb-gallery kb-gallery--layout-thumbs-3-alt kb-grid">
+<div class="ui-gallery ui-gallery--layout-thumbs-3-alt ui-grid">
     ${htmlFragmentFigureGalleryAlt}
     ${htmlFragmentFigureGalleryAlt}
     ${htmlFragmentFigureGalleryAlt}
@@ -72,12 +72,12 @@ Gallery1Alternate.storyName = 'Gallery 1 (alternate thumbnail grid layouts)';
 
 export const Gallery1Tabs = () => `
 <div
-    class="kb-tabs kb-gallery__tabs"
+    class="ui-tabs ui-gallery__tabs"
     data-tabs-no-accordion="true"
 >
-    <h2 class="kb-tabs__title">1st Gallery</h2>
-    <div class="kb-tabs__content">
-        <ul class="kb-gallery kb-grid">
+    <h2 class="ui-tabs__title">1st Gallery</h2>
+    <div class="ui-tabs__content">
+        <ul class="ui-gallery ui-grid">
             <li>${htmlFragmentFigureGallery}</li>
             <li>${htmlFragmentFigureGallery}</li>
             <li>${htmlFragmentFigureGallery}</li>
@@ -85,9 +85,9 @@ export const Gallery1Tabs = () => `
             <li>${htmlFragmentFigureGallery}</li>
         </ul>
     </div>
-    <h2 class="kb-tabs__title">2nd Gallery</h2>
-    <div class="kb-tabs__content">
-        <ul class="kb-gallery kb-grid">
+    <h2 class="ui-tabs__title">2nd Gallery</h2>
+    <div class="ui-tabs__content">
+        <ul class="ui-gallery ui-grid">
             <li>${htmlFragmentFigureGallery}</li>
             <li>${htmlFragmentFigureGallery}</li>
             <li>${htmlFragmentFigureGallery}</li>
@@ -99,17 +99,17 @@ Gallery1Tabs.storyName = 'Gallery 1 (thumbnails in tabs)';
 
 export const Gallery1Slider = () => `
 <section
-    class="kb-gallery kb-slider"
+    class="ui-gallery ui-slider"
     aria-label="Gallery slider"
     data-slide-autoplay="false"
     data-slide-no-animations="true"
     data-slide-tabbed="true"
 >
-    <ul class="kb-slider__slides">
-        <li class="kb-slider__slide">
-            <figure class="kb-gallery__figure">
+    <ul class="ui-slider__slides">
+        <li class="ui-slider__slide">
+            <figure class="ui-gallery__figure">
                 <img
-                    class="kb-image"
+                    class="ui-image"
                     src="https://via.placeholder.com/1024x655.png"
                     srcset="https://via.placeholder.com/400x300.png 400w,
                             https://via.placeholder.com/768x492.png 768w,
@@ -122,45 +122,45 @@ export const Gallery1Slider = () => `
                     height="655"
                     width="1024"
                 />
-                <figcaption class="kb-gallery__caption">
+                <figcaption class="ui-gallery__caption">
                     [image caption]
                 </figcaption>
             </figure>
         </li>
-        <li class="kb-slider__slide">${htmlFragmentFigureSlider2}</li>
-        <li class="kb-slider__slide">${htmlFragmentFigureSlider3}</li>
-        <li class="kb-slider__slide">${htmlFragmentFigureSlider4}</li>
-        <li class="kb-slider__slide">${htmlFragmentFigureSlider5}</li>
+        <li class="ui-slider__slide">${htmlFragmentFigureSlider2}</li>
+        <li class="ui-slider__slide">${htmlFragmentFigureSlider3}</li>
+        <li class="ui-slider__slide">${htmlFragmentFigureSlider4}</li>
+        <li class="ui-slider__slide">${htmlFragmentFigureSlider5}</li>
     </ul>
 </section>
 `;
 Gallery1Slider.storyName = 'Gallery 1 (full-size images in slider)';
 
 export const Gallery1Modal = () => `
-<div class="kb-layout">
-    <ul class="kb-gallery kb-grid">
+<div class="ui-layout">
+    <ul class="ui-gallery ui-grid">
         <li>
             <a
-                class="kb-gallery__link"
+                class="ui-gallery__link"
                 href="https://via.placeholder.com/1024x655.png"
                 target="_blank"
                 data-modal-open="modal"
                 data-modal-title="Gallery"
                 data-modal-fetch-content="true"
-                data-modal-css-class="kb-gallery__modal"
+                data-modal-css-class="ui-gallery__modal"
                 data-slider="modal-slider1"
                 data-slide-to-show="1"
             >
-                <figure class="kb-gallery__figure">
+                <figure class="ui-gallery__figure">
                     <img
-                        class="kb-image"
+                        class="ui-image"
                         src="https://via.placeholder.com/400x300.png"
                         alt=""
                         loading="lazy"
                         height="300"
                         width="400"
                     />
-                    <figcaption class="kb-gallery__caption">
+                    <figcaption class="ui-gallery__caption">
                         [image caption]
                     </figcaption>
                 </figure>
@@ -173,7 +173,7 @@ export const Gallery1Modal = () => `
     </ul>
 
     <section
-        class="kb-gallery kb-slider"
+        class="ui-gallery ui-slider"
         data-id="modal-slider1"
         data-slide-autoplay="false"
         data-slide-no-animations="true"
@@ -188,11 +188,11 @@ export const Gallery1Modal = () => `
             Gallery slider
         </h2>
 
-        <ul class="kb-slider__slides">
-            <li class="kb-slider__slide">
-                <figure class="kb-gallery__figure">
+        <ul class="ui-slider__slides">
+            <li class="ui-slider__slide">
+                <figure class="ui-gallery__figure">
                     <img
-                        class="kb-image"
+                        class="ui-image"
                         src="https://via.placeholder.com/1024x655.png"
                         srcset="https://via.placeholder.com/400x300.png 400w,
                                 https://via.placeholder.com/768x492.png 768w,
@@ -205,44 +205,44 @@ export const Gallery1Modal = () => `
                         height="655"
                         width="1024"
                     />
-                    <figcaption class="kb-gallery__caption">
+                    <figcaption class="ui-gallery__caption">
                         [image caption]
                     </figcaption>
                 </figure>
             </li>
-            <li class="kb-slider__slide">${htmlFragmentFigureSlider2}</li>
-            <li class="kb-slider__slide">${htmlFragmentFigureSlider3}</li>
-            <li class="kb-slider__slide">${htmlFragmentFigureSlider4}</li>
-            <li class="kb-slider__slide">${htmlFragmentFigureSlider5}</li>
+            <li class="ui-slider__slide">${htmlFragmentFigureSlider2}</li>
+            <li class="ui-slider__slide">${htmlFragmentFigureSlider3}</li>
+            <li class="ui-slider__slide">${htmlFragmentFigureSlider4}</li>
+            <li class="ui-slider__slide">${htmlFragmentFigureSlider5}</li>
         </ul>
     </section>
 </div>
 
-<div class="kb-modal__overlay is-hidden" id="modal">
-    <div class="kb-modal">
+<div class="ui-modal__overlay is-hidden" id="modal">
+    <div class="ui-modal">
         <div
-            class="kb-modal__inner"
+            class="ui-modal__inner"
             role="dialog"
             aria-modal="true"
         >
 
             <button
                 type="button"
-                class="kb-button kb-button--icon"
+                class="ui-button ui-button--icon"
                 data-modal-close
             >
                 <svg
                     aria-hidden="true"
                     focusable="false"
-                    class="kb-icon kb-icon--medium"
+                    class="ui-icon ui-icon--medium"
                 >
                     <title>Close</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG016" />
+                    <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                 </svg>
                 <span class="sr-only">Close</span>
             </button>
 
-            <div class="kb-modal__ajax"></div>
+            <div class="ui-modal__ajax"></div>
 
         </div>
     </div>

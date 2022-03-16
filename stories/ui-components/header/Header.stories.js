@@ -11,7 +11,7 @@ export default {
 
 const style = `
 <style>
-    .kb-header > * {
+    .ui-header > * {
         border: 2px dashed rgb(235, 201, 90);
     }
 </style>
@@ -19,42 +19,42 @@ const style = `
 
 export const Header = () => `
 ${style}
-<header class="kb-layout__header kb-layout__sticky kb-layout__sticky--header" id="header">
-    <div class="kb-layout__header__overlay"></div>
-    <div class="kb-layout__inner">
+<header class="ui-layout__header ui-layout__sticky ui-layout__sticky--header" id="header">
+    <div class="ui-layout__header__overlay"></div>
+    <div class="ui-layout__inner">
 
-        <div class="kb-header">
-            <a href="/" class="kb-button kb-button--icon kb-header__home">
-                <img class="kb-image is-hidden-on-large" src="https://via.placeholder.com/100x100.png" alt="home" />
-                <img class="kb-image" src="https://via.placeholder.com/250x100.png" alt="home" />
+        <div class="ui-header">
+            <a href="/" class="ui-button ui-button--icon ui-header__home">
+                <img class="ui-image is-hidden-on-large" src="https://via.placeholder.com/100x100.png" alt="home" />
+                <img class="ui-image" src="https://via.placeholder.com/250x100.png" alt="home" />
             </a>
 
             <nav
                 id="navigation"
-                class="kb-navigation kb-header__nav"
+                class="ui-navigation ui-header__nav"
                 aria-label="site header navigation"
             >
                 Site navigation...
             </nav>
 
-            <div class="kb-header__logo">
+            <div class="ui-header__logo">
                 Dealer logo...
             </div>
 
             <form
                 id="site-search"
-                class="kb-header__search kb-form"
+                class="ui-header__search ui-form"
                 action="#"
                 role="search"
             >
                 Site search...
             </form>
 
-            <a class="kb-header__offers" href="#">
+            <a class="ui-header__offers" href="#">
                 Offers link...
             </a>
 
-            <div class="kb-branch-rotator kb-header__contact">
+            <div class="ui-branch-rotator ui-header__contact">
                 Branch rotator...
             </div>
         </div>
@@ -65,19 +65,19 @@ ${style}
 
 export const VerticalHeader = () => `
 ${style}
-<header class="kb-layout__header" id="header">
-    <div class="kb-layout__header__overlay"></div>
-    <div class="kb-layout__inner">
+<header class="ui-layout__header" id="header">
+    <div class="ui-layout__header__overlay"></div>
+    <div class="ui-layout__inner">
 
-        <div class="kb-header kb-header--vertical">
-            <a href="/" class="kb-button kb-button--icon kb-header__home">
-                <img class="kb-image is-hidden-on-large" src="https://via.placeholder.com/100x100.png" alt="home" />
-                <img class="kb-image" src="https://via.placeholder.com/250x100.png" alt="home" />
+        <div class="ui-header ui-header--vertical">
+            <a href="/" class="ui-button ui-button--icon ui-header__home">
+                <img class="ui-image is-hidden-on-large" src="https://via.placeholder.com/100x100.png" alt="home" />
+                <img class="ui-image" src="https://via.placeholder.com/250x100.png" alt="home" />
             </a>
 
             <nav
                 id="navigation"
-                class="kb-navigation--vertical kb-header__nav"
+                class="ui-navigation--vertical ui-header__nav"
                 aria-label="site header navigation"
             >
                 Site navigation...

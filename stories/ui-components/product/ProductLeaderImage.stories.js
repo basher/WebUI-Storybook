@@ -10,9 +10,9 @@ export default {
 };
 
 export const ProductLeaderImage = () => `
-<div class="kb-product-leader-image">
+<div class="ui-product-leader-image">
     <img
-        class="kb-image"
+        class="ui-image"
         src="https://via.placeholder.com/1024x655.png"
         srcset="https://via.placeholder.com/480x307.png 480w,
                 https://via.placeholder.com/768x492.png 768w,
@@ -26,7 +26,7 @@ export const ProductLeaderImage = () => `
         width="1024"
     />
     <img
-        class="kb-image"
+        class="ui-image"
         src="https://via.placeholder.com/1024x655.png"
         srcset="https://via.placeholder.com/480x307.png 480w,
                 https://via.placeholder.com/768x492.png 768w,
@@ -44,9 +44,9 @@ export const ProductLeaderImage = () => `
 ProductLeaderImage.storyName = '2 images';
 
 export const ProductLeaderImageSingle = () => `
-<div class="kb-product-leader-image kb-product-leader-image--single-image">
+<div class="ui-product-leader-image ui-product-leader-image--single-image">
     <img
-        class="kb-image"
+        class="ui-image"
         src="https://via.placeholder.com/1024x655.png"
         srcset="https://via.placeholder.com/768x492.png 768w,
                 https://via.placeholder.com/1024x655.png 1024w,

@@ -19,18 +19,18 @@ export default {
 
 export const Swatch = () => `
 <section
-    class="kb-swatch kb-slider"
+    class="ui-swatch ui-slider"
     data-slide-autoplay="false"
     data-slide-tabbed="true"
     data-slide-no-animations="true"
     data-slide-custom-tabs="true"
 >
-    <h2 class="kb-swatch__title">Colour swatch</h2>
-    <ul class="kb-slider__slides">
-        <li class="kb-slider__slide">
+    <h2 class="ui-swatch__title">Colour swatch</h2>
+    <ul class="ui-slider__slides">
+        <li class="ui-slider__slide">
             <span data-slide-tab="true">
                 <img
-                    class="kb-image"
+                    class="ui-image"
                     src="/swatch/tn-orange.jpg"
                     alt=""
                     loading="lazy"
@@ -39,14 +39,14 @@ export const Swatch = () => `
                 />
             </span>
 
-            <article class="kb-card kb-card--fullwidth kb-card--media-inline">
-                <div class="kb-card__content">
-                    <h3 class="kb-card__title">Exterior paint</h3>
+            <article class="ui-card ui-card--fullwidth ui-card--media-inline">
+                <div class="ui-card__content">
+                    <h3 class="ui-card__title">Exterior paint</h3>
                     <p>Hot zingy summer orange and here is some extra text</p>
                 </div>
-                <figure class="kb-card__media">
+                <figure class="ui-card__media">
                     <img
-                        class="kb-image"
+                        class="ui-image"
                         src="/swatch/orange.png"
                         alt="orange"
                         loading="lazy"
@@ -56,15 +56,15 @@ export const Swatch = () => `
                 </figure>
             </article>
         </li>
-        <li class="kb-slider__slide">
+        <li class="ui-slider__slide">
             ${htmlFragmentThumb2}
             ${htmlFragmentSwatch2}
         </li>
-        <li class="kb-slider__slide">
+        <li class="ui-slider__slide">
             ${htmlFragmentThumb3}
             ${htmlFragmentSwatch3}
         </li>
-        <li class="kb-slider__slide">
+        <li class="ui-slider__slide">
             ${htmlFragmentThumb4}
             ${htmlFragmentSwatch4}
         </li>

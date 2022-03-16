@@ -10,22 +10,22 @@ export default {
 };
 
 export const PromotionFilter = () => `
-<div class="kb-promotion-filter kb-button-group">
+<div class="ui-promotion-filter ui-button-group">
     <a
         href="#"
-        class="kb-button kb-button--text kb-button--toggle is-selected"
+        class="ui-button ui-button--text ui-button--toggle is-selected"
     >
         Show all offers
     </a>
     <a
         href="#"
-        class="kb-button kb-button--text kb-button--toggle"
+        class="ui-button ui-button--text ui-button--toggle"
     >
         Show all new offers
     </a>
     <a
         href="#"
-        class="kb-button kb-button--text kb-button--toggle"
+        class="ui-button ui-button--text ui-button--toggle"
     >
         Show all used offers
     </a>

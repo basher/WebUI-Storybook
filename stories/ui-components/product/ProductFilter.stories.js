@@ -14,15 +14,15 @@ export default {
 };
 
 export const ProductFilter = () => `
-<div class="kb-product-filter kb-tabs">
-    <span class="kb-tabs__title">Filter 1</span>
-    <div class="kb-tabs__content">
-        <ul class="kb-grid">
+<div class="ui-product-filter ui-tabs">
+    <span class="ui-tabs__title">Filter 1</span>
+    <div class="ui-tabs__content">
+        <ul class="ui-grid">
             <li>
-                <a class="kb-card kb-product-card kb-product-card--filter" href="/">
-                    <figure class="kb-card__media">
+                <a class="ui-card ui-product-card ui-product-card--filter" href="/">
+                    <figure class="ui-card__media">
                         <img
-                            class="kb-image"
+                            class="ui-image"
                             src="https://via.placeholder.com/200x113.png"
                             alt=""
                             loading="lazy"
@@ -30,9 +30,9 @@ export const ProductFilter = () => `
                             width="200"
                         />
                     </figure>
-                    <div class="kb-card__content">
-                        <p class="kb-card__title">Product name</p>
-                        <p class="kb-product-card__price">From &pound;19.999</p>
+                    <div class="ui-card__content">
+                        <p class="ui-card__title">Product name</p>
+                        <p class="ui-product-card__price">From &pound;19.999</p>
                     </div>
                 </a>
             </li>
@@ -43,17 +43,17 @@ export const ProductFilter = () => `
         </ul>
         <small>Smallprint goes here...</small>
     </div>
-    <span class="kb-tabs__title">Filter 2</span>
-    <div class="kb-tabs__content">
-        <ul class="kb-grid">
+    <span class="ui-tabs__title">Filter 2</span>
+    <div class="ui-tabs__content">
+        <ul class="ui-grid">
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
         </ul>
         <small>Smallprint goes here...</small>
     </div>
-    <span class="kb-tabs__title">Filter 3</span>
-    <div class="kb-tabs__content">
-        <ul class="kb-grid">
+    <span class="ui-tabs__title">Filter 3</span>
+    <div class="ui-tabs__content">
+        <ul class="ui-grid">
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
@@ -65,15 +65,15 @@ export const ProductFilter = () => `
 ProductFilter.storyName = 'New product filter';
 
 export const ProductFilterAlt = () => `
-<div class="kb-product-filter kb-product-filter--alt kb-tabs" data-open="false">
-    <span class="kb-tabs__title">Filter 1</span>
-    <div class="kb-tabs__content">
-        <ul class="kb-grid">
+<div class="ui-product-filter ui-product-filter--alt ui-tabs" data-open="false">
+    <span class="ui-tabs__title">Filter 1</span>
+    <div class="ui-tabs__content">
+        <ul class="ui-grid">
             <li>
-                <a class="kb-card kb-product-card kb-product-card--filter" href="/">
-                    <figure class="kb-card__media">
+                <a class="ui-card ui-product-card ui-product-card--filter" href="/">
+                    <figure class="ui-card__media">
                         <img
-                            class="kb-image"
+                            class="ui-image"
                             src="https://via.placeholder.com/200x113.png"
                             alt=""
                             loading="lazy"
@@ -81,9 +81,9 @@ export const ProductFilterAlt = () => `
                             width="200"
                         />
                     </figure>
-                    <div class="kb-card__content">
-                        <p class="kb-card__title">Product name</p>
-                        <p class="kb-product-card__price">From &pound;19.999</p>
+                    <div class="ui-card__content">
+                        <p class="ui-card__title">Product name</p>
+                        <p class="ui-product-card__price">From &pound;19.999</p>
                     </div>
                 </a>
             </li>
@@ -94,17 +94,17 @@ export const ProductFilterAlt = () => `
         </ul>
         <small>Smallprint goes here...</small>
     </div>
-    <span class="kb-tabs__title">Filter 2</span>
-    <div class="kb-tabs__content">
-        <ul class="kb-grid">
+    <span class="ui-tabs__title">Filter 2</span>
+    <div class="ui-tabs__content">
+        <ul class="ui-grid">
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
         </ul>
         <small>Smallprint goes here...</small>
     </div>
-    <span class="kb-tabs__title">Filter 3</span>
-    <div class="kb-tabs__content">
-        <ul class="kb-grid">
+    <span class="ui-tabs__title">Filter 3</span>
+    <div class="ui-tabs__content">
+        <ul class="ui-grid">
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
             <li>${htmlFragmentProductFilterCard}</li>
@@ -116,14 +116,14 @@ export const ProductFilterAlt = () => `
 ProductFilterAlt.storyName = 'New product filter (alternate)';
 
 export const ProductFilterVertical = () => `
-<div class="kb-product-filter kb-tabs kb-tabs--vertical">
-    <span class="kb-tabs__title">Filter 1</span>
-    <div class="kb-tabs__content">
-        <fieldset class="kb-form__fieldset kb-form__fieldset--checkbox kb-form__fieldset--checkbox-custom">
-            <legend class="kb-form__legend sr-only">
+<div class="ui-product-filter ui-tabs ui-tabs--vertical">
+    <span class="ui-tabs__title">Filter 1</span>
+    <div class="ui-tabs__content">
+        <fieldset class="ui-form__fieldset ui-form__fieldset--checkbox ui-form__fieldset--checkbox-custom">
+            <legend class="ui-form__legend sr-only">
                 Filter 1
             </legend>
-            <div class="kb-grid">
+            <div class="ui-grid">
                 ${htmlFragmentFilterCheckbox}
                 ${htmlFragmentFilterCheckbox}
                 ${htmlFragmentFilterCheckbox}
@@ -132,25 +132,25 @@ export const ProductFilterVertical = () => `
             </div>
         </fieldset>
     </div>
-    <span class="kb-tabs__title">Filter 2</span>
-    <div class="kb-tabs__content">
-        <fieldset class="kb-form__fieldset kb-form__fieldset--checkbox kb-form__fieldset--checkbox-custom">
-            <legend class="kb-form__legend sr-only">
+    <span class="ui-tabs__title">Filter 2</span>
+    <div class="ui-tabs__content">
+        <fieldset class="ui-form__fieldset ui-form__fieldset--checkbox ui-form__fieldset--checkbox-custom">
+            <legend class="ui-form__legend sr-only">
                 Filter 2
             </legend>
-            <div class="kb-grid">
+            <div class="ui-grid">
                 ${htmlFragmentFilterCheckbox}
                 ${htmlFragmentFilterCheckbox}
             </div>
         </fieldset>
     </div>
-    <span class="kb-tabs__title">Filter 3</span>
-    <div class="kb-tabs__content">
-        <fieldset class="kb-form__fieldset kb-form__fieldset--checkbox kb-form__fieldset--checkbox-custom">
-            <legend class="kb-form__legend sr-only">
+    <span class="ui-tabs__title">Filter 3</span>
+    <div class="ui-tabs__content">
+        <fieldset class="ui-form__fieldset ui-form__fieldset--checkbox ui-form__fieldset--checkbox-custom">
+            <legend class="ui-form__legend sr-only">
                 Filter 3
             </legend>
-            <div class="kb-grid">
+            <div class="ui-grid">
                 ${htmlFragmentFilterCheckbox}
                 ${htmlFragmentFilterCheckbox}
                 ${htmlFragmentFilterCheckbox}

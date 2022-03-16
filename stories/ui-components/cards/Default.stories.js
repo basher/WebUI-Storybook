@@ -23,15 +23,15 @@ export default {
 };
 
 export const DefaultCard = (args) => `
-<article class="kb-card kb-card--${args.cardOrientation}">
-    <div class="kb-card__content">
-        <h3 class="kb-card__title">Card title</h3>
+<article class="ui-card ui-card--${args.cardOrientation}">
+    <div class="ui-card__content">
+        <h3 class="ui-card__title">Card title</h3>
         <p>Paragraph of text with a <a href="#">simple text link</a> inside it.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam molestiae. Soluta voluptatem deleniti excepturi laudantium. Officia at repudiandae quo nulla reiciendis optio modi nemo.</p>
     </div>
-    <figure class="kb-card__media">
+    <figure class="ui-card__media">
         <img
-            class="kb-image"
+            class="ui-image"
             src="https://via.placeholder.com/400x225.png"
             alt=""
             loading="lazy"
@@ -44,15 +44,15 @@ export const DefaultCard = (args) => `
 DefaultCard.storyName = 'Default card';
 
 export const QuietCard = (args) => `
-<article class="kb-card kb-card--quiet kb-card--${args.cardOrientation}">
-    <div class="kb-card__content">
-        <h3 class="kb-card__title">Card title</h3>
+<article class="ui-card ui-card--quiet ui-card--${args.cardOrientation}">
+    <div class="ui-card__content">
+        <h3 class="ui-card__title">Card title</h3>
         <p>Paragraph of text with a <a href="#">simple text link</a> inside it.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam molestiae. Soluta voluptatem deleniti excepturi laudantium. Officia at repudiandae quo nulla reiciendis optio modi nemo.</p>
     </div>
-    <figure class="kb-card__media">
+    <figure class="ui-card__media">
         <img
-            class="kb-image"
+            class="ui-image"
             src="https://via.placeholder.com/400x225.png"
             alt=""
             loading="lazy"
@@ -65,15 +65,15 @@ export const QuietCard = (args) => `
 QuietCard.storyName = 'Quiet card';
 
 export const CardWithButtons = (args) => `
-<article class="kb-card kb-card--${args.cardOrientation}">
-    <div class="kb-card__content">
-        <h3 class="kb-card__title">Card title</h3>
+<article class="ui-card ui-card--${args.cardOrientation}">
+    <div class="ui-card__content">
+        <h3 class="ui-card__title">Card title</h3>
         <p>Paragraph of text with a <a href="#">simple text link</a> inside it.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam molestiae. Soluta voluptatem deleniti excepturi laudantium. Officia at repudiandae quo nulla reiciendis optio modi nemo.</p>
     </div>
-    <figure class="kb-card__media">
+    <figure class="ui-card__media">
         <img
-            class="kb-image"
+            class="ui-image"
             src="https://via.placeholder.com/400x225.png"
             alt=""
             loading="lazy"
@@ -81,11 +81,11 @@ export const CardWithButtons = (args) => `
             width="400"
         />
     </figure>
-    <div class="kb-card__actions kb-button-group">
-        <a href="#" class="kb-button kb-button--text kb-button--primary">
+    <div class="ui-card__actions ui-button-group">
+        <a href="#" class="ui-button ui-button--text ui-button--primary">
             Primary text link
         </a>
-        <a href="#" class="kb-button kb-button--text kb-button--secondary">
+        <a href="#" class="ui-button ui-button--text ui-button--secondary">
             Secondary text link
         </a>
     </div>
@@ -94,15 +94,15 @@ export const CardWithButtons = (args) => `
 CardWithButtons.storyName = 'Card with buttons';
 
 export const CardFullwidth = () => `
-<article class="kb-card kb-card--fullwidth kb-card--media-inline">
-    <div class="kb-card__content">
-        <h3 class="kb-card__title">Card title</h3>
+<article class="ui-card ui-card--fullwidth ui-card--media-inline">
+    <div class="ui-card__content">
+        <h3 class="ui-card__title">Card title</h3>
         <p>Paragraph of text with a <a href="#">simple text link</a> inside it.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam molestiae. Soluta voluptatem deleniti excepturi laudantium. Officia at repudiandae quo nulla reiciendis optio modi nemo.</p>
     </div>
-    <figure class="kb-card__media">
+    <figure class="ui-card__media">
         <img
-            class="kb-image"
+            class="ui-image"
             src="https://via.placeholder.com/1024x655.png"
             srcset="https://via.placeholder.com/480x307.png 480w,
                     https://via.placeholder.com/768x492.png 768w,
@@ -121,21 +121,21 @@ export const CardFullwidth = () => `
 CardFullwidth.storyName = 'Fullwidth card';
 
 export const CardsInGrid = (args) => `
-<ul class="kb-grid kb-card-grid">
+<ul class="ui-grid ui-card-grid">
     <li>
-        <article class="kb-card kb-card--${args.cardOrientation}">
+        <article class="ui-card ui-card--${args.cardOrientation}">
             ${htmlFragmentDefaultCard}
             ${htmlFragmentDefaultCardButtons}
         </article>
     </li>
     <li>
-        <article class="kb-card kb-card--${args.cardOrientation}">
+        <article class="ui-card ui-card--${args.cardOrientation}">
             ${htmlFragmentDefaultCard2}
             ${htmlFragmentDefaultCardButtons}
         </article>
     </li>
     <li>
-        <article class="kb-card kb-card--${args.cardOrientation}">
+        <article class="ui-card ui-card--${args.cardOrientation}">
             ${htmlFragmentDefaultCard}
             ${htmlFragmentDefaultCardButtons}
         </article>

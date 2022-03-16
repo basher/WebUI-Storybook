@@ -11,8 +11,8 @@ export default {
 };
 
 export const ShowHide = () => `
-<div class="kb-show-hide">
-    <div class="kb-show-hide__content">
+<div class="ui-show-hide">
+    <div class="ui-show-hide__content">
         ${htmlFragmentContent}
     </div>
 </div>

@@ -49,7 +49,7 @@ import { Preview, Story } from '@storybook/addon-docs/blocks';
 
 ## Form errors
 - As mentioned above, we're leveraging **native HTML5 browser validation** (i.e. `:valid`, `:invalid` and `:required` pseudo classes), with no additional client-side validation scripts.
-- Additionally, on server postback, form errors are identified by an extra `kb-form__field--has-error` class.
+- Additionally, on server postback, form errors are identified by an extra `ui-form__field--has-error` class.
 
 ### Accessibility considerations
 - The error list container has an ARIA `role="alert"` which is announced when the page loads.
@@ -60,7 +60,7 @@ import { Preview, Story } from '@storybook/addon-docs/blocks';
 </Preview>
 
 ## Disabled fields
-- In addition to the form control having a `disabled` attribute, the parent `kb-form__field` or `kb-form__fieldset` has an `is-disabled` class.
+- In addition to the form control having a `disabled` attribute, the parent `ui-form__field` or `ui-form__fieldset` has an `is-disabled` class.
 
 <Preview>
     <Story id="ui-components-forms--disabled-fields" />

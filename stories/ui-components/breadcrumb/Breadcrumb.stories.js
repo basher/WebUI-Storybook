@@ -10,20 +10,20 @@ export default {
 };
 
 export const Breadcrumb = () => `
-<nav class="kb-breadcrumb" aria-label="breadcrumb">
+<nav class="ui-breadcrumb" aria-label="breadcrumb">
     <ol
-        class="kb-breadcrumb__list"
+        class="ui-breadcrumb__list"
         itemscope
         itemtype="http://schema.org/BreadcrumbList"
     >
         <li
-            class="kb-breadcrumb__item"
+            class="ui-breadcrumb__item"
             itemscope
             itemprop="itemListElement"
             itemtype="http://schema.org/ListItem"
         >
             <a
-                class="kb-breadcrumb__link"
+                class="ui-breadcrumb__link"
                 href="#"
                 itemprop="item"
             >
@@ -34,13 +34,13 @@ export const Breadcrumb = () => `
             <meta itemprop="position" content="1">
         </li>
         <li
-            class="kb-breadcrumb__item"
+            class="ui-breadcrumb__item"
             itemscope
             itemprop="itemListElement"
             itemtype="http://schema.org/ListItem"
         >
             <a
-                class="kb-breadcrumb__link"
+                class="ui-breadcrumb__link"
                 href="#"
                 itemprop="item"
             >
@@ -51,13 +51,13 @@ export const Breadcrumb = () => `
             <meta itemprop="position" content="2">
         </li>
         <li
-            class="kb-breadcrumb__item"
+            class="ui-breadcrumb__item"
             itemscope
             itemprop="itemListElement"
             itemtype="http://schema.org/ListItem"
         >
             <a
-                class="kb-breadcrumb__link"
+                class="ui-breadcrumb__link"
                 href="#"
                 itemprop="item"
             >
@@ -68,13 +68,13 @@ export const Breadcrumb = () => `
             <meta itemprop="position" content="3">
         </li>
         <li
-            class="kb-breadcrumb__item"
+            class="ui-breadcrumb__item"
             itemscope
             itemprop="itemListElement"
             itemtype="http://schema.org/ListItem"
         >
             <a
-                class="kb-breadcrumb__link"
+                class="ui-breadcrumb__link"
                 href="#"
                 aria-current="page"
                 itemprop="item"

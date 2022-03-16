@@ -11,15 +11,15 @@ export default {
 };
 
 export const Accordion = () => `
-<div class="kb-accordion">
-    <h2 class="kb-accordion__title">Accordion title 1</h2>
-    <div class="kb-accordion__content">
+<div class="ui-accordion">
+    <h2 class="ui-accordion__title">Accordion title 1</h2>
+    <div class="ui-accordion__content">
         <p>Accordion content 1.</p>
         ${htmlFragmentContent}
     </div>
 
-    <h2 class="kb-accordion__title">Accordion title 2</h2>
-    <div class="kb-accordion__content">
+    <h2 class="ui-accordion__title">Accordion title 2</h2>
+    <div class="ui-accordion__content">
         <p>Accordion content 2.</p>
         ${htmlFragmentContent}
     </div>
@@ -27,15 +27,15 @@ export const Accordion = () => `
 `;
 
 export const AccordionOpen = () => `
-<div class="kb-accordion" data-open="true">
-    <h2 class="kb-accordion__title">Accordion title 1</h2>
-    <div class="kb-accordion__content">
+<div class="ui-accordion" data-open="true">
+    <h2 class="ui-accordion__title">Accordion title 1</h2>
+    <div class="ui-accordion__content">
         <p>Accordion content 1.</p>
         ${htmlFragmentContent}
     </div>
 
-    <h2 class="kb-accordion__title">Accordion title 2</h2>
-    <div class="kb-accordion__content">
+    <h2 class="ui-accordion__title">Accordion title 2</h2>
+    <div class="ui-accordion__content">
         <p>Accordion content 2.</p>
         ${htmlFragmentContent}
     </div>

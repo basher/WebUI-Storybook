@@ -1,5 +1,5 @@
 export const htmlFragmentVideoPlayer = `
-<div class="kb-video-player">
+<div class="ui-video-player">
     <a
         href="https://www.youtube.com/embed/PEkrL0tY1Rk"
         target="_blank"
@@ -7,7 +7,7 @@ export const htmlFragmentVideoPlayer = `
         data-video-width=""
     >
         <img
-            class="kb-image"
+            class="ui-image"
             src="https://via.placeholder.com/400x225.png"
             alt="Meaningful video title"
             loading="lazy"
@@ -16,7 +16,7 @@ export const htmlFragmentVideoPlayer = `
         />
     </a>
     <div data-modal-ajax-content="modal">
-        <div class="kb-responsive-media"></div>
+        <div class="ui-responsive-media"></div>
     </div>
 </div>
 `;

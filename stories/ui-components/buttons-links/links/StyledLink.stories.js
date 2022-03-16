@@ -20,7 +20,7 @@ export default {
 export const StyledLink = (args) => `
 <a
     href="#"
-    class="kb-button kb-button--text kb-button--${args.buttonType} kb-button--${args.buttonSize}"
+    class="ui-button ui-button--text ui-button--${args.buttonType} ui-button--${args.buttonSize}"
 >
     ${args.label}
 </a>

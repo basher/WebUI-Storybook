@@ -16,8 +16,8 @@ Storybook auto-generates the HTML code view for each component, and this results
 
 ### (a) Removing `${args.}` text from component HTML
 - If the component contains text starting with `${args.` and ending with `}`, delete the entire `${args. }` text.
-    - NOTE: Sometimes this extra text is part of a CSS classname for the component. For example, `kb-button--${args.buttonType}`.
-    - In such cases, delete the whole bit of text `kb-button--${args.buttonType}`.
+    - NOTE: Sometimes this extra text is part of a CSS classname for the component. For example, `ui-button--${args.buttonType}`.
+    - In such cases, delete the whole bit of text `ui-button--${args.buttonType}`.
 - The `${args.}` are generated because the component has configurable parameters. For example, see the [text + icon CTA](/story/ui-components-buttons-links-links-text-icon--text-and-icon-link) component.
     - Click on the `Controls` button at the bottom of the story.
     - Select `primary` from the `buttonType` dropdown to change the CTA to a primary CTA.
@@ -32,7 +32,7 @@ Storybook auto-generates the HTML code view for each component, and this results
 - If the component contains an icon, you need to fix the icon's `href` so that the correct icon is shown on the website.
 - For example, see the [documentation for the text + icon CTA](/?path=/docs/ui-components-buttons-links-links-text-icon--text-and-icon-link) component.
     - Every icon uses an HTML `<svg>` tag.
-    - Inside every `<svg>` is this line `<use href="${KBconfig.theme}.sprite.svg#${args.iconRef}" />`, which must be edited in 2 places:
-        - Replace `${KBconfig.theme}.sprite.svg` with the correct path.
+    - Inside every `<svg>` is this line `<use href="${UIconfig.theme}.sprite.svg#${args.iconRef}" />`, which must be edited in 2 places:
+        - Replace `${UIconfig.theme}.sprite.svg` with the correct path.
         - Replace `${args.iconRef}` with the correct icon `ID`. For example, `SVG001`.
             - You can see [all icon IDs here](/story/ui-components-icons--icons) by hovering over the icon you need to use.

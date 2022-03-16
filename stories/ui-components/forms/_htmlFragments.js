@@ -1,14 +1,14 @@
 export const htmlFragmentButtons = `
-<div class="kb-form__buttons kb-button-group">
+<div class="ui-form__buttons ui-button-group">
     <button
         type="submit"
-        class="kb-button kb-button--text kb-button--positive"
+        class="ui-button ui-button--text ui-button--positive"
     >
         Submit
     </button>
     <button
         type="reset"
-        class="kb-button kb-button--text"
+        class="ui-button ui-button--text"
     >
         Reset
     </button>
@@ -16,11 +16,11 @@ export const htmlFragmentButtons = `
 `;
 
 export const htmlFragmentTextInputRequired = `
-<div class="kb-form__field">
-    <label class="kb-form__label">
+<div class="ui-form__field">
+    <label class="ui-form__label">
         <span>Text input</span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="text"
             placeholder="placeholder..."
             required
@@ -28,19 +28,19 @@ export const htmlFragmentTextInputRequired = `
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon kb-form__icon--error"
+            class="ui-icon ui-form__icon ui-form__icon--error"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG074" />
         </svg>
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon"
+            class="ui-icon ui-form__icon"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG075" />
         </svg>
         <span
-            class="kb-form__error"
+            class="ui-form__error"
             id="error1-text"
         >
             Error 1 text
@@ -50,11 +50,11 @@ export const htmlFragmentTextInputRequired = `
 `;
 
 export const htmlFragmentSelectRequired = `
-<div class="kb-form__field">
-    <label class="kb-form__label">
+<div class="ui-form__field">
+    <label class="ui-form__label">
         <span>Select</span>
         <select
-            class="kb-form__select"
+            class="ui-form__select"
             required
         >
             <option></option>
@@ -65,19 +65,19 @@ export const htmlFragmentSelectRequired = `
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon kb-form__icon--error"
+            class="ui-icon ui-form__icon ui-form__icon--error"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG074" />
         </svg>
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon"
+            class="ui-icon ui-form__icon"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG075" />
         </svg>
         <span
-            class="kb-form__error"
+            class="ui-form__error"
             id="error2-text"
         >
             Error 2 text
@@ -87,11 +87,11 @@ export const htmlFragmentSelectRequired = `
 `;
 
 export const htmlFragmentEmailInputRequired = `
-<div class="kb-form__field">
-    <label class="kb-form__label">
+<div class="ui-form__field">
+    <label class="ui-form__label">
         <span>Email input</span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="email"
             autocomplete="email"
             placeholder="email@domain.com"
@@ -100,19 +100,19 @@ export const htmlFragmentEmailInputRequired = `
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon kb-form__icon--error"
+            class="ui-icon ui-form__icon ui-form__icon--error"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG074" />
         </svg>
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon"
+            class="ui-icon ui-form__icon"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG075" />
         </svg>
         <span
-            class="kb-form__error"
+            class="ui-form__error"
             id="error3-text"
         >
             Error 3 text
@@ -122,11 +122,11 @@ export const htmlFragmentEmailInputRequired = `
 `;
 
 export const htmlFragmentTelInputRequired = `
-<div class="kb-form__field">
-    <label class="kb-form__label">
+<div class="ui-form__field">
+    <label class="ui-form__label">
         <span>Tel input</span>
         <input
-            class="kb-form__input"
+            class="ui-form__input"
             type="tel"
             autocomplete="tel"
             pattern="^[0-9-+\s()]*$"
@@ -136,19 +136,19 @@ export const htmlFragmentTelInputRequired = `
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon kb-form__icon--error"
+            class="ui-icon ui-form__icon ui-form__icon--error"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG074" />
         </svg>
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon"
+            class="ui-icon ui-form__icon"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG075" />
         </svg>
         <span
-            class="kb-form__error"
+            class="ui-form__error"
             id="error4-text"
         >
             Error 4 text
@@ -158,11 +158,11 @@ export const htmlFragmentTelInputRequired = `
 `;
 
 export const htmlFragmentTextareaRequired = `
-<div class="kb-form__field">
-    <label class="kb-form__label">
+<div class="ui-form__field">
+    <label class="ui-form__label">
         <span>Textarea</span>
         <textarea
-            class="kb-form__textarea"
+            class="ui-form__textarea"
             cols="30"
             rows="6"
             required
@@ -170,19 +170,19 @@ export const htmlFragmentTextareaRequired = `
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon kb-form__icon--error"
+            class="ui-icon ui-form__icon ui-form__icon--error"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG074" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG074" />
         </svg>
         <svg
             aria-hidden="true"
             focusable="false"
-            class="kb-icon kb-form__icon"
+            class="ui-icon ui-form__icon"
         >
-            <use href="${KBconfig.theme}.sprite.svg#SVG075" />
+            <use href="${UIconfig.theme}.sprite.svg#SVG075" />
         </svg>
         <span
-            class="kb-form__error"
+            class="ui-form__error"
             id="error5-text"
         >
             Error 5 text

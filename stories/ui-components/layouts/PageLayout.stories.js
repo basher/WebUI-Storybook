@@ -14,17 +14,17 @@ const style = `
     .sb-show-main.sb-main-padded {
         padding: 0;
     }
-    .kb-layout__sticky .kb-layout__inner,
-    .kb-layout__header .kb-layout__inner {
+    .ui-layout__sticky .ui-layout__inner,
+    .ui-layout__header .ui-layout__inner {
         background-color: rgba(235, 201, 90, 0.2);
         border: 1px solid rgb(235, 201, 90);
         padding: 1rem 0.25rem;
     }
-    .kb-layout__footer .kb-layout__inner {
+    .ui-layout__footer .ui-layout__inner {
         background-color: rgba(235, 201, 90, 0.2);
         padding: 1rem 0.25rem;
     }
-    .kb-layout__main .kb-layout__inner > div p {
+    .ui-layout__main .ui-layout__inner > div p {
         border: 2px dashed rgb(235, 201, 90);
         padding: 0.25rem;
     }
@@ -33,37 +33,37 @@ const style = `
 
 export const PageLayout = () => `
 ${style}
-<div class="kb-layout">
+<div class="ui-layout">
 
     <header
         id="header"
-        class="kb-layout__header kb-layout__sticky kb-layout__sticky--header"
+        class="ui-layout__header ui-layout__sticky ui-layout__sticky--header"
     >
-        <div class="kb-layout__header__overlay"></div>
-        <div class="kb-layout__inner">
+        <div class="ui-layout__header__overlay"></div>
+        <div class="ui-layout__inner">
             Sticky <code>&lt;header&gt;</code>, whose internal content is managed by CSS Grid
         </div>
     </header>
 
-    <main id="main" class="kb-layout__main">
+    <main id="main" class="ui-layout__main">
 
-        <div class="kb-layout__inner">
+        <div class="ui-layout__inner">
 
-            <div class="kb-layout__fullbleed">
+            <div class="ui-layout__fullbleed">
                 <p>
-                    "<b>kb-layout__fullbleed</b>" container (e.g. for banners) that extends 100% of browser viewport, irrespective of any <i>bleed</i> areas.
+                    "<b>ui-layout__fullbleed</b>" container (e.g. for banners) that extends 100% of browser viewport, irrespective of any <i>bleed</i> areas.
                 </p>
             </div>
 
-            <div class="kb-layout__has-max-width">
+            <div class="ui-layout__has-max-width">
                 <p>
-                    "<b>kb-layout__has-max-width</b>" container whose <code>max-width</code> is capped, based on the value of the <code>--themeMaxContentWidth</code> CSS variable.
+                    "<b>ui-layout__has-max-width</b>" container whose <code>max-width</code> is capped, based on the value of the <code>--themeMaxContentWidth</code> CSS variable.
                 </p>
             </div>
 
-            <div class="kb-layout__has-no-max-width">
+            <div class="ui-layout__has-no-max-width">
                 <p>
-                    "<b>kb-layout__has-no-max-width</b>" container whose width is 100% of the available space.
+                    "<b>ui-layout__has-no-max-width</b>" container whose width is 100% of the available space.
                 </p>
             </div>
 
@@ -73,9 +73,9 @@ ${style}
                 </p>
             </div>
 
-            <div class="kb-layout__has-centered-content">
+            <div class="ui-layout__has-centered-content">
                 <p>
-                    "<b>kb-layout__has-centered-content</b>" container whose width is also 100% of the available space, but whose content is centered.
+                    "<b>ui-layout__has-centered-content</b>" container whose width is also 100% of the available space, but whose content is centered.
                 </p>
             </div>
 
@@ -83,15 +83,15 @@ ${style}
 
     </main>
 
-    <footer id="footer" class="kb-layout__footer">
-        <div class="kb-layout__inner">
+    <footer id="footer" class="ui-layout__footer">
+        <div class="ui-layout__inner">
             <code>&lt;footer&gt;</code>
         </div>
     </footer>
 
-    <div class="kb-layout__sticky kb-layout__sticky--footer">
-        <div class="kb-layout__footer__overlay"></div>
-        <div class="kb-layout__inner">
+    <div class="ui-layout__sticky ui-layout__sticky--footer">
+        <div class="ui-layout__footer__overlay"></div>
+        <div class="ui-layout__inner">
             Sticky footer <code>&lt;div&gt;</code>
         </div>
     </div>
@@ -102,37 +102,37 @@ PageLayout.storyName = 'Page layout';
 
 export const PageLayoutVerticalHeader = () => `
 ${style}
-<div class="kb-layout kb-layout--has-vertical-header">
+<div class="ui-layout ui-layout--has-vertical-header">
 
     <header
         id="header"
-        class="kb-layout__header"
+        class="ui-layout__header"
     >
-        <div class="kb-layout__header__overlay"></div>
-        <div class="kb-layout__inner">
+        <div class="ui-layout__header__overlay"></div>
+        <div class="ui-layout__inner">
             Vertical <code>&lt;header&gt;</code>
         </div>
     </header>
 
-    <main id="main" class="kb-layout__main">
+    <main id="main" class="ui-layout__main">
 
-        <div class="kb-layout__inner">
+        <div class="ui-layout__inner">
 
-            <div class="kb-layout__fullbleed">
+            <div class="ui-layout__fullbleed">
                 <p>
-                    "<b>kb-layout__fullbleed</b>" container (e.g. for banners) that extends 100% of browser viewport, irrespective of any <i>bleed</i> areas.
+                    "<b>ui-layout__fullbleed</b>" container (e.g. for banners) that extends 100% of browser viewport, irrespective of any <i>bleed</i> areas.
                 </p>
             </div>
 
-            <div class="kb-layout__has-max-width">
+            <div class="ui-layout__has-max-width">
                 <p>
-                    "<b>kb-layout__has-max-width</b>" container whose <code>max-width</code> is capped, based on the value of the <code>--themeMaxContentWidth</code> CSS variable.
+                    "<b>ui-layout__has-max-width</b>" container whose <code>max-width</code> is capped, based on the value of the <code>--themeMaxContentWidth</code> CSS variable.
                 </p>
             </div>
 
-            <div class="kb-layout__has-no-max-width">
+            <div class="ui-layout__has-no-max-width">
                 <p>
-                    "<b>kb-layout__has-no-max-width</b>" container whose width is 100% of the available space.
+                    "<b>ui-layout__has-no-max-width</b>" container whose width is 100% of the available space.
                 </p>
             </div>
 
@@ -142,9 +142,9 @@ ${style}
                 </p>
             </div>
 
-            <div class="kb-layout__has-centered-content">
+            <div class="ui-layout__has-centered-content">
                 <p>
-                    "<b>kb-layout__has-centered-content</b>" container whose width is also 100% of the available space, but whose content is centered.
+                    "<b>ui-layout__has-centered-content</b>" container whose width is also 100% of the available space, but whose content is centered.
                 </p>
             </div>
 
@@ -152,15 +152,15 @@ ${style}
 
     </main>
 
-    <footer id="footer" class="kb-layout__footer">
-        <div class="kb-layout__inner">
+    <footer id="footer" class="ui-layout__footer">
+        <div class="ui-layout__inner">
             <code>&lt;footer&gt;</code>
         </div>
     </footer>
 
-    <div class="kb-layout__sticky">
-        <div class="kb-layout__footer__overlay"></div>
-        <div class="kb-layout__inner">
+    <div class="ui-layout__sticky">
+        <div class="ui-layout__footer__overlay"></div>
+        <div class="ui-layout__inner">
             Sticky footer <code>&lt;div&gt;</code>
         </div>
     </div>

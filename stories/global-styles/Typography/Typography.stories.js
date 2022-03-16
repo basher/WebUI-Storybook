@@ -19,24 +19,24 @@ export default {
 const style = `
 <style>
     style + h2,
-    .kb-grid + h2:last-of-type,
-    .kb-grid:first-of-type,
-    .kb-grid:last-of-type {
+    .ui-grid + h2:last-of-type,
+    .ui-grid:first-of-type,
+    .ui-grid:last-of-type {
         display: none;
     }
-    .kb-grid {
+    .ui-grid {
         grid-template-columns: repeat(auto-fit, 25rem);
     }
-    .kb-grid li {
+    .ui-grid li {
         border-block-end: 1px solid;
         display: flex;
         flex-direction: column;
         padding-block-end: 1rem;
     }
-    .kb-grid span {
+    .ui-grid span {
         word-break: break-all;
     }
-    .kb-grid span:not(.styled) {
+    .ui-grid span:not(.styled) {
         font-size: 0.875rem;
     }
     .styled {
@@ -59,7 +59,7 @@ export const TypographyTheme = (args, { loaded }) => `
                     section.slice(1).replace(/-/g, ' ')
                 }
             </h2>
-            <ul class="kb-grid">
+            <ul class="ui-grid">
                 ${loaded[section]
                     .map(
                         (type) =>
@@ -87,9 +87,8 @@ export const TypographyTheme = (args, { loaded }) => `
             let styledSpan = document.querySelectorAll('.styled');
             styledSpan.forEach((span) => {
                 let computedSpan = span;
-                computedSpan.innerHTML = getComputedStyle(
-                    span
-                ).getPropertyValue('font-family');
+                computedSpan.innerHTML =
+                    getComputedStyle(span).getPropertyValue('font-family');
             });
         })
     }
@@ -131,11 +130,11 @@ export const TypographyExamples = () => `
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam molestiae. Soluta voluptatem deleniti excepturi laudantium. Officia at repudiandae quo nulla reiciendis optio modi nemo.</p>
 
-<h2 class="kb-h4">Heading level 2 with <code>class="kb-h4"</code></h2>
-<h3 class="kb-h4">Heading level 3 with <code>class="kb-h4"</code></h3>
+<h2 class="ui-h4">Heading level 2 with <code>class="ui-h4"</code></h2>
+<h3 class="ui-h4">Heading level 3 with <code>class="ui-h4"</code></h3>
 
-<div class="kb-cms__font-override">
-    <p>This is HTML inside a <code>&lt;div class="kb-cms__font-override"&gt;</code> wrapper, to override typography styles if required.</p>
+<div class="ui-cms__font-override">
+    <p>This is HTML inside a <code>&lt;div class="ui-cms__font-override"&gt;</code> wrapper, to override typography styles if required.</p>
 </div>
 
 <p><small>Smallprint using <code>&lt;small&gt;</code> element.</small></p>

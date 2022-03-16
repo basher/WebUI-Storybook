@@ -3,21 +3,21 @@ export default {
 };
 
 export const ProductSearch = () => `
-<div class="kb-product-search">
+<div class="ui-product-search">
     <form
-        class="kb-form"
+        class="ui-form"
         action="#"
     >
-        <fieldset class="kb-form__fieldset">
-            <legend class="kb-form__legend">
+        <fieldset class="ui-form__fieldset">
+            <legend class="ui-form__legend">
                 Search 10 vehicles for sale
             </legend>
-            <div class="kb-grid">
-                <div class="kb-form__field">
-                    <label class="kb-form__label">
+            <div class="ui-grid">
+                <div class="ui-form__field">
+                    <label class="ui-form__label">
                         <span>Make</span>
                         <select
-                            class="kb-form__select"
+                            class="ui-form__select"
                         >
                             <option value="option1">All makes</option>
                             <option value="option2">Option 1</option>
@@ -25,11 +25,11 @@ export const ProductSearch = () => `
                         </select>
                     </label>
                 </div>
-                <div class="kb-form__field">
-                    <label class="kb-form__label">
+                <div class="ui-form__field">
+                    <label class="ui-form__label">
                         <span>Model</span>
                         <select
-                            class="kb-form__select"
+                            class="ui-form__select"
                         >
                             <option value="option1">All models</option>
                             <option value="option2">Option 1</option>
@@ -37,18 +37,18 @@ export const ProductSearch = () => `
                         </select>
                     </label>
                 </div>
-                <div class="kb-form__buttons kb-button-group">
+                <div class="ui-form__buttons ui-button-group">
                     <button
                         type="button"
-                        class="kb-button kb-button--text-icon kb-button--positive"
+                        class="ui-button ui-button--text-icon ui-button--positive"
                     >
-                        <span class="kb-button__inner kb-button__inner--reverse">
+                        <span class="ui-button__inner ui-button__inner--reverse">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
-                                class="kb-icon"
+                                class="ui-icon"
                             >
-                                <use href="${KBconfig.theme}.sprite.svg#SVG012" />
+                                <use href="${UIconfig.theme}.sprite.svg#SVG012" />
                             </svg>
                             <span>Search</span>
                         </span>

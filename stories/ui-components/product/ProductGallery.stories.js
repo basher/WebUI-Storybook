@@ -12,20 +12,20 @@ export default {
 
 export const ProductGallery = () => `
 <section
-    class="kb-product-gallery"
+    class="ui-product-gallery"
     aria-labelledby="product-gallery-title"
 >
     <h2
-        class="kb-product-gallery__title"
+        class="ui-product-gallery__title"
         id="product-gallery-title"
     >
         Product gallery
     </h2>
 
-    <div class="kb-tabs kb-gallery__tabs">
-        <h3 class="kb-tabs__title">Gallery 1</h3>
-        <div class="kb-tabs__content">
-            <ul class="kb-gallery kb-grid">
+    <div class="ui-tabs ui-gallery__tabs">
+        <h3 class="ui-tabs__title">Gallery 1</h3>
+        <div class="ui-tabs__content">
+            <ul class="ui-gallery ui-grid">
                 <li>${htmlFragmentFigureGallery}</li>
                 <li>${htmlFragmentFigureGallery}</li>
                 <li>${htmlFragmentFigureGallery}</li>
@@ -33,9 +33,9 @@ export const ProductGallery = () => `
                 <li>${htmlFragmentFigureGallery}</li>
             </ul>
         </div>
-        <h3 class="kb-tabs__title">Gallery 2</h3>
-        <div class="kb-tabs__content">
-            <ul class="kb-gallery kb-grid">
+        <h3 class="ui-tabs__title">Gallery 2</h3>
+        <div class="ui-tabs__content">
+            <ul class="ui-gallery ui-grid">
                 <li>${htmlFragmentFigureGallery}</li>
                 <li>${htmlFragmentFigureGallery}</li>
                 <li>${htmlFragmentFigureGallery}</li>

@@ -14,9 +14,9 @@ export default {
 };
 
 export const ContactCardAddress = () => `
-<article class="kb-card kb-contact-card">
-    <div class="kb-card__content">
-        <h3 class="kb-card__title">
+<article class="ui-card ui-contact-card">
+    <div class="ui-card__content">
+        <h3 class="ui-card__title">
             <a href="#">Contact name</a>
         </h3>
         <address>
@@ -33,15 +33,15 @@ export const ContactCardAddress = () => `
             </span>
         </address>
     </div>
-    <div class="kb-card__actions kb-button-group">
-        <a href="#" class="kb-button kb-button--text kb-button--primary">
+    <div class="ui-card__actions ui-button-group">
+        <a href="#" class="ui-button ui-button--text ui-button--primary">
             Get directions
         </a>
     </div>
 
-    <div class="kb-ratings">
-        <div class="kb-ratings__stars" style="--rating: 68%;"></div>
-        <p class="kb-ratings__text">
+    <div class="ui-ratings">
+        <div class="ui-ratings__stars" style="--rating: 68%;"></div>
+        <p class="ui-ratings__text">
             <a href="#">
                 <span>Rating</span>
                 3.4 (based on 195 reviews)
@@ -53,9 +53,9 @@ export const ContactCardAddress = () => `
 ContactCardAddress.storyName = 'Contact card address';
 
 export const ContactCardPerson = () => `
-<article class="kb-card kb-contact-card kb-contact-card--person">
-    <div class="kb-card__content">
-        <h3 class="kb-card__title">
+<article class="ui-card ui-contact-card ui-contact-card--person">
+    <div class="ui-card__content">
+        <h3 class="ui-card__title">
             <a href="#">Contact name</a>
         </h3>
         <p>Job title</p>
@@ -63,9 +63,9 @@ export const ContactCardPerson = () => `
             <a href="mailto:contact@Web.com">contact@Web.com</a>
         </p>
     </div>
-    <figure class="kb-card__media">
+    <figure class="ui-card__media">
         <img
-            class="kb-image"
+            class="ui-image"
             src="https://via.placeholder.com/400x300.png"
             alt=""
             loading="lazy"
@@ -78,7 +78,7 @@ export const ContactCardPerson = () => `
 ContactCardPerson.storyName = 'Contact card person';
 
 export const ContactCardsInGrid = () => `
-<ul class="kb-grid kb-contact-card-grid">
+<ul class="ui-grid ui-contact-card-grid">
     <li>${htmlFragmentContactCardAddress}</li>
     <li>${htmlFragmentContactCardPerson}</li>
     <li>${htmlFragmentContactCardAddress}</li>

@@ -10,15 +10,15 @@ export default {
 };
 
 export const Social = () => `
-<div class="kb-social">
-    <h2 class="kb-social__title">
+<div class="ui-social">
+    <h2 class="ui-social__title">
         Follow Us on Social Media
     </h2>
-    <ul class="kb-social__icons">
-        <li class="kb-social__icon">
+    <ul class="ui-social__icons">
+        <li class="ui-social__icon">
             <a href="#" target="_blank" title="link opens in a new tab">
                 <img
-                    class="kb-image"
+                    class="ui-image"
                     src="https://via.placeholder.com/48x48.png"
                     alt="Facebook"
                     height="48"
@@ -26,10 +26,10 @@ export const Social = () => `
                 />
             </a>
         </li>
-        <li class="kb-social__icon">
+        <li class="ui-social__icon">
             <a href="#" target="_blank" title="link opens in a new tab">
                 <img
-                    class="kb-image"
+                    class="ui-image"
                     src="https://via.placeholder.com/48x48.png"
                     alt="Twitter"
                     height="48"
@@ -37,10 +37,10 @@ export const Social = () => `
                 />
             </a>
         </li>
-        <li class="kb-social__icon">
+        <li class="ui-social__icon">
             <a href="#" target="_blank" title="link opens in a new tab">
                 <img
-                    class="kb-image"
+                    class="ui-image"
                     src="https://via.placeholder.com/48x48.png"
                     alt="Youtube"
                     height="48"
@@ -48,10 +48,10 @@ export const Social = () => `
                 />
             </a>
         </li>
-        <li class="kb-social__icon">
+        <li class="ui-social__icon">
             <a href="#"  target="_blank" title="link opens in a new tab">
                 <img
-                    class="kb-image"
+                    class="ui-image"
                     src="https://via.placeholder.com/48x48.png"
                     alt="Instagram"
                     height="48"
@@ -59,10 +59,10 @@ export const Social = () => `
                 />
             </a>
         </li>
-        <li class="kb-social__icon">
+        <li class="ui-social__icon">
             <a href="#" target="_blank" title="link opens in a new tab">
                 <img
-                    class="kb-image"
+                    class="ui-image"
                     src="https://via.placeholder.com/48x48.png"
                     alt="Whatsapp"
                     height="48"

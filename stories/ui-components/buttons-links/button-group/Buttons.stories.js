@@ -8,24 +8,24 @@ export default {
 };
 
 export const Buttons = (args) => `
-<div class="kb-button-group ${
-    args.centeredButtons === true ? 'kb-button-group--centered' : ''
+<div class="ui-button-group ${
+    args.centeredButtons === true ? 'ui-button-group--centered' : ''
 }">
     <button
         type="button"
-        class="kb-button kb-button--text"
+        class="ui-button ui-button--text"
     >
         Cancel
     </button>
     <button
         type="button"
-        class="kb-button kb-button--text kb-button--positive"
+        class="ui-button ui-button--text ui-button--positive"
     >
         Yes please
     </button>
     <button
         type="button"
-        class="kb-button kb-button--text kb-button--negative"
+        class="ui-button ui-button--text ui-button--negative"
     >
         No thanks
     </button>

@@ -18,9 +18,9 @@ export default {
 };
 
 export const ProductSearchResults = () => `
-<div class="kb-layout">
+<div class="ui-layout">
 
-    <div class="kb-product-search-results">
+    <div class="ui-product-search-results">
         <h1>[static heading]</h1>
 
         <section
@@ -29,25 +29,25 @@ export const ProductSearchResults = () => `
             <h2 id="products-search-filters">Modify search results</h2>
 
             <form
-                class="kb-form kb-product-search-results__form"
+                class="ui-form ui-product-search-results__form"
                 action="#"
             >
 
                 <button
                     type="button"
-                    class="kb-button kb-button--text-icon kb-button--small"
+                    class="ui-button ui-button--text-icon ui-button--small"
                     data-id="products-filter-button"
                     data-modal-open="modal"
                     data-modal-fetch-content="true"
-                    data-modal-css-class="kb-product-search-results__modal"
+                    data-modal-css-class="ui-product-search-results__modal"
                 >
-                    <span class="kb-button__inner">
+                    <span class="ui-button__inner">
                         <svg
                             aria-hidden="true"
                             focusable="false"
-                            class="kb-icon"
+                            class="ui-icon"
                         >
-                            <use href="${KBconfig.theme}.sprite.svg#SVG073" />
+                            <use href="${UIconfig.theme}.sprite.svg#SVG073" />
                         </svg>
                         <span>Filter</span>
                     </span>
@@ -55,22 +55,22 @@ export const ProductSearchResults = () => `
 
                 <a
                     href="#"
-                    class="kb-button kb-button--text kb-button--small kb-button--toggle is-hidden-on-small is-selected has-no-condition"
+                    class="ui-button ui-button--text ui-button--small ui-button--toggle is-hidden-on-small is-selected has-no-condition"
                 >
-                    <span class="kb-button__inner">
+                    <span class="ui-button__inner">
                         <svg
                             aria-hidden="true"
                             focusable="false"
-                            class="kb-icon"
+                            class="ui-icon"
                         >
-                            <use href="${KBconfig.theme}.sprite.svg#SVG011" />
+                            <use href="${UIconfig.theme}.sprite.svg#SVG011" />
                         </svg>
                         <svg
                             aria-hidden="true"
                             focusable="false"
-                            class="kb-icon"
+                            class="ui-icon"
                         >
-                            <use href="${KBconfig.theme}.sprite.svg#SVG016" />
+                            <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                         </svg>
                         <span>All Stock</span>
                     </span>
@@ -78,22 +78,22 @@ export const ProductSearchResults = () => `
 
                 <a
                     href="#"
-                    class="kb-button kb-button--text-icon kb-button--small kb-button--toggle is-hidden-on-small is-not-selected"
+                    class="ui-button ui-button--text-icon ui-button--small ui-button--toggle is-hidden-on-small is-not-selected"
                 >
-                    <span class="kb-button__inner">
+                    <span class="ui-button__inner">
                         <svg
                             aria-hidden="true"
                             focusable="false"
-                            class="kb-icon"
+                            class="ui-icon"
                         >
-                            <use href="${KBconfig.theme}.sprite.svg#SVG011" />
+                            <use href="${UIconfig.theme}.sprite.svg#SVG011" />
                         </svg>
                         <svg
                             aria-hidden="true"
                             focusable="false"
-                            class="kb-icon"
+                            class="ui-icon"
                         >
-                            <use href="${KBconfig.theme}.sprite.svg#SVG016" />
+                            <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                         </svg>
                         <span>New</span>
                     </span>
@@ -101,32 +101,32 @@ export const ProductSearchResults = () => `
 
                 <a
                     href="#"
-                    class="kb-button kb-button--text-icon kb-button--small kb-button--toggle is-hidden-on-small is-not-selected"
+                    class="ui-button ui-button--text-icon ui-button--small ui-button--toggle is-hidden-on-small is-not-selected"
                 >
-                    <span class="kb-button__inner">
+                    <span class="ui-button__inner">
                         <svg
                             aria-hidden="true"
                             focusable="false"
-                            class="kb-icon"
+                            class="ui-icon"
                         >
-                            <use href="${KBconfig.theme}.sprite.svg#SVG011" />
+                            <use href="${UIconfig.theme}.sprite.svg#SVG011" />
                         </svg>
                         <svg
                             aria-hidden="true"
                             focusable="false"
-                            class="kb-icon"
+                            class="ui-icon"
                         >
-                            <use href="${KBconfig.theme}.sprite.svg#SVG016" />
+                            <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                         </svg>
                         <span>Used</span>
                     </span>
                 </a>
 
-                <div class="kb-form__field is-hidden-on-medium">
-                    <label class="kb-form__label">
+                <div class="ui-form__field is-hidden-on-medium">
+                    <label class="ui-form__label">
                         <span>Stock</span>
                         <select
-                            class="kb-form__select"
+                            class="ui-form__select"
                             id="Condition"
                         >
                             <option value="0">All Stock</option>
@@ -136,11 +136,11 @@ export const ProductSearchResults = () => `
                     </label>
                 </div>
 
-                <div class="kb-form__field">
-                    <label class="kb-form__label">
+                <div class="ui-form__field">
+                    <label class="ui-form__label">
                         <span>Sort</span>
                         <select
-                            class="kb-form__select"
+                            class="ui-form__select"
                             data-id="products-sort-select"
                         >
                             <option value="">Sort by &hellip;</option>
@@ -153,7 +153,7 @@ export const ProductSearchResults = () => `
 
                 <button
                     type="submit"
-                    class="kb-button kb-button--text kb-button--small"
+                    class="ui-button ui-button--text ui-button--small"
                     data-id="products-sort-button"
                 >
                     Go
@@ -162,16 +162,16 @@ export const ProductSearchResults = () => `
                 <div role="region" aria-live="polite">
                     <a
                         href="#"
-                        class="kb-button kb-button--text-icon kb-button--small is-selected"
+                        class="ui-button ui-button--text-icon ui-button--small is-selected"
                         data-id="stock-compare"
                     >
-                        <span class="kb-button__inner">
+                        <span class="ui-button__inner">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
-                                class="kb-icon"
+                                class="ui-icon"
                             >
-                                <use href="${KBconfig.theme}.sprite.svg#SVG056" />
+                                <use href="${UIconfig.theme}.sprite.svg#SVG056" />
                             </svg>
                             <span>1 saved products</span>
                         </span>
@@ -182,14 +182,14 @@ export const ProductSearchResults = () => `
                     data-id="products-filter-content"
                     data-modal-ajax-content="modal"
                 >
-                    <div class="kb-product-filter kb-tabs kb-tabs--vertical">
-                        <span class="kb-tabs__title">Filter 1</span>
-                        <div class="kb-tabs__content">
-                            <fieldset class="kb-form__fieldset kb-form__fieldset--checkbox kb-form__fieldset--checkbox-custom">
-                                <legend class="kb-form__legend sr-only">
+                    <div class="ui-product-filter ui-tabs ui-tabs--vertical">
+                        <span class="ui-tabs__title">Filter 1</span>
+                        <div class="ui-tabs__content">
+                            <fieldset class="ui-form__fieldset ui-form__fieldset--checkbox ui-form__fieldset--checkbox-custom">
+                                <legend class="ui-form__legend sr-only">
                                     Filter 1
                                 </legend>
-                                <div class="kb-grid">
+                                <div class="ui-grid">
                                     ${htmlFragmentFilterCheckbox}
                                     ${htmlFragmentFilterCheckbox}
                                     ${htmlFragmentFilterCheckbox}
@@ -198,17 +198,17 @@ export const ProductSearchResults = () => `
                                 </div>
                             </fieldset>
                         </div>
-                        <span class="kb-tabs__title">Filter 2</span>
-                        <div class="kb-tabs__content">
+                        <span class="ui-tabs__title">Filter 2</span>
+                        <div class="ui-tabs__content">
                             ${htmlFragmentRangeInputMultiple}
                         </div>
-                        <span class="kb-tabs__title">Filter 3</span>
-                        <div class="kb-tabs__content">
-                            <fieldset class="kb-form__fieldset kb-form__fieldset--checkbox kb-form__fieldset--checkbox-custom">
-                                <legend class="kb-form__legend sr-only">
+                        <span class="ui-tabs__title">Filter 3</span>
+                        <div class="ui-tabs__content">
+                            <fieldset class="ui-form__fieldset ui-form__fieldset--checkbox ui-form__fieldset--checkbox-custom">
+                                <legend class="ui-form__legend sr-only">
                                     Filter 2
                                 </legend>
-                                <div class="kb-grid">
+                                <div class="ui-grid">
                                     ${htmlFragmentFilterCheckbox}
                                     ${htmlFragmentFilterCheckbox}
                                     ${htmlFragmentFilterCheckbox}
@@ -217,10 +217,10 @@ export const ProductSearchResults = () => `
                         </div>
                     </div>
 
-                    <div class="kb-form__buttons kb-button-group">
+                    <div class="ui-form__buttons ui-button-group">
                         <button
                             type="submit"
-                            class="kb-button kb-button--text kb-button--positive"
+                            class="ui-button ui-button--text ui-button--positive"
                             data-modal-close
                         >
                             Search
@@ -228,15 +228,15 @@ export const ProductSearchResults = () => `
 
                         <button
                             type="reset"
-                            class="kb-button kb-button--text-icon"
+                            class="ui-button ui-button--text-icon"
                         >
-                            <span class="kb-button__inner kb-button__inner--reverse">
+                            <span class="ui-button__inner ui-button__inner--reverse">
                                 <svg
                                     aria-hidden="true"
                                     focusable="false"
-                                    class="kb-icon"
+                                    class="ui-icon"
                                 >
-                                    <use href="${KBconfig.theme}.sprite.svg#SVG012" />
+                                    <use href="${UIconfig.theme}.sprite.svg#SVG012" />
                                 </svg>
                                 <span>Reset</span>
                             </span>
@@ -251,7 +251,7 @@ export const ProductSearchResults = () => `
 
     <section aria-labelledby="products-search-results">
         <h2 id="products-search-results"><span>3</span> results</h2>
-        <ul class="kb-product-card-grid kb-grid">
+        <ul class="ui-product-card-grid ui-grid">
             <li>${htmlFragmentProductCard}</li>
             <li>${htmlFragmentProductCardShort}</li>
             <li>${htmlFragmentProductCard}</li>
@@ -260,31 +260,31 @@ export const ProductSearchResults = () => `
 
 </div>
 
-<div class="kb-modal__overlay is-hidden" id="modal">
-    <div class="kb-modal">
+<div class="ui-modal__overlay is-hidden" id="modal">
+    <div class="ui-modal">
         <div
-            class="kb-modal__inner"
+            class="ui-modal__inner"
             role="dialog"
             aria-modal="true"
         >
 
             <button
                 type="button"
-                class="kb-button kb-button--icon"
+                class="ui-button ui-button--icon"
                 data-modal-close
             >
                 <svg
                     aria-hidden="true"
                     focusable="false"
-                    class="kb-icon kb-icon--medium"
+                    class="ui-icon ui-icon--medium"
                 >
                     <title>Close</title>
-                    <use href="${KBconfig.theme}.sprite.svg#SVG016" />
+                    <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                 </svg>
                 <span class="sr-only">Close</span>
             </button>
 
-            <div class="kb-modal__ajax"></div>
+            <div class="ui-modal__ajax"></div>
 
         </div>
     </div>

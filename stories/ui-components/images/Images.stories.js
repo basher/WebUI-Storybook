@@ -11,7 +11,7 @@ export default {
 
 export const ResponsiveImage = () => `
 <img
-    class="kb-image"
+    class="ui-image"
     src="https://via.placeholder.com/1024x655.png"
     srcset="https://via.placeholder.com/480x307.png 480w,
             https://via.placeholder.com/768x492.png 768w,
@@ -31,7 +31,7 @@ ResponsiveImage.storyName = 'Responsive images';
 
 export const FixedSizeImage = () => `
 <img
-    class="kb-image"
+    class="ui-image"
     src="https://via.placeholder.com/400x300.png"
     alt="[alt]"
     loading="lazy"

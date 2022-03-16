@@ -35,7 +35,7 @@ export default {
 
 const style = `
 <style>
-    .kb-flex > * {
+    .ui-flex > * {
         background: rgba(235, 201, 90, 0.2);
     }
 </style>
@@ -43,7 +43,7 @@ const style = `
 
 export const Flex = (args) => `
 ${style}
-<div class="kb-flex kb-flex--${args.direction} kb-flex--${args.justification} kb-flex--${args.alignment}">
+<div class="ui-flex ui-flex--${args.direction} ui-flex--${args.justification} ui-flex--${args.alignment}">
     <div>Flex item 1</div>
     <div>Flex item 2</div>
     <div>Flex item 3</div>
@@ -54,7 +54,7 @@ ${style}
 
 export const FlexList = (args) => `
 ${style}
-<ul class="kb-flex kb-flex--${args.direction} kb-flex--${args.justification} kb-flex--${args.alignment}">
+<ul class="ui-flex ui-flex--${args.direction} ui-flex--${args.justification} ui-flex--${args.alignment}">
     <li>Flex item 1</li>
     <li>Flex item 2</li>
     <li>Flex item 3</li>
