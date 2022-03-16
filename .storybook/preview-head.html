@@ -1,0 +1,46 @@
+<!-- Stop web crawlers. -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Load CSS that Parcel has bundled. -->
+<link href="%STORYBOOK_CSS_PATH%" rel="stylesheet" />
+
+<!-- Overrides for Storybook Docs and UI. -->
+<link href="storybook-overrides.css" rel="stylesheet" />
+
+<!-- This config mimics behaviour on DEV|PROD websites, allowing correct SVG icon sprite to be rendered in HTML and JS widgets. Change 'theme' and 'svgPath' properties to 'theme1', 'theme2', etc, to see different icon sprites. -->
+<script>
+    const KBconfig = {
+        theme: 'whitelabel',
+        svgPath: '%STORYBOOK_SVG_PATH%',
+        translations: {
+            AjaxError: 'Sorry, something went wrong... please try again or contact us',
+            BranchRotatorHideDepts: 'Hide All Departments',
+            BranchRotatorShowDepts: 'Show All Departments',
+            Close: 'Close',
+            CompareAdd: 'Add to compare',
+            CompareRemove: 'Remove from compare',
+            MobileNavBack: 'Back to {0}',
+            MobileNavBackToMainMenu: 'Back to Main Menu',
+            MobileNavClose: 'Close Menu',
+            MobileNavShow: 'Show Menu',
+            ShowLess: 'Show Less',
+            ShowMore: 'Show More',
+            SliderGoTo: 'Go to Slide {0}',
+            SliderNext: 'Next Slide',
+            SliderPrevious: 'Previous Slide',
+            VideoPlayerButton: 'Play video',
+        }
+    }
+</script>
+
+<script defer src="%STORYBOOK_JS_PATH%"></script>
+
+<script>
+    // Custom event for Parcel UI to listen to in order to instantiate UI component JavaScript when Storybook iframe loads for each story.
+    const eventStorybook = new Event('StorybookLoaded');
+
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('Storybook DOMContentLoaded... ');
+        window.dispatchEvent(eventStorybook);
+    }, false);
+</script>

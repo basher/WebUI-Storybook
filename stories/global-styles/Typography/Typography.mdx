@@ -1,0 +1,18 @@
+# Fluid responsive typography
+
+- We're implementing [simplified fluid typography](https://css-tricks.com/simplified-fluid-typography/) by leveraging [CSS clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp).
+- We have Sass `fluid-type-` mixins that define the **minimum**, **maximum** and **ideal** font sizes for specific elements, and fallbacks for unsupported browsers. For example:
+```
+body { @include fluid-type-default; }
+h1 { @include fluid-type-xxl; }
+```
+- This enables us to achieve nice responsive results with
+    - minimal usage of `font-size` declarations,
+    - usage of `unset` and `inherit` values,
+    - very few, if any, media queries.
+- RTL languages are supported too.
+    - The `root` font size is increased to improve legibility of these languages
+    - The `fluid-type-` mixins increase the font-sizes by the same scaling factor.
+
+## Displaying current theme typefaces
+- Please refer to the [Colours story](/?path=/docs/global-styles-colours--colours) for an explanation of how we dynamically import the theme colours. The same strategy is used for importing the theme typefaces.

@@ -1,0 +1,43 @@
+<div role="region" aria-live="polite">
+    <form
+        class="gw-form"
+        action="#"
+        data-action="/ajax/fragment-form.html"
+        method="post"
+    >
+        <div class="gw-form__field">
+            <label class="gw-form__label">
+                <span>OnChange event submits form</span>
+                <select
+                    class="gw-form__select"
+                >
+                    <option value="option1">Select 1 option 1</option>
+                    <option value="option2">Select 1 option 2</option>
+                    <option value="option3" selected>Select 1 option 3</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="gw-form__field">
+            <label class="gw-form__label">
+                <span>Disabled field until Ajax completes</span>
+                <select
+                    class="gw-form__select"
+                >
+                    <option value="option1">Select 2 option 1</option>
+                    <option value="option2">Select 2 option 2</option>
+                    <option value="option3">Select 2 option 3</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="gw-form__buttons gw-button-group">
+            <button
+                type="submit"
+                class="gw-button gw-button--text gw-button--positive"
+            >
+                Submit
+            </button>
+        </div>
+    </form>
+</div>

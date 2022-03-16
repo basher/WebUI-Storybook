@@ -1,0 +1,13 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Swatch
+- This is a custom `slider` with specific `data-slide-` attributes to trigger certain behaviours.
+- The `tab controls` are created from swatch thumbnails, which each have a `data-slide-tab="true"` attribute.
+- The slider also has an `<h2>` rather than an `aria-label`.
+
+## TODO:
+- Add the `data-slide-tab="true"` attribute directly to the thumb `<img>` when we can add that markup in back-code image helper.
+
+<Preview>
+    <Story id="ui-components-swatch--swatch" />
+</Preview>

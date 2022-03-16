@@ -1,0 +1,20 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Images
+
+## Responsive and performance considerations
+- Images use [responsive images syntax](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/), they are [lazy loaded](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading) in supporting browsers, and they have [explicit height & width](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/) declared in the HTML.
+- The image `srcset` and `sizes` attributes are based on the key Sass breakpoint values. To see how the browser swaps the images at different screen widths:
+    - Click the `'Open canvas in new tab'` button in the Storybook `Canvas mode` toolbar.
+    - Then use browser's dev tools responsive emulator.
+
+<Preview>
+    <Story id="ui-components-images--responsive-image" />
+</Preview>
+
+## Fixed size images
+- If you know you need to display just 1 image size (for example, in a card component), then you do not need to specify `srcset` and `sizes` attributes.
+
+<Preview>
+    <Story id="ui-components-images--fixed-size-image" />
+</Preview>

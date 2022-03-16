@@ -1,0 +1,33 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Flex
+- Uses `CSS Flexbox` to provide some simple layout solutions.
+
+## Default behaviour & overrides
+- The flex properties below have either been explicitly set in the Sass, or have been omitted to ensure browser defaults are used:
+
+Property | Functionality
+--- | ---
+`flex-wrap: wrap` | Explicitly set. Overrides the default `flex-wrap: nowrap` so flex items will naturally wrap rather than cause an overflow.
+`flex: 0 1 auto` | Browser default is used. `flex-grow` is 0, so items will not grow larger than their `flex-basis` size. `flex-shrink` is 1, so items can shrink rather than overflow. `flex-basis` is auto, so items will be sized based on their content.
+
+- The story `controls` below add additional CSS classes to override the default `kb-flex` component behaviour detailed above:
+
+Control | Functionality
+--- | ---
+`direction` | Overrides the default `flex-direction: row` property.
+`justification` | Overrides the default `justify-content: flex-start` property.
+`alignment` | Overrides the default `align-items: stretch` property.
+
+## Flex layout using `<div>` elements
+
+<Preview>
+    <Story id="ui-components-layouts-flex--flex" />
+</Preview>
+
+## Flex layout using `<ul><li>` elements
+- Use semantic `<ul><li>` if it makes sense to have a **list of related "things"** rendered in a flexbox container.
+
+<Preview>
+    <Story id="ui-components-layouts-flex--flex-list" />
+</Preview>

@@ -1,0 +1,75 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Slider
+- Multiple sliders can be used on the same page, and they all behave independently.
+- Slider will take up full width of its parent container.
+
+## Accessibility considerations
+- By default, sliders `autoplay`.
+    - This can be overridden in the HTML:
+```
+data-slide-autoplay="false"
+```
+- Autoplaying sliders will be stopped on mouse `:hover`, or when they receive `:focus` via keyboard or touch, or if the page is scrolled beyond the slider.
+    - There is no need for a `pause|play` button.
+- Keyboard focus is only applied to the currently visible slide(s) and any focusable content within.
+    - This allows keyboard users to use `TAB | SHIFT TAB` key to focus on visible slide, even after using `NEXT | PREV` keys.
+    - Screen reader users will therefore also get the visible slide content read out.
+- When slider auto plays, the content is **not** included in an `ARIA live region`, so screen reader users will not have all the content read out when they have not actually interacted with the slider.
+- The slider in this story is marked up with a `<section>` element, with an appropriate `aria-label`, and a JavaScript-generated `aria-roledescription="carousel"`.
+    - This can be replaced by a simple `<div>` if the slider is already contained within another section of the document with an appropriate heading.
+    - The `<div>` still needs an `aria-label`, as well as a JavaScript-generated `role="region"` which is needed in addition to the `aria-roledescription="carousel"`.
+
+## Add `tabs` functionality
+- Slider can behave like a `tabs` component, with additional navigation buttons, by adding:
+```
+data-slide-tabbed="true"
+```
+
+## Changing slide widths
+- By default, slides take up 100% of their parent container's width.
+- Override slide width by adding a specific width, using a **valid CSS value** in the HTML. For example:
+```
+data-slide-width="40%"
+```
+- Or override slide width by specifying the number of visible slides. For example:
+```
+data-slide-count="2"
+```
+- If both `data-slide-width` and `data-slide-count` are specified, `data-slide-count` takes precedence.
+
+## Stop slides animating
+- This allows the slider to be used as a 360 image viewer. For example:
+```
+data-slide-no-animations="true"
+```
+
+## Other bespoke slider functionality
+- For specific components that need slider functionality, the following `data-` attributes can be added:
+
+Attribute | Functionality
+--- | ---
+`data-slide-custom-tabs="true"` | Allows custom tab control buttons to be rendered. For example, see the [Swatch story](/story/ui-components-swatch--swatch).
+`data-slide-variable-height="true"` | Modifies the height of the slider, based on the **height of CURRENT visible slide**. For example, see the [Banners slider story](/story/ui-components-banners--banner-slider).
+`data-slide-fixed-height="true"` | Fixes the height of the slider, based on the **height of the FIRST visible slide** on load.
+`data-slide-trigger="true"` | Opens slider at a specific slide. The links or buttons that trigger this behaviour need `data-slider` and `data-slide-to-show` attributes (to identify the correct slider & slide). For example, see the [Gallery modal story](/story/ui-components-gallery-gallery1--gallery-1-modal).
+`data-slide-autowidths="true"` | Ensures each slide width is calculated individually.
+`data-slide-nofocus="true"` | Ensures `tabindex="0"` is not added to each slide. This can be useful if the slide content is itself an `<a>` or a `<button>`, and therefore keyboard users will not have to use the `TAB` key twice to activate them.
+`data-slide-move-by-one="true"` | Moves slider by 1 slide at a time.
+
+## Other UI components that use sliders
+Here's a list of other UI components that are based on (or use) a slider:
+- [Hero / billboard banner slider](/story/ui-components-banners--banner-slider).
+- [Branch rotator](/story/ui-components-branch-rotator--branch-rotator).
+- [Gallery1 with modal slider](/story/ui-components-gallery-gallery1--gallery-1-modal).
+- [Gallery2 sliders, both with modal sliders](/story/ui-components-gallery-gallery2--gallery-2).
+- [Swatch](/story/ui-components-swatch--swatch).
+- [News cards in slider](/story/ui-components-cards-news--news-card-slider).
+- [Promotions cards in slider](/story/ui-components-cards-promotion--promotion-card-slider).
+
+## Please note:
+- Some inline *demo styles* (e.g. border-color) have been added to this story to help identify each individual slide.
+
+<Preview>
+    <Story id="ui-components-slider-or-carousel--slider" />
+</Preview>

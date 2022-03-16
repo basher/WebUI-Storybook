@@ -1,0 +1,50 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Banners
+
+## Responsive and performance considerations
+- Please refer to the [Responsive images story](/story/ui-components-images--responsive-image) or [Fixed size images story](/story/ui-components-images--fixed-size-image) for `<img>` HTML markup, etc.
+- Please refer to the [Sliders story](/story/ui-components-slider-or-carousel--slider) for slider considerations.
+
+## Hero banner with overlay
+- Hero banners can also be referred to as **billboards**. They tend to be on homepages, but can be used anywhere.
+- Overlay is hidden on mobile, and is shown below the banner image instead.
+- Overlay position is based on a `3x3 grid`, where the `vertical` position is specified first, followed by the `horizontal`:
+
+```
+| top-left      | top-middle    | top-right    |
+| middle-left   | middle-middle | middle-right |
+| bottom-left   | bottom-middle | bottom-right |
+```
+
+<Preview>
+    <Story id="ui-components-banners--hero-banner" />
+</Preview>
+
+## Hero banners in slider
+- The slider component has an additional `data-slide-variable-height="true"` attribute to alter the default slider behaviour (e.g. button positioning is based on the banner image height, not the overall slide height).
+- The slider also has a CSS `kb-slider--banner` class to identify it specifically as a banner slider.
+
+<Preview>
+    <Story id="ui-components-banners--banner-slider" />
+</Preview>
+
+## Banner with clickable overlay
+- Overlay position controls make no difference to clickable overlay position.
+
+<Preview>
+    <Story id="ui-components-banners--banner-overlay-clickable" />
+</Preview>
+
+## Banner with video
+<Preview>
+    <Story id="ui-components-banners--banner-video" />
+</Preview>
+
+## Page title banner
+- Page title banners are normally at the top of the page, and should therefore contain the `<h1>` page title.
+- The title is not rendered in an overlay so the image is not obscured.
+
+<Preview>
+    <Story id="ui-components-banners--banner-page-title" />
+</Preview>

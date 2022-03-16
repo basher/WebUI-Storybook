@@ -1,0 +1,10 @@
+<Meta title="Web UI Storybook/Introduction/How to use WebUI repo static UI assets" />
+
+# How to use correct static UI assets from WebUI repo
+
+- All static UI assets (CSS, JS, SVG, JSON) are bundled by Parcel in [WebUI repo](TBC/_git/WebUI).
+- In order for the components in this Storybook to render correctly with the **correct theme**, you **must** run this command from a terminal session in the `WebUI repo`:
+```
+npm run start:theme --web-ui-parcel:theme=[theme-name]
+```
+- Also note that some of the static assets (SVG sprites) need to be manually copied into the `public` folder in this Storybook repo before they can be used in the stories. This avoids CORS errors.

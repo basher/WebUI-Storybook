@@ -1,0 +1,48 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Modal
+
+## HTML attributes
+Here's a list of all the HTML attributes needed to "wire up" modal behaviour, and the specific HTML elements that require them:
+
+Attribute | HTML element | Attribute value & functionality
+--- | --- | ---
+`data-modal-open` | `<button>` or `<a>` that opens modal | Must be the same as the `"id"` on `<div class="kb-modal__overlay">` to be opened.
+`data-modal-title` | As above | Meaningful modal title text, or an empty string if modal content already contains a title, which is applied to the modal `<h2 data-modal-title>`.
+`data-auto-open-modal` | As above | CSS classname to be added to  `"kb-modal__overlay"` for additional styling.
+`data-modal-fetch-content` | As above | If set to `"true"` the modal content is fetched via Ajax.
+`id` | `<div class="kb-modal__overlay">` | Must be the same as the `"id"` on the `<button>` or `<a>` that opens modal.
+`data-auto-open-modal` | As above | Modal automatically opened on page load.
+`data-modal-close` | Modal close button, and any other buttons (e.g. form submit or cancel) | Closes modal.
+`data-modal-ajax-content` | Hidden content on the page (e.g. image gallery slider) | Must be the same as the `"id"` on `<div class="kb-modal__overlay">` to be opened, so the hidden content can be moved into modal.
+
+## Accessibility considerations
+- Simplified implementation based on [ARIA dialog](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal).
+    - All focusable elements inside `<div class="kb-layout">` are rendered **inert** to screen readers (via `aria-hidden="true"`) when modal is open.
+    - Keyboard focus is kept within the modal until it is closed, whereby focus is set back to the triggering button.
+- `<div class="kb-layout">` and `<div class="kb-modal__overlay">` **must** be sibling DOM elements.
+
+## Modal HTML content is hardcoded:
+- We don't currently use modals whose content is already hardcoded.
+
+<Preview>
+    <Story id="ui-components-modal--modal" />
+</Preview>
+
+## Modal HTML content fetched via Ajax:
+- In this instance, the content is already in the page, albeit hidden with CSS until `openModal()` is triggered.
+    - The hidden content should also have an `<h2>` with `id` and `data-modal-title` attributes to be referenced by the modal container.
+- The modal has an empty `<div class="kb-modal__ajax">` which will be populated with the Ajax-fetched content.
+- The modal does not have a hardcoded `aria-labelledby` attribute.
+    - This will be programatically generated when the content is fetched, if there's an appropriate heading with `data-modal-title` attribute.
+
+<Preview>
+    <Story id="ui-components-modal--modal-ajax" />
+</Preview>
+
+## Modal shows on page load (e.g. for cookie consent)
+- We don't currently use modals whose content is rendered on page load.
+
+<Preview>
+    <Story id="ui-components-modal--modal-pageload" />
+</Preview>

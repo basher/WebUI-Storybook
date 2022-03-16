@@ -1,0 +1,29 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Responsive tables
+
+## Accessibility & responsive considerations
+- Placing a table inside an overflowing container [as per these guidelines](https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html?ref=sidebar) is the simplest way to achieve a fully accessible & responsive table, which is keyboard & screen reader friendly.
+- The container has an `aria-labelledby` attribute pointing to a unique ID on the table `<caption>`.
+
+## TODO:
+- How configurable is WYSIWYG editor in CMS?
+- Do we need JavaScript to auto-generate unique IDs?
+- Is overflow container an acceptable responsive solution, or do we need to present a linear view?
+    - Using only CSS to change table display properties breaks table semantics in assistive technologies.
+    - We would need JavaScript to add appropriate `ARIA` roles too.
+
+## With column headers only
+<Preview>
+    <Story id="ui-components-tables--responsive-table" />
+</Preview>
+
+## With both column & row headers
+<Preview>
+    <Story id="ui-components-tables--responsive-table-row-headers" />
+</Preview>
+
+## Simple striped table
+<Preview>
+    <Story id="ui-components-tables--responsive-striped-table" />
+</Preview>

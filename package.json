@@ -1,0 +1,40 @@
+{
+  "name": "web-ui-storybook",
+  "version": "1.0.0",
+  "description": "UI Storybook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -s ./public -p 9009",
+    "build-storybook": "build-storybook -s public",
+    "chromatic:whitelabel": "npx chromatic --project-token=813c271a0864"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@storybook/addon-a11y": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/html": "^6.3.12",
+    "babel-loader": "^8.1.0",
+    "chromatic": "^5.9.2",
+    "domready": "^1.0.8",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "react-is": "^16.13.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "stories/**/*.js": [
+      "prettier --write"
+    ]
+  }
+}

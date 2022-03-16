@@ -1,0 +1,114 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Forms
+
+## Accessibility considerations & form validation
+- Form `<inputs>` are nested inside their `<labels>`, thereby creating an implicit association, so there is no need to add `for | id` attribute pairs.
+- We're leveraging **native HTML5 browser validation** (i.e. `:valid`, `:invalid` and `:required` pseudo classes), with no additional client-side validation scripts (except for ["Grouped" required fields](/story/ui-components-forms--grouped-required-fields)).
+
+## Additional reading
+- [Creating accessible forms](https://webaim.org/techniques/forms/controls).
+- [Managing required form fields](https://developer.paciellogroup.com/blog/2019/02/required-attribute-requirements/).
+- [Form input types for better mobile user experiences](https://css-tricks.com/better-form-inputs-for-better-mobile-user-experiences/).
+
+## Basic form structure
+<Preview>
+    <Story id="ui-components-forms--basic-form-structure" />
+</Preview>
+
+## Checkboxes & radio inputs
+<Preview>
+    <Story id="ui-components-forms--checkbox-radio" />
+</Preview>
+
+## Custom checkboxes
+<Preview>
+    <Story id="ui-components-forms--custom-checkbox" />
+</Preview>
+
+## Special text input types
+<Preview>
+    <Story id="ui-components-forms--special-inputs" />
+</Preview>
+
+## Required fields
+- Required fields are not identified by a *. They simply have a `required` attribute.
+- UX best practice is to identify **optional** fields instead.
+
+<Preview>
+    <Story id="ui-components-forms--required-fields" />
+</Preview>
+
+## "Grouped" required fields
+- Some fields need to be validated as a group. They use the same `data-validate-group` attribute and value.
+- e.g. `email` and `tel` might both be `required`, but completing 1 of those fields is suffiecient, so JavaScript removes the `required` attribute from the other field.
+
+<Preview>
+    <Story id="ui-components-forms--grouped-required-fields" />
+</Preview>
+
+## Form errors
+- As mentioned above, we're leveraging **native HTML5 browser validation** (i.e. `:valid`, `:invalid` and `:required` pseudo classes), with no additional client-side validation scripts.
+- Additionally, on server postback, form errors are identified by an extra `kb-form__field--has-error` class.
+
+### Accessibility considerations
+- The error list container has an ARIA `role="alert"` which is announced when the page loads.
+- The individual form controls with errors have `aria-invalid="true"` and `aria-describedby` attributes, allowing the corresponding error text to be read out by screen readers.
+
+<Preview>
+    <Story id="ui-components-forms--form-errors" />
+</Preview>
+
+## Disabled fields
+- In addition to the form control having a `disabled` attribute, the parent `kb-form__field` or `kb-form__fieldset` has an `is-disabled` class.
+
+<Preview>
+    <Story id="ui-components-forms--disabled-fields" />
+</Preview>
+
+## Range input slider
+- JavaScript is required to show the range value in a `bubble`.
+- This value is updated dynamically.
+
+<Preview>
+    <Story id="ui-components-forms--range-input" />
+</Preview>
+
+## Multiple range input sliders
+- The `MIN` range input has a `max` value that is 1 step less than the `max` value on the `MAX` range input.
+- Similarly, The `MAX` range input has a `min` value that is 1 step greater than the `min` value on the `MIN` range input.
+
+<Preview>
+    <Story id="ui-components-forms--range-input-multiple" />
+</Preview>
+
+## Multiple range input sliders with unit conversions
+- For example, to convert `CC` to `Ltr`.
+- Toggling the unit conversion radio buttons triggers JavaScript to assign new attributes to the range sliders via pre-populated `<input type="hidden"` fields.
+
+<Preview>
+    <Story id="ui-components-forms--range-input-multiple-conversions" />
+</Preview>
+
+## Ajax form submission
+- Triggered by a `change` event on the `<select>` elements.
+
+### Accessibility considerations
+- Keyboard users need to use the `spacebar` to activate the list of available options, which they can traverse with `arrow` keys to make their selection. If, however, they use the `arrow` keys directly without the spacebar, the form will submit on the very first arrow key press.
+- The form is wrapped in an ARIA `region` to provide a meaningful landmark for assistive technologies.
+- This region also acts as a "hook" for JavaScript to reload the form.
+- Once reloaded, JavaScript sets `:focus` on the field that triggered the Ajax form submit, allowing keyboard users to continue filling out the form from where they were.
+
+### Please note:
+- The Ajax form submission does NOT complete in Storybook due to CORS errors with the story's `<iframe>`.
+
+<Preview>
+    <Story id="ui-components-forms--ajax-form-submission" />
+</Preview>
+
+## Form fields in a grid
+- Ideally, only `<input type="text">` (including special inputs like `tel`, `email` etc) and `<select>` should be constrained inside a grid.
+
+<Preview>
+    <Story id="ui-components-forms--form-fields-in-grid" />
+</Preview>

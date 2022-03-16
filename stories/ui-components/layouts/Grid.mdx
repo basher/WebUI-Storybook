@@ -1,0 +1,93 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Grid
+- Uses `CSS Grid`, with `Flexbox` fallbacks for older browsers.
+- By default, the grid component auto-arranges the columns (or grid items) based on available space, without needing any CSS media queries, using this code in the Sass mixin:
+```
+grid-template-columns: repeat(#{$auto-layout}, minmax(#{$min-width}, #{$max-width}));
+```
+
+## Description of Sass variables used in `grid-template-columns`
+
+Variable | Functionality
+--- | ---
+`$auto-layout` | Either `auto-fit` (**default**) or `auto-fill`. Allows grid to reflow automatically at different screen widths without any media queries. See [this CSS Tricks article](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/) for an explanation of the subtle differences between them. The `kb-gallery` component use `auto-fill` to prevent the grid columns from expanding beyond the maximum size of the gallery images.
+`$min-width` | Minimum grid column width.
+`$max-width` | Maximum grid column width.
+
+
+## Override grid behaviour with Sass mixins
+
+### 1. Change grid cell `min-width` and `max-width`
+- For example, for a grid of `kb-widget` components:
+```
+.kb-widget-grid.kb-grid {
+    @include responsive-grid-columns($min-width: 17.5rem);
+}
+```
+```
+.kb-widget-grid.kb-grid {
+    @include responsive-grid-columns($max-width: 30rem);
+}
+```
+```
+.kb-widget-grid.kb-grid {
+    @include responsive-grid-columns($min-width: 17.5rem, $max-width: 30rem);
+}
+```
+
+### 2. Center the grid
+- Add the `kb-grid--centered` classname in the HTML, or provide appropriate parameter to the Sass mixin.
+- For example, for a grid of `kb-widget` components:
+```
+.kb-widget-grid.kb-grid {
+    @include responsive-grid($centered: true);
+}
+```
+
+### 3. Remove grid gaps
+- Add the `kb-grid--no-gap` classname in the HTML, or provide appropriate parameter to the Sass mixin.
+- For example, for a grid of `kb-widget` components:
+```
+.kb-widget-grid.kb-grid {
+    @include responsive-grid($gap: 0);
+}
+```
+
+## Grid layout using `<div>` elements
+- Use generic `<div` if, for example, you want to sub-divide the page (or a part of the page), into a mutli-column layout.
+
+<Preview>
+    <Story id="ui-components-layouts-grid--grid" />
+</Preview>
+
+## Grid layout using `<ul><li>` elements
+- Use semantic `<ul><li>` if it makes sense to have a **list of related "things"** rendered in a grid.
+- For example, a gallery of images, or grid of product cards.
+
+<Preview>
+    <Story id="ui-components-layouts-grid--grid-list" />
+</Preview>
+
+## Asymmetric 2-column layouts
+- The `kb-grid--asymmetric` component sets default asymmetric widths (e.g. 60% and 40%).
+- Widths can be overridden for specific component.
+```
+.kb-widget-grid {
+    @include responsive-grid-asymmetric($col1: 75%, $col2: 25%);
+}
+```
+
+<Preview>
+    <Story id="ui-components-layouts-grid--grid-asymmetric" />
+</Preview>
+
+- Alternate layout **reverses the column widths**, either by using the `kb-grid--asymmetric-alt` classname in the HTML, or by overriding the Sass mixin.
+```
+.kb-widget-grid.kb-grid--asymmetric {
+    @include responsive-grid-asymmetric($alt-layout: true);
+}
+```
+<Preview>
+    <Story id="ui-components-layouts-grid--grid-asymmetric-alt" />
+</Preview>

@@ -1,0 +1,29 @@
+# Theme colour palette
+
+- Theme Sass colours get automatically exported to a JSON file when a theme is started in `WebUI repo`.
+- Theme colours will be updated automatically
+    - if you change the theme,
+    - if you set the operating system preference to `dark mode`, thereby triggering the CSS `prefers-color-scheme: dark` media query.
+
+## Using the external `exported-colors.json` in this Storybook
+
+- The default export for this story contains an async loader which fetches the JSON before the story renders:
+```
+loaders: [() => fetch('http://localhost:1234/exported-colors.json').then(r => r.json()).then((json) => json)]
+```
+- The JSON is then passed as a `{loaded}` story argument, which can then be iterated:
+```
+export const Colours = (args, {loaded}) => `...`
+```
+
+## Why the 'funky' syntax for the CSS variables?
+
+- The CSS variable colour values are specified as a comma-separated list of individual `r`, `g` and `b` values:
+```
+:root { --themeAccentColor: 0, 58, 82; }
+```
+- This enables us to use the CSS variables directly in the `rgba()` Sass function, providing us with access to the `alpha` channel for `opacity`:
+```
+.my-selector { background: #{rgba(var(--themeAccentColor), 0.6)}; }
+```
+- This would be impossible if the CSS variables had been specified as `hex` or a single `rgb()` value.

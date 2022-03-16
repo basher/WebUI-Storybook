@@ -1,0 +1,21 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Quick view item
+- This is a composite component made up of [Asymmetric grid](/story/ui-components-layouts-grid--grid-asymmetric), [Responsive video](/story/ui-components-responsive-media--responsive-video), [Stock toolbar](/story/ui-components-toolbar-stock-toolbar--toolbar-stock), [Product summary](/story/ui-components-product-product-summary--product-summary) and [Product specs (subset)](/story/ui-components-product-product-specs--product-specs) components.
+
+## Accessibility considerations
+- Some of the HTML markup from these components has been removed (e.g. `<section>` tags) to simplify the overall DOM.
+
+<Preview>
+    <Story id="ui-components-quick-view--quick-view" />
+</Preview>
+
+## Quick view product card grid
+- If quick view is enabled in the back-end, the product cards will have quick view open/close buttons enabled, which Ajax fetch quick view HTML fragments.
+
+## Accessibility considerations
+- The open/close buttons will have `aria-expanded` attributes, as they behave like "toggle" buttons.
+
+<Preview>
+    <Story id="ui-components-quick-view--quick-view-grid" />
+</Preview>

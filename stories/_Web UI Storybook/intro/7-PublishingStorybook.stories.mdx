@@ -1,0 +1,44 @@
+<Meta title="Web UI Storybook/Introduction/Publishing Storybook Live" />
+
+# Publishing Storybook to Chromatic
+
+## When should this be done?
+- If Storybook is updated, follow the procedure below for **ALL UI themes**, completing the whole procedure for each theme in turn.
+- If a specific theme UI is updated, follow the procedure below for **specific UI theme only**.
+
+## 1. Ensure Parcel UI and Storybook repos are up-to-date
+- Checkout and pull latest code in `master` branch for both repos.
+- Empty the following `dist` folders in each repo:
+    - Parcel UI: `WebUI/dist/`
+    - Storybook: `WebUIStorybook/public/dist/`
+- If the `dist` folders don't exist, create them first as they are not stored in Git.
+
+## 2. Build Parcel UI (per theme) and copy to Storybook repo
+- Use the following script to build Parcel UI assets for 1 theme at a time.
+```
+npm run build:theme-storybook --web-ui-parcel:theme=[theme-name]
+```
+- Copy these 2 JSON files from `WebUI/dist/` into `WebUI/dist/theme-build` folder:
+    - `exported-colors.json`
+    - `exported-typography.json`
+- Copy all the files from `WebUI/dist/theme-build` folder to `WebUIStorybook/public/dist/` folder.
+
+> NOTE: If you get errors running the build command from VSCode, try running it from an external terminal window (e.g. Git Bash).
+
+## 3. Get Chromatic project token
+- This is a **one time** operation per Chromatic project (i.e. theme).
+- See screenshot below for locating the Chromatic token for each project:
+![Chromatic manage](chromatic-manage.jpg)
+- For each project, add a Chromatic script to `package.json` in Storybook repo, with correct project token:
+```
+"scripts": {
+    "chromatic:whitelabel": "npx chromatic --project-token=813c271a0864"
+}
+```
+
+## 4. Publish Storybook to Chromatic
+- Finally, build Chromatic for each project in turn. For example:
+```
+npm run chromatic:whitelabel
+```
+- This runs the `build-storybook` NPM script.

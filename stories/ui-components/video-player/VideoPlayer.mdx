@@ -1,0 +1,32 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Video player
+- This component intercepts embedded videos (e.g. YouTube) and loads the video into a modal.
+    - This prevents YouTube from downloading all its JavaScript code until a user has hit the play button.
+- There's a static placeholder image, with a custom play button.
+
+## Copy/paste the correct bits of HTML
+- To use this component, simply copy/paste this fragment of the HTML from the snippet:
+```
+<div class="kb-video-player">
+    ...
+</div>
+```
+
+- Update the following HTML attributes on the respective elements in the snippet:
+
+HTML element | Attribute | Functionality
+--- | --- | ---
+`<a>` |`href` | Replace the link's `href` attribute with the text inside the video `src` attribute from YouTube embed code.
+`<a>` | `data-video-height` | Height of video (if available in the YouTube embed code). If left blank, the theme CSS will ensure the video displays with an appropriate aspect ratio.
+`<a>` | `data-video-width` | As above.
+`<img>` | `alt` | Replace the `alt` text with appropriate text. This will provide meaningful text for the `<a>` as well as a title for the video.
+`<img>` | `src` | Replace the `src` text with the correct URL of the placeholder image.
+
+## Accessibility considerations
+- The modal behaviour is as per our default modals (e.g. image gallery).
+- There is NO explicit heading in the modal, as the video itself should have an accessible `title` provided.
+
+<Preview>
+    <Story id="ui-components-video-player--video-player" />
+</Preview>

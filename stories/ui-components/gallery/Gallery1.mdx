@@ -1,0 +1,61 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Gallery 1
+- Please refer to the [Layouts - Grid story](/story/ui-components-layouts-grid--grid) for `CSS Grid` HTML markup, etc.
+- Please refer to the [Images story](/story/ui-components-images--responsive-image) for `<img>` HTML markup, etc.
+
+## TODO
+- Decide whether images need captions. They're not currently provided in back-end code.
+
+## Gallery 1 (default thumbnail grid layout)
+- This is a **thumbnail** gallery, where clicking on an image will load the **full-size** image in a new browser tab.
+- Image `<figcaption>` is revealed on `:hover` or `:focus`.
+- The `kb-gallery` class is added to the parent `kb-grid` to enable overriding of default grid behaviour. For example, setting the grid columns to `auto-fill` so that they don't expand beyond the maximum size of the images.
+
+<Preview>
+    <Story id="ui-components-gallery-gallery1--gallery-1" />
+</Preview>
+
+## Gallery 1 (alternate thumbnail grid layouts)
+- The `kb-gallery--layout-thumbs-` modifier classes allow alternate layouts comprising **2 or 3 thumbnails per row** which, when combined together, produce a masonry-type layout.
+- We are no longer using semantic `<ul><li>` constructs for these alternate gallery layouts, as each row of the gallery is actually a separate grid container, so it makes no sense to announce these as separate lists.
+
+### TODO: Re-organise gallery stories?
+- Add click behaviour to this gallery to launch modal lightbox.
+- For now, please see [Gallery modal story](/story/ui-components-gallery-gallery1--gallery-1-modal) for example of clicking an image to load bigger image in a modal lightbox.
+
+<Preview>
+    <Story id="ui-components-gallery-gallery1--gallery-1-alternate" />
+</Preview>
+
+## Gallery 1 (thumbnails in tabs)
+- The `kb-gallery__tabs` class is added to the parent `kb-tabs` to enable overriding of default tabs behaviour.
+- `data-tabs-no-accordion="true"` ensures that the gallery tabs are not converted to an accordion on smaller screens.
+- Ensure an appropriate heading level is used for the `kb-tabs__title` headings.
+
+<Preview>
+    <Story id="ui-components-gallery-gallery1--gallery-1-tabs" />
+</Preview>
+
+##  Gallery 1 (full-size images in slider)
+- Please refer to the [Sliders story](/story/ui-components-slider-or-carousel--slider) for slider considerations.
+- The slider contains **full-size** images, not thumbnails.
+- The number of slides, or their widths, can be modified using the `data-slide-count` and `data-slide-width` attributes.
+- The `kb-gallery` class is added to the parent `kb-slider` to enable overriding of default slider behaviour.
+
+<Preview>
+    <Story id="ui-components-gallery-gallery1--gallery-1-slider" />
+</Preview>
+
+## Gallery 1 (slider in modal lightbox )
+- Please refer to the [Modal story](/story/ui-components-modal--modal-ajax) for modal considerations, and specifically fetching content via Ajax.
+- Clicking on an image thumbnail will load the corresponding **full-size** image in a modal lightbox slider.
+    - These thumbnail links have additional `data-` attributes to trigger this behaviour.
+- The slider has additional `data-` attributes to identify it as the target slider, and to hide it until the modal is opened.
+- The slider has an `<h2>`, rather than the default slider `aria-label`, which is referenced by the modal `aria-labelledby`.
+- The slide widths should all be 100% in the modal.
+- The `kb-gallery__modal` class is added to the parent `kb-modal__overlay` to enable overriding of default modal behaviour.
+
+<Preview>
+    <Story id="ui-components-gallery-gallery1--gallery-1-modal" />
+</Preview>

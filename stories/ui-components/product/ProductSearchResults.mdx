@@ -1,0 +1,18 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Product (stock) search results
+- The basic functionality (e.g. filtering) works without JavaScript, but is progressively enhanced.
+    - All filtering is still performed server-side.
+    - The filters are loaded into a modal.
+    - Please refer to the [Modal story](/story/ui-components-modal--modal-ajax) for modal considerations, and specifically fetching content via Ajax.
+- The `RESET` button behaves as a normal `<button type="reset">` without JavaScript.
+    - It is then progressivley enhanced to remove all filtering options (i.e. the `URL parameters`) via the `data-reset-url` attribute.
+    - The page is reloaded without these URL parameters.
+
+## TODO
+- Rename components to `stock`?
+- Apply Ajax filtering?
+
+<Preview>
+    <Story id="ui-components-product-product-stock-search-results--product-search-results" />
+</Preview>

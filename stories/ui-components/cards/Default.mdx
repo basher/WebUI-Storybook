@@ -1,0 +1,42 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Default card
+- Default card component is marked up as an `<article>` and should therefore contain a heading with the appropriate level.
+- The media, marked up as a `<figure>`, can contain `<img>`, `<video>`, `<iframe>`, etc.
+
+<Preview>
+    <Story id="ui-components-cards-default--default-card" />
+</Preview>
+
+# Quiet card
+- Quiet cards have no visual treatment such as background colour, border, shadow, etc.
+- In some themes, they may look exactly like default cards.
+
+<Preview>
+    <Story id="ui-components-cards-default--quiet-card" />
+</Preview>
+
+## Default card with buttons
+<Preview>
+    <Story id="ui-components-cards-default--card-with-buttons" />
+</Preview>
+
+## Fullwidth default card
+- This is an example of a fullwidth card component, allowing images (or any media) to sit alongside content, but without width constraints on the card itself.
+- It also demonstrates using a fully responsive image, with `srcset` and `sizes` attributes. See [Responsive images story](/story/ui-components-images--responsive-image).
+
+<Preview>
+    <Story id="ui-components-cards-default--card-fullwidth" />
+</Preview>
+
+## Default cards in a grid - responsive behaviour
+- It's probably best to only use **vertical** cards inside a grid, as there's no way of determining how much horizonatal space is available in each card without using JavaScript.
+- The grid container has an extra `kb-card-grid` class to override the default CSS Grid behaviour of `kb-grid`. See [Grid layout story](/story/ui-components-layouts-grid--grid).
+- For example, the `kb-card-grid` column min-widths are overridden by:
+```
+.kb-card-grid.kb-grid { @include responsive-grid-columns($min-width: 17.5rem) }
+```
+
+<Preview>
+    <Story id="ui-components-cards-default--cards-in-grid" />
+</Preview>

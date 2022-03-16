@@ -1,0 +1,48 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Site navigation sub-components
+- HTML structure for the site navigation sub-component fragments.
+- There are inline `<style>` blocks to allow the navigation fragments to render correctly in the Storybook preview pane.
+- **NOTE:** Responsive behaviour may not be correct, as these fragments have been taken out of context with respect to the complete site navigation component.
+
+### Dropdown content
+- Child and grandchild navigation links.
+- On desktop, the children are rendered as static titles.
+- On mobile, the children are rendered as buttons that click through to the grandchildren sub-menu.
+
+<Preview>
+    <Story id="ui-components-navigation-site-navigation-sub-components--dropdown-content" />
+</Preview>
+
+### Dropdown content - no grandchild
+- When a child contains no grandchildren, the child link text & URL are rendered as a "faux" grandchild.
+- On mobile, this enables users to go directly to the page URL without having to "drill down" to next level of sub-navigation.
+
+<Preview>
+    <Story id="ui-components-navigation-site-navigation-sub-components--dropdown-content-no-grandchild" />
+</Preview>
+
+### Mobile menu toggle button
+<Preview>
+    <Story id="ui-components-navigation-site-navigation-sub-components--mobile-menu-button" />
+</Preview>
+
+### Mobile back button
+<Preview>
+    <Story id="ui-components-navigation-site-navigation-sub-components--mobile-back-button" />
+</Preview>
+
+### Open sub-menu on touch button
+<Preview>
+    <Story id="ui-components-navigation-site-navigation-sub-components--touch-open-sub-menu-button" />
+</Preview>
+
+### Sub-menu title & button
+<Preview>
+    <Story id="ui-components-navigation-site-navigation-sub-components--sub-menu-title-and-button" />
+</Preview>
+
+### Button group
+<Preview>
+    <Story id="ui-components-navigation-site-navigation-sub-components--nav-button-group" />
+</Preview>

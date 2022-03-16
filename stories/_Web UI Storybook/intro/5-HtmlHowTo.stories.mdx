@@ -1,0 +1,38 @@
+<Meta title="Web UI Storybook/Introduction/How to use component HTML" />
+
+# How to use component HTML
+- Click on the component to load the correct story in Storybook's `Canvas` view.
+- Click on the `Docs` button in the Storybook toolbar to show the documentation and code fragment for the component.
+    - NOTE: Some documentation pages have additional descriptions immediately before the component, and sometimes at the top of the page too if there are multiple related components being documented on the same page.
+- Click the `Show code` button, which expands the panel, showing the underyling HTML code.
+- Click the `Copy` button at the bottom of the expanded code panel to select all the component HTML, which can then be pasted directly into a text editor or the CMS.
+- See the following sections for details on sanitising or tidying up the HTML before using it on the website.
+
+## 1. Remove unwanted parts of the component HTML
+Storybook auto-generates the HTML code view for each component, and this results in some extra code/text that **must be removed** before using the component on the website:
+
+- All component HTML starts with either `() =>` or `(args) =>`, followed by a *`* character. Delete this whole line.
+- All component HTML ends with *`* character. Delete this line.
+
+### (a) Removing `${args.}` text from component HTML
+- If the component contains text starting with `${args.` and ending with `}`, delete the entire `${args. }` text.
+    - NOTE: Sometimes this extra text is part of a CSS classname for the component. For example, `kb-button--${args.buttonType}`.
+    - In such cases, delete the whole bit of text `kb-button--${args.buttonType}`.
+- The `${args.}` are generated because the component has configurable parameters. For example, see the [text + icon CTA](/story/ui-components-buttons-links-links-text-icon--text-and-icon-link) component.
+    - Click on the `Controls` button at the bottom of the story.
+    - Select `primary` from the `buttonType` dropdown to change the CTA to a primary CTA.
+    - Now `right click` on the CTA and use the browser's inspector / dev tools to find the additional CSS classname that you can now use in your component HTML, assuming you wanted a primary CTA.
+
+### (b) Removing `${htmlFragment}` text from component HTML
+- If the component contains text starting with `${htmlFragment` and ending with `}`, delete the entire `${htmlFragment }` text.
+- The `${htmlFragment}` are generated because we re-use smaller "chunks" of HTML in a number of different components.
+- More often than not, it's just placeholder text, so you can simply replace it with the real content you need to show.
+
+## 2. Fixing `HREF` for SVG icons
+- If the component contains an icon, you need to fix the icon's `href` so that the correct icon is shown on the website.
+- For example, see the [documentation for the text + icon CTA](/?path=/docs/ui-components-buttons-links-links-text-icon--text-and-icon-link) component.
+    - Every icon uses an HTML `<svg>` tag.
+    - Inside every `<svg>` is this line `<use href="${KBconfig.theme}.sprite.svg#${args.iconRef}" />`, which must be edited in 2 places:
+        - Replace `${KBconfig.theme}.sprite.svg` with the correct path.
+        - Replace `${args.iconRef}` with the correct icon `ID`. For example, `SVG001`.
+            - You can see [all icon IDs here](/story/ui-components-icons--icons) by hovering over the icon you need to use.

@@ -1,0 +1,28 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Page layout
+- Page layout is defined by `semantic HTML5 landmark regions` & other appropriate structural elements.
+- `<div class="kb-layout">` is a `CSS Flex` container, with `flex-direction: column;`.
+- `<main>` element has `flex-grow: 1;` to ensure the footer & sticky footer are pushed all the way down.
+
+## Layout modifiers:
+
+CSS classname | Use in CMS | Functionality
+--- | --- | ---
+`kb-layout__inner` | NO | Internal wrapper. Acts as an additional styling hook (e.g. if `<header>` or `<footer>` are 100% wide, but internal content needs constraining).
+`kb-layout__fullbleed` | YES | Creates full-bleed container (e.g. for banners) that extends 100% of browser viewport, irrespective of any *bleed* areas.
+`kb-layout__has-max-width` | YES | Creates a container whose `max-width` is capped, based on the value of the `--themeMaxContentWidth` CSS variable.
+`kb-layout__has-no-max-width` | YES | Creates a container whose width is not constrained, but takes up **100% of available space**.
+`NULL` | YES | i.e. **No** CSS classname needed. Also creates a container whose width is not constrained, but takes up **100% of available space**.
+`kb-layout__has-centered-content` | YES | Also creates a container whose width is not constrained, but whose **content is centered**.
+
+<Preview>
+    <Story id="ui-components-layouts-page-layout--page-layout" />
+</Preview>
+
+## Page layout with vertical `<header>`
+- `<div class="kb-layout kb-layout--has-vertical-header">` becomes a `CSS Grid` container at a specific CSS breakpoint.
+
+<Preview>
+    <Story id="ui-components-layouts-page-layout--page-layout-vertical-header" />
+</Preview>

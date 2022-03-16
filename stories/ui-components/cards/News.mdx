@@ -1,0 +1,24 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# News card
+
+## Accessibility considerations
+- Toolbar comes before card title in the HTML. Is this a problem?
+
+<Preview>
+    <Story id="ui-components-cards-news--news-card" />
+</Preview>
+
+## News cards in a grid
+<Preview>
+    <Story id="ui-components-cards-news--news-card-grid" />
+</Preview>
+
+## News cards in a slider
+### Accessibility considerations
+- Please ignore (for the time being) the accessiblity errors relating to `landmarks` and `role-description`.
+- We have adhered to [slider accessibility guidelines](/docs/ui-components-slider-or-carousel--slider#accessibility-considerations), and screen reader testing passes OK.
+
+<Preview>
+    <Story id="ui-components-cards-news--news-card-slider" />
+</Preview>

@@ -1,0 +1,30 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Responsive media (iframes, videos, etc)
+- The `iframe` & `video` examples use standard Google Maps & YouTube `embed` code.
+- Default aspect ratio has been defined in the UI theme CSS, but can be overridden by adding an inline style to the parent container:
+```
+style="--themeMediaAspectRatio: 21/9;"
+```
+- Old browsers that do not support the CSS `aspect-ratio` property can also work by appending an inline `padding-top` property to the parent container.
+```
+style="--themeMediaAspectRatio: 21/9; padding-top: 42.857%;"
+```
+- The percentage value is calculated like so:
+```
+1 / (21/9) x 100%
+```
+- These responsive components can be used inside other components - e.g. `card` or `grid`.
+
+## Accessibility considerations
+- `<iframe>` should have a non-empty `title` attribute.
+
+## Iframe
+<Preview>
+    <Story id="ui-components-responsive-media--responsive-iframe" />
+</Preview>
+
+## Video
+<Preview>
+    <Story id="ui-components-responsive-media--responsive-video" />
+</Preview>
