@@ -1,4 +1,5 @@
 # Storybook for Web UI components
+This repo contains HTML components, whose CSS/JS is managed by [this Parcel repo](https://github.com/basher/WebUI-Parcel).
 
 ## QUICK START
 
