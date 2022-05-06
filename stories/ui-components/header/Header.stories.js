@@ -37,8 +37,8 @@ ${style}
                 Site navigation...
             </nav>
 
-            <div class="ui-header__logo">
-                Dealer logo...
+            <div class="ui-header__other1">
+                Other content...
             </div>
 
             <form
@@ -50,12 +50,8 @@ ${style}
                 Site search...
             </form>
 
-            <a class="ui-header__offers" href="#">
-                Offers link...
-            </a>
-
-            <div class="ui-branch-rotator ui-header__contact">
-                Branch rotator...
+            <div class="ui-header__other2">
+                Other content...
             </div>
         </div>
 
