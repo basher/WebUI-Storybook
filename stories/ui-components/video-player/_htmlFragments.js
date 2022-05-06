@@ -1,7 +1,7 @@
 export const htmlFragmentVideoPlayer = `
 <div class="ui-video-player">
     <a
-        href="https://www.youtube.com/embed/PEkrL0tY1Rk"
+        href="https://www.youtube.com/embed/U94wDbctu1U"
         target="_blank"
         data-video-height=""
         data-video-width=""

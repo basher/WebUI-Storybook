@@ -1,7 +1,7 @@
-import docs from './BranchLocator.mdx';
+import docs from './MapLocation.mdx';
 
 export default {
-    title: 'UI Components/Branch locator (contact)',
+    title: 'UI Components/Map location',
     parameters: {
         docs: {
             page: docs,
@@ -9,7 +9,7 @@ export default {
     },
 };
 
-export const BranchLocatorMap = () => `
+export const MapLocation = () => `
 <div class="ui-map__wrap">
     <div id="ui-location-map" class="ui-map">
         <!-- Hardcoded Google map for demo purposes -->
@@ -45,4 +45,3 @@ export const BranchLocatorMap = () => `
     </div>
 </div>
 `;
-BranchLocatorMap.storyName = 'Map with overlay';

@@ -21,7 +21,7 @@ export const QuickView = () => `
             class="ui-quick-view__media ui-responsive-media"
             style="--themeMediaAspectRatio: 3/2; padding-top: 66.667%;"
         >
-            <iframe src="https://www.youtube.com/embed/PEkrL0tY1Rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/U94wDbctu1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="ui-quick-view__content">

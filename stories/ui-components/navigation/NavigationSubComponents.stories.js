@@ -242,29 +242,3 @@ export const SubMenuTitleAndButton = () => `
 </button>
 `;
 SubMenuTitleAndButton.storyName = 'Sub-menu title & button';
-
-export const NavButtonGroup = () => `
-<div class="ui-button-group">
-    <a href="/"
-        class="ui-button ui-button--text"
-    >
-        Custom button
-    </a>
-    <a href="/"
-        class="ui-button ui-button--text"
-    >
-        Custom button
-    </a>
-    <a href="/"
-        class="ui-button ui-button--text ui-button--primary"
-    >
-        Explore all promotions
-    </a>
-    <a href="/"
-        class="ui-button ui-button--text ui-button--primary"
-    >
-        Explore all vehicles
-    </a>
-</div>
-`;
-NavButtonGroup.storyName = 'Button group';

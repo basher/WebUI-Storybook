@@ -24,7 +24,7 @@ export const ResponsiveVideo = () => `
     class="ui-responsive-media"
     style="--themeMediaAspectRatio: 21/9; padding-top: 42.857%;"
 >
-    <iframe src="https://www.youtube.com/embed/PEkrL0tY1Rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/U94wDbctu1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 `;
 ResponsiveVideo.storyName = 'Video';

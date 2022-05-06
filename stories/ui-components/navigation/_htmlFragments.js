@@ -123,11 +123,6 @@ export const htmlFragmentSubMenuTitleAndButton = `
 
 export const htmlFragmentDropdownMenu = `
 <ul class="ui-navigation__list--nested">
-    <li class="ui-navigation__item is-hoisted">
-        <a class="ui-navigation__link" href="/">
-            "Hoisted" grandchild
-        </a>
-    </li>
     <li class="ui-navigation__item" data-dropdown-open="false">
         ${htmlFragmentSubMenuTitleAndButton}
         <div class="ui-navigation__dropdown">
