@@ -9,7 +9,7 @@ import {
 } from '../cards/_htmlFragments';
 
 export default {
-    title: 'UI Components/Product/Product (stock) search results',
+    title: 'UI Components/Product/Product search results',
     parameters: {
         docs: {
             page: docs,
@@ -72,7 +72,7 @@ export const ProductSearchResults = () => `
                         >
                             <use href="${UIconfig.theme}.sprite.svg#SVG016" />
                         </svg>
-                        <span>All Stock</span>
+                        <span>All Products</span>
                     </span>
                 </a>
 
@@ -124,12 +124,12 @@ export const ProductSearchResults = () => `
 
                 <div class="ui-form__field is-hidden-on-medium">
                     <label class="ui-form__label">
-                        <span>Stock</span>
+                        <span>Products</span>
                         <select
                             class="ui-form__select"
                             id="Condition"
                         >
-                            <option value="0">All Stock</option>
+                            <option value="0">All Products</option>
                             <option value="1">New</option>
                             <option value="2">Used</option>
                         </select>
@@ -163,7 +163,7 @@ export const ProductSearchResults = () => `
                     <a
                         href="#"
                         class="ui-button ui-button--text-icon ui-button--small is-selected"
-                        data-id="stock-compare"
+                        data-id="product-compare"
                     >
                         <span class="ui-button__inner">
                             <svg

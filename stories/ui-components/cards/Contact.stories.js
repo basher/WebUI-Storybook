@@ -38,16 +38,6 @@ export const ContactCardAddress = () => `
             Get directions
         </a>
     </div>
-
-    <div class="ui-ratings">
-        <div class="ui-ratings__stars" style="--rating: 68%;"></div>
-        <p class="ui-ratings__text">
-            <a href="#">
-                <span>Rating</span>
-                3.4 (based on 195 reviews)
-            </a>
-        </p>
-    </div>
 </article>
 `;
 ContactCardAddress.storyName = 'Contact card address';

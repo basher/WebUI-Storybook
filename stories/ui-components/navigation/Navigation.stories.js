@@ -130,7 +130,7 @@ ${style1}
     </header>
 </div>
 `;
-Navigation.storyName = 'Site navigation';
+Navigation.storyName = 'Site navigation (with mega dropdown)';
 
 /* Full navigation, but importing fragment template literals to make HTML easier to read. */
 export const VerticalNavigation = () => `
@@ -228,4 +228,4 @@ ${style1}
     </header>
 </div>
 `;
-VerticalNavigation.storyName = 'Vertical site navigation';
+VerticalNavigation.storyName = 'Vertical site navigation (with flyout)';

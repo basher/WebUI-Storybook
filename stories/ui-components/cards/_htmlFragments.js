@@ -72,15 +72,6 @@ export const htmlFragmentContactCardAddress = `
             Primary text link
         </a>
     </div>
-    <div class="ui-ratings">
-        <div class="ui-ratings__stars" style="--rating: 68%;"></div>
-        <p class="ui-ratings__text">
-            <a href="#">
-                <span>Rating</span>
-                3.4 (based on 195 reviews)
-            </a>
-        </p>
-    </div>
 </article>
 `;
 
@@ -255,196 +246,6 @@ export const htmlFragmentNewsCardShort = `
 </article>
 `;
 
-/* Promotion card */
-export const htmlFragmentPromotionCard = `
-<article class="ui-card ui-promotion-card">
-    <div class="ui-card__content">
-        <div class="ui-toolbar ui-toolbar--promotions">
-            <div class="ui-button-group">
-                <div class="ui-share">
-                    <button
-                        type="button"
-                        class="ui-button ui-button--icon ui-share__button"
-                        data-share-url="https://www.google.com"
-                        data-share-title="google"
-                    >
-                        <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            class="ui-icon"
-                        >
-                            <title>Share</title>
-                            <use href="${UIconfig.theme}.sprite.svg#SVG035" />
-                        </svg>
-                        <span class="sr-only">Share</span>
-                    </button>
-
-                    <div class="ui-share__fallback">
-                        <label class="ui-form__label">
-                            <span>Share [page title]</span>
-                            <input
-                                class="ui-form__input"
-                                type="text"
-                                value=""
-                            />
-                        </label>
-                        <button
-                            type="button"
-                            class="ui-button ui-button--text ui-button--secondary"
-                        >
-                            Copy
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="ui-toolbar__item">
-                <span>Offer ends:</span>
-                <span>28/02/2030</span>
-            </div>
-        </div>
-
-        <p class="ui-promotion-card__tags">
-            Lorem ipsum dolor | sit amet consectetur
-        </p>
-
-        <h2 class="ui-card__title">
-            Promotion name which might be stupidly long and wrap to multiple lines
-        </h2>
-
-        <div class="ui-card__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam molestiae
-        </div>
-    </div>
-
-    <figure class="ui-card__media">
-        <a href="#" class="ui-responsive-media" style="--themeMediaAspectRatio: 4/3; padding-top: 75%;">
-            <img
-                class="ui-image"
-                src="https://via.placeholder.com/400x400.png"
-                alt="Promotion name"
-                loading="lazy"
-                height="300"
-                width="400"
-            />
-        </a>
-    </figure>
-
-    <div class="ui-card__actions ui-button-group">
-        <a
-            href="#"
-            class="ui-button ui-button--text ui-button--secondary"
-        >
-            Book appointment
-        </a>
-        <a
-            href="#"
-            class="ui-button ui-button--text ui-button--secondary is-selected"
-        >
-            View offer details
-        </a>
-    </div>
-</article>
-`;
-
-export const htmlFragmentPromotionCardShort = `
-<article class="ui-card ui-promotion-card">
-    <div class="ui-card__content">
-        <div class="ui-toolbar ui-toolbar--promotions">
-            <div class="ui-button-group">
-                <div class="ui-share">
-                    <button
-                        type="button"
-                        class="ui-button ui-button--icon ui-share__button"
-                        data-share-url="https://www.google.com"
-                        data-share-title="google"
-                    >
-                        <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            class="ui-icon"
-                        >
-                            <title>Share</title>
-                            <use href="${UIconfig.theme}.sprite.svg#SVG035" />
-                        </svg>
-                        <span class="sr-only">Share</span>
-                    </button>
-
-                    <div class="ui-share__fallback">
-                        <label class="ui-form__label">
-                            <span>Share [page title]</span>
-                            <input
-                                class="ui-form__input"
-                                type="text"
-                                value=""
-                            />
-                        </label>
-                        <button
-                            type="button"
-                            class="ui-button ui-button--text ui-button--secondary"
-                        >
-                            Copy
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="ui-toolbar__item">
-                <span>Offer ends:</span>
-                <span>28/02/2030</span>
-            </div>
-        </div>
-
-        <p class="ui-promotion-card__tags">
-            Lorem | ipsum
-        </p>
-
-        <h2 class="ui-card__title">
-            Promotion name
-        </h2>
-    </div>
-
-    <figure class="ui-card__media">
-        <a href="#" class="ui-responsive-media" style="--themeMediaAspectRatio: 4/3; padding-top: 75%;">
-            <img
-                class="ui-image"
-                src="https://via.placeholder.com/400x300.png"
-                alt="Promotion name"
-                loading="lazy"
-                height="300"
-                width="400"
-            />
-        </a>
-    </figure>
-
-    <div class="ui-card__actions ui-button-group">
-        <a
-            href="#"
-            class="ui-button ui-button--text ui-button--secondary is-selected"
-        >
-            View offer details
-        </a>
-    </div>
-</article>
-`;
-
-export const htmlFragmentPromotionSecondaryCard = `
-<a class="ui-card ui-promotion-card ui-promotion-card--secondary" href="#">
-    <div class="ui-card__content">
-        <p class="ui-card__title">Promotion name</p>
-    </div>
-
-    <figure class="ui-card__media">
-        <img
-            class="ui-image"
-            src="https://via.placeholder.com/400x300.png"
-            alt=""
-            loading="lazy"
-            height="300"
-            width="400"
-        />
-    </figure>
-</a>
-`;
-
 /* Product card */
 export const htmlFragmentProductCard = `
 <article class="ui-card ui-product-card">
@@ -462,7 +263,7 @@ export const htmlFragmentProductCard = `
         />
     </figure>
 
-    <div class="ui-toolbar ui-toolbar--stock">
+    <div class="ui-toolbar ui-toolbar--product">
         <div class="ui-button-group">
             <a
                 href="https://www.google.com"
@@ -477,7 +278,7 @@ export const htmlFragmentProductCard = `
             </a>
             <a
                 href="https://www.google.com"
-                class="ui-button ui-button--icon ui-toolbar--stock__compare"
+                class="ui-button ui-button--icon ui-toolbar--product__compare"
             >
                     <svg aria-hidden="true" focusable="false" class="ui-icon">
                         <title>Compare</title>
@@ -600,9 +401,9 @@ export const htmlFragmentProductCardShort = `
         />
     </figure>
 
-    <div class="ui-toolbar ui-toolbar--stock">
+    <div class="ui-toolbar ui-toolbar--product">
         <div class="ui-button-group">
-            <span class="ui-toolbar--stock__location">
+            <span class="ui-toolbar--product__location">
                 <svg aria-hidden="true" focusable="false" class="ui-icon">
                     <use href="${UIconfig.theme}.sprite.svg#SVG007"></use>
                 </svg>
@@ -610,7 +411,7 @@ export const htmlFragmentProductCardShort = `
             </span>
             <a
                 href="https://www.google.com"
-                class="ui-button ui-button--icon ui-toolbar--stock__compare is-selected"
+                class="ui-button ui-button--icon ui-toolbar--product__compare is-selected"
             >
                     <svg aria-hidden="true" focusable="false" class="ui-icon">
                         <title>Compare</title>
@@ -719,12 +520,6 @@ export const htmlFragmentProductOverviewCard = `
         />
     </figure>
     <div class="ui-card__actions ui-button-group">
-        <a
-            href="https://www.google.com"
-            class="ui-button ui-button--text ui-button--primary"
-        >
-            Test drive
-        </a>
         <a
             href="https://www.google.com"
             class="ui-button ui-button--text ui-button--primary"

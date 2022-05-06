@@ -26,7 +26,7 @@ export const QuickView = () => `
 
         <div class="ui-quick-view__content">
 
-            <div class="ui-toolbar ui-toolbar--stock">
+            <div class="ui-toolbar ui-toolbar--product">
                 <div class="ui-button-group">
                     <a
                         href="https://www.google.com"
@@ -41,7 +41,7 @@ export const QuickView = () => `
                     </a>
                     <a
                         href="https://www.google.com"
-                        class="ui-button ui-button--icon ui-toolbar--stock__compare"
+                        class="ui-button ui-button--icon ui-toolbar--product__compare"
                     >
                             <svg aria-hidden="true" focusable="false" class="ui-icon">
                                 <title>Compare</title>

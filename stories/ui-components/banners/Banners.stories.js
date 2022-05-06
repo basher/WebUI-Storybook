@@ -73,7 +73,7 @@ export const HeroBanner = (args) => `
         </div>
 </div>
 `;
-HeroBanner.storyName = 'Hero (or billboard) banner';
+HeroBanner.storyName = 'Hero banner';
 
 export const BannerSlider = () => `
 <section
@@ -96,7 +96,7 @@ export const BannerSlider = () => `
 </section>
 <p>TEST CONTENT BELOW SLIDER</p>
 `;
-BannerSlider.storyName = 'Hero (or billboard) banners in slider';
+BannerSlider.storyName = 'Hero banners in slider';
 
 export const BannerOverlayClickable = () => `
 <div class="ui-banner">

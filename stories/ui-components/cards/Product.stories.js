@@ -7,7 +7,7 @@ import {
 import { htmlFragmentShare } from '../share/_htmlFragments';
 
 export default {
-    title: 'UI Components/Cards/Product & stock',
+    title: 'UI Components/Cards/Product',
     parameters: {
         docs: {
             page: docs,
@@ -30,7 +30,7 @@ export const ProductCard = () => `
             width="400"
         />
     </figure>
-    <div class="ui-toolbar ui-toolbar--stock">
+    <div class="ui-toolbar ui-toolbar--product">
         <div class="ui-button-group">
             <a
                 href="https://www.google.com"
@@ -45,7 +45,7 @@ export const ProductCard = () => `
             </a>
             <a
                 href="https://www.google.com"
-                class="ui-button ui-button--icon ui-toolbar--stock__compare"
+                class="ui-button ui-button--icon ui-toolbar--product__compare"
             >
                     <svg aria-hidden="true" focusable="false" class="ui-icon">
                         <title>Compare</title>
@@ -121,7 +121,7 @@ export const ProductCard = () => `
     </div>
 </article>
 `;
-ProductCard.storyName = 'Product (stock) card';
+ProductCard.storyName = 'Product card';
 
 export const ProductCardGrid = () => `
 <ul class="ui-grid ui-product-card-grid ">
@@ -157,18 +157,12 @@ export const ProductOverviewCard = () => `
             href="https://www.google.com"
             class="ui-button ui-button--text ui-button--primary"
         >
-            Test drive
-        </a>
-        <a
-            href="https://www.google.com"
-            class="ui-button ui-button--text ui-button--primary"
-        >
             Enquire
         </a>
     </div>
 </article>
 `;
-ProductOverviewCard.storyName = 'New product overview card';
+ProductOverviewCard.storyName = 'Product overview card';
 
 export const ProductOverviewCardGrid = () => `
 <ul class="ui-grid ui-product-card-grid">
@@ -177,4 +171,4 @@ export const ProductOverviewCardGrid = () => `
     <li>${htmlFragmentProductOverviewCard}</li>
 </ul>
 `;
-ProductOverviewCardGrid.storyName = 'New product overview card in a grid';
+ProductOverviewCardGrid.storyName = 'Product overview card in a grid';
