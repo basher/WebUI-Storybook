@@ -38,7 +38,7 @@ ${style}
             </nav>
 
             <div class="ui-header__slot1">
-                Other content...
+                Slot1 content...
             </div>
 
             <form
@@ -51,7 +51,7 @@ ${style}
             </form>
 
             <div class="ui-header__slot2">
-                Other content...
+                Slot2 content...
             </div>
         </div>
 
