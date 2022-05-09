@@ -37,7 +37,7 @@ ${style}
                 Site navigation...
             </nav>
 
-            <div class="ui-header__other1">
+            <div class="ui-header__slot1">
                 Other content...
             </div>
 
@@ -50,7 +50,7 @@ ${style}
                 Site search...
             </form>
 
-            <div class="ui-header__other2">
+            <div class="ui-header__slot2">
                 Other content...
             </div>
         </div>
