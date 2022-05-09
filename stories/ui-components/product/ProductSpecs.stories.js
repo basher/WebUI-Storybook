@@ -22,13 +22,6 @@ export const ProductSpecs = () => `
     </h2>
 
     <ul class="ui-product-specs__list">
-
-        <li class="ui-product-specs__item ui-product-specs__price">
-            <span>Starting from</span>
-            <strong>&pound;25,000</strong>
-            <small>Smallprint</small>
-        </li>
-
         <li class="ui-product-specs__item">
             <svg
                 aria-hidden="true"
@@ -40,7 +33,6 @@ export const ProductSpecs = () => `
             <span>5.0 V8</span>
             <span>Engine</span>
         </li>
-
         <li class="ui-product-specs__item">
             <svg
                 aria-hidden="true"
@@ -52,7 +44,6 @@ export const ProductSpecs = () => `
             <span>5.7 Seconds</span>
             <span>0-60 mph</span>
         </li>
-
         <li class="ui-product-specs__item">
             <svg
                 aria-hidden="true"
@@ -64,67 +55,6 @@ export const ProductSpecs = () => `
             <span>20"</span>
             <span>Wheels</span>
         </li>
-
-        <li class="ui-product-specs__item ui-product-specs__actions">
-            <ul class="ui-product-specs__actions__list">
-
-                <li class="ui-product-specs__item ui-product-specs__action">
-                    <a
-                        href="#"
-                        class="ui-button ui-button--text-icon ui-button--primary ui-button--vertical"
-                    >
-                        <span class="ui-button__inner">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                class="ui-icon"
-                            >
-                                <use href="${UIconfig.theme}.sprite.svg#SVG021" />
-                            </svg>
-                            <span>Brochure</span>
-                        </span>
-                    </a>
-                </li>
-
-                <li class="ui-product-specs__item ui-product-specs__action">
-                    <a
-                        href="#"
-                        class="ui-button ui-button--text-icon ui-button--primary ui-button--vertical"
-                    >
-                        <span class="ui-button__inner">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                class="ui-icon"
-                            >
-                                <use href="${UIconfig.theme}.sprite.svg#SVG021" />
-                            </svg>
-                            <span>Price List</span>
-                        </span>
-                    </a>
-                </li>
-
-                <li class="ui-product-specs__item ui-product-specs__action">
-                    <a
-                        href="#"
-                        class="ui-button ui-button--text-icon ui-button--primary ui-button--vertical"
-                    >
-                        <span class="ui-button__inner">
-                            <svg
-                                aria-hidden="true"
-                                focusable="false"
-                                class="ui-icon"
-                            >
-                                <use href="${UIconfig.theme}.sprite.svg#SVG054" />
-                            </svg>
-                            <span>Build &amp; Price</span>
-                        </span>
-                    </a>
-                </li>
-
-            </ul>
-        </li>
-
     </ul>
 </section>
 `;

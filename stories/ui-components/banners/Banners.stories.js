@@ -149,20 +149,3 @@ export const BannerVideo = (args) => `
 </div>
 `;
 BannerVideo.storyName = 'Banner with video';
-
-export const BannerPageTitle = (args) => `
-<div class="ui-banner ui-banner--page-title">
-    <div class="ui-banner__title">
-        <h1 class="ui-banner__text ui-banner__text--large">
-            Page title
-        </h1>
-    </div>
-    <div
-        class="ui-banner__inner ui-responsive-media"
-        style="--themeMediaAspectRatio: 21/9; padding-top: 42.857%;"
-    >
-        ${htmlFragmentImage}
-    </div>
-</div>
-`;
-BannerPageTitle.storyName = 'Page title banner';

@@ -32,7 +32,7 @@ ${style}
             <nav
                 id="navigation"
                 class="ui-navigation ui-header__nav"
-                aria-label="site header navigation"
+                aria-label="main"
             >
                 Site navigation...
             </nav>
