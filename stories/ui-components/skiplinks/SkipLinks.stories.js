@@ -10,7 +10,7 @@ export default {
 };
 
 export const Skiplinks = () => `
-<nav class="ui-skiplinks">
+<nav class="ui-skiplinks" aria-label="skiplinks">
     <a class="ui-skiplinks__link" href="#navigation">Skip to navigation</a>
     <a class="ui-skiplinks__link" href="#site-search">Skip to search</a>
     <a class="ui-skiplinks__link" href="#main">Skip to main content</a>
